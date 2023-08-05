@@ -1,0 +1,1898 @@
+{
+    "functions": [
+        {
+            "description": "Sat Pressure f(T): (0)MPa, (1)psia, (2)bara, (3)kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TP",
+            "name": "TP",
+            "parameters": [
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Sat Temperature f(P):  (0)K, (1)°F, (2)°C, (3)°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PT",
+            "name": "PT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Surface Tension f(T): (0)mN/m, (1)lbf/ft, (2)mN/m, (3)mN/m",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TY",
+            "name": "TY",
+            "parameters": [
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Returns requested parameter f(P,T): Specified Return Parameter in Units Specified",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "FPT",
+            "name": "FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "name": "returnName",
+                    "type": "any"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                },
+                {
+                    "description": "false=normal, true=metastable",
+                    "name": "metastable",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Returns requested parameter f(P,h): Specified Return Parameter in Units Specified",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "FPH",
+            "name": "FPH",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "name": "returnName",
+                    "type": "any"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Returns requested parameter f(P,S): Specified Return Parameter in Units Specified",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "FPS",
+            "name": "FPS",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "name": "returnName",
+                    "type": "any"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Returns requested parameter f(H,S): Specified Return Parameter in Units Specified",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "FHS",
+            "name": "FHS",
+            "parameters": [
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "name": "returnName",
+                    "type": "any"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Enthalpy f(P,T): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PTH",
+            "name": "PTH",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                },
+                {
+                    "description": "false=normal, true=metastable",
+                    "name": "metastable",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Entropy f(P,T): (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PTS",
+            "name": "PTS",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                },
+                {
+                    "description": "false=normal, true=metastable",
+                    "name": "metastable",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Internal Energy f(P,T): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PTU",
+            "name": "PTU",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                },
+                {
+                    "description": "false=normal, true=metastable",
+                    "name": "metastable",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Specific Volume f(P,T): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PTV",
+            "name": "PTV",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                },
+                {
+                    "description": "false=normal, true=metastable",
+                    "name": "metastable",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Pressure Specific Heat f(P,T): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PTCP",
+            "name": "PTCP",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                },
+                {
+                    "description": "false=normal, true=metastable",
+                    "name": "metastable",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Volumn Specific Heat f(P,T): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PTCV",
+            "name": "PTCV",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                },
+                {
+                    "description": "false=normal, true=metastable",
+                    "name": "metastable",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Speed of Sound f(P,T): (0)m/s, (1)ft/s, (2)m/s, (3)m/s",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PTW",
+            "name": "PTW",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                },
+                {
+                    "description": "false=normal, true=metastable",
+                    "name": "metastable",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Temperature f(P,H):  (0)K, (1)°F, (2)°C, (3)°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PHT",
+            "name": "PHT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Specific Entropy f(P,H): (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PHS",
+            "name": "PHS",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Internal Energy f(P,H): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PHU",
+            "name": "PHU",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Specific Volume f(P,H): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PHV",
+            "name": "PHV",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Pressure Specific Heat f(P,H): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PHCP",
+            "name": "PHCP",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Volumn Specific Heat f(P,H): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PHCV",
+            "name": "PHCV",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Speed of Sound f(P,H): (0)m/s, (1)ft/s, (2)m/s, (3)m/s",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PHW",
+            "name": "PHW",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Quality f(P,H): dimensionless",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PHQ",
+            "name": "PHQ",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Temperature f(P,S):  (0)K, (1)°F, (2)°C, (3)°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PST",
+            "name": "PST",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Enthalpy f(P,S): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PSH",
+            "name": "PSH",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Internal Energy f(P,S): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PSU",
+            "name": "PSU",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Specific Volume f(P,S): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PSV",
+            "name": "PSV",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Pressure Specific Heat f(P,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PSCP",
+            "name": "PSCP",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Volumn Specific Heat f(P,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PSCV",
+            "name": "PSCV",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Speed of Sound f(P,S): (0)m/s, (1)ft/s, (2)m/s, (3)m/s",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PSW",
+            "name": "PSW",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Thermal Conductivity f(P,S): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PSK",
+            "name": "PSK",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Quality f(P,S): dimensionless",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PSQ",
+            "name": "PSQ",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Pressure f(H,S): (0)MPa, (1)psia, (2)bara, (3)kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "HSP",
+            "name": "HSP",
+            "parameters": [
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Temperature f(H,S):  (0)K, (1)°F, (2)°C, (3)°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "HST",
+            "name": "HST",
+            "parameters": [
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Quality f(H,S): dimensionless",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "HSQ",
+            "name": "HSQ",
+            "parameters": [
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Internal Energy f(H,S): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "HSU",
+            "name": "HSU",
+            "parameters": [
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Specific Volume f(H,S): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "HSV",
+            "name": "HSV",
+            "parameters": [
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Pressure Specific Heat f(H,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "HSCP",
+            "name": "HSCP",
+            "parameters": [
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Volumn Specific Heat f(H,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "HSCV",
+            "name": "HSCV",
+            "parameters": [
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Speed of Sound f(H,S): (0)m/s, (1)ft/s, (2)m/s, (3)m/s",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "HSW",
+            "name": "HSW",
+            "parameters": [
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Thermal Conductivity f(H,S): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "HSK",
+            "name": "HSK",
+            "parameters": [
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+                    "name": "entropy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Enthalpy f(P,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PQH",
+            "name": "PQH",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Entropy f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PQS",
+            "name": "PQS",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Internal Energy f(P,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PQU",
+            "name": "PQU",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Specific Volume f(P,Q): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PQV",
+            "name": "PQV",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Pressure Specific Heat f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PQCP",
+            "name": "PQCP",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Volumn Specific Heat f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PQCV",
+            "name": "PQCV",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Enthalpy f(T,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TQH",
+            "name": "TQH",
+            "parameters": [
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Entropy f(T,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TQS",
+            "name": "TQS",
+            "parameters": [
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Internal Energy f(T,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TQU",
+            "name": "TQU",
+            "parameters": [
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Specific Volume f(T,Q): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TQV",
+            "name": "TQV",
+            "parameters": [
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Pressure Specific Heat f(T,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TQCP",
+            "name": "TQCP",
+            "parameters": [
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Constant Volumn Specific Heat f(T,Q): (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TQCV",
+            "name": "TQCV",
+            "parameters": [
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "dimensionless",
+                    "name": "quality",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Viscosity f(P,T): (0)Pa·s, (1)lbf·s/ft³, (2)cP, (3)cP",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PTM",
+            "name": "PTM",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Viscosity f(T, v) used to verify the values in R12-08 Table 4.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TVM",
+            "name": "TVM",
+            "parameters": [
+                {
+                    "description": "K",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)m³/kg",
+                    "name": "volume",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Thermal Conductivity f(P,T): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PTK",
+            "name": "PTK",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Thermal Conductivity f(P,H): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "PHK",
+            "name": "PHK",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns pressure f(v,T)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_VTP",
+            "name": "TEST_VTP",
+            "parameters": [
+                {
+                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+                    "name": "volume",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns enthalpy f(v,T)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_VTH",
+            "name": "TEST_VTH",
+            "parameters": [
+                {
+                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+                    "name": "volume",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns internal energy f(v,T)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_VTU",
+            "name": "TEST_VTU",
+            "parameters": [
+                {
+                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+                    "name": "volume",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns entropy f(v,T)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_VTS",
+            "name": "TEST_VTS",
+            "parameters": [
+                {
+                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+                    "name": "volume",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns isobaric specific heat f(v,T)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_VTCP",
+            "name": "TEST_VTCP",
+            "parameters": [
+                {
+                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+                    "name": "volume",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns speed of sound f(v,T)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_VTW",
+            "name": "TEST_VTW",
+            "parameters": [
+                {
+                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
+                    "name": "volume",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "returns Region 3 saturation pressure psat(h)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_R3_H_PSAT",
+            "name": "TEST_R3_H_PSAT",
+            "parameters": [
+                {
+                    "description": "kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "returns Region 1 to Region 4 boundary: h(s)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_R3_S_PSAT",
+            "name": "TEST_R3_S_PSAT",
+            "parameters": [
+                {
+                    "name": "enthalpy",
+                    "type": "any"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "returns Region 1 to Region 4 boundary: h(s)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_H1_SAT_LIQS",
+            "name": "TEST_H1_SAT_LIQS",
+            "parameters": [
+                {
+                    "name": "enthalpy",
+                    "type": "any"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "returns Region 3 to Region 4 saturated liquid boundary: h(s)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_H3A_SAT_LIQS",
+            "name": "TEST_H3A_SAT_LIQS",
+            "parameters": [
+                {
+                    "name": "enthalpy",
+                    "type": "any"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "returns Region 1 to Region 4 boundary: h(s)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_H2AB_SAT_VAPS",
+            "name": "TEST_H2AB_SAT_VAPS",
+            "parameters": [
+                {
+                    "description": "kJ/(kg·K)",
+                    "name": "entropy",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "returns Region 3 to Region 4 saturated liquid boundary: h(s)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_H2C3B_SAT_VAPS",
+            "name": "TEST_H2C3B_SAT_VAPS",
+            "parameters": [
+                {
+                    "description": "kJ/(kg·K)",
+                    "name": "entropy",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "returns boundary between Regions 1 & 3 f(s)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_HB13S",
+            "name": "TEST_HB13S",
+            "parameters": [
+                {
+                    "description": "kJ/(kg·K)",
+                    "name": "entropy",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "returns boundary between Regions 2 & 3 T(h,s)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_TB23HS",
+            "name": "TEST_TB23HS",
+            "parameters": [
+                {
+                    "description": "kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "kJ/(kg·K)",
+                    "name": "entropy",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "returns boundary between Regions 2 & 3 T(h,s)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_TSATHS",
+            "name": "TEST_TSATHS",
+            "parameters": [
+                {
+                    "description": "kJ/kg",
+                    "name": "enthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "kJ/(kg·K)",
+                    "name": "entropy",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3ab(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3AB",
+            "name": "TEST_T3AB",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3op(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3OP",
+            "name": "TEST_T3OP",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3ef(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3EF",
+            "name": "TEST_T3EF",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3cd(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3CD",
+            "name": "TEST_T3CD",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3gh(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3GH",
+            "name": "TEST_T3GH",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3ij(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3IJ",
+            "name": "TEST_T3IJ",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3jk(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3JK",
+            "name": "TEST_T3JK",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3mn(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3MN",
+            "name": "TEST_T3MN",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3qu(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3QU",
+            "name": "TEST_T3QU",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3rx(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3RX",
+            "name": "TEST_T3RX",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3uv(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3UV",
+            "name": "TEST_T3UV",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Region 3 only: returns T3wx(p)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_T3WX",
+            "name": "TEST_T3WX",
+            "parameters": [
+                {
+                    "description": "MPa",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        }
+    ]
+}
