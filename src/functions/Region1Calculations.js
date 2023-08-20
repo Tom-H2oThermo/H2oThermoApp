@@ -1,7 +1,5 @@
 import * as Constants from "./Constants.js";
 import * as Errors from "./Errors.js";
-// import * as Conductivity from "./Conductivity.js";
-// import * as Viscosity from "./Viscosity.js";
 import * as Region4SatPressure from "./Region4SatPressure.js";
 
 const R = Constants.R_H2O * 1000; // convert the kJ to Joules
@@ -91,16 +89,6 @@ export function Properties_fPT(pressure, temperature) {
       var dUdP_T = 1000 * Volume * (pressure * kappa_T - temperature * alpha_v); // Array Index 72: IAPWS AN3-07 (2018) Table 2
       var dHdP_T = 1000 * Volume * (1 - temperature * alpha_v); // Array Index 92: IAPWS AN3-07 (2018) Table 2
       var dSdP_T = 1000 * (-Volume * alpha_v); // Array Index 112: IAPWS AN3-07 (2018) Table 2
-
-      var visc = NaN;
-      /* if (temperature >= Constants.Ttriple) {
-        visc = Viscosity.Visc(temperature, Volume, pressure);
-      } */
-
-      var ThermConductivity = NaN;
-      /* if (temperature >= Constants.Ttriple) {
-        ThermConductivity = Conductivity.Cond(temperature, Volume, pressure);
-      } */
 
       // The following five groups provide the partial derivatives of pressure.  Refer to IAPWS AN3-07 (2018) Equation 5
       var dPdT_V = (dPdP_T * dVdT_P - dPdT_P * dVdP_T) / (dTdP_T * dVdT_P - dTdT_P * dVdP_T); // Array Index 12
@@ -250,9 +238,9 @@ export function Properties_fPT(pressure, temperature) {
       var dSdH_V = (dSdP_T * dVdT_P - dSdT_P * dVdP_T) / (dHdP_T * dVdT_P - dHdT_P * dVdP_T); // Array Index 130
       var dSdH_U = (dSdP_T * dUdT_P - dSdT_P * dUdP_T) / (dHdP_T * dUdT_P - dHdT_P * dUdP_T); // Array Index 131
 
-      // Array indices for the first 12 steam properties values
+      // Array indices for the first 10 steam properties values
       // [(0) Pressure, (1) Temperature, (2) Quality, (3) Enthalpy, (4) Entropy, (5) InternalEnergy, (6) Volume
-      //  (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound, (10) Viscosity, (11) ThermConductivity
+      //  (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound
 
       if (temperature >= 273.15) {
         return [
@@ -265,9 +253,7 @@ export function Properties_fPT(pressure, temperature) {
           Volume,
           IsobaricHeat,
           IsochoricHeat,
-          SpeedOfSound,
-          visc,
-          ThermConductivity, // Elements 0 through 11
+          SpeedOfSound, // Elements 0 through 9 (10 & 11 not used)
           dPdT_V,
           dPdT_U,
           dPdT_H,
@@ -400,9 +386,9 @@ export function Properties_fPT(pressure, temperature) {
           Volume,
           IsobaricHeat,
           IsochoricHeat,
-          SpeedOfSound,
+          SpeedOfSound, // Elements 0 through 9
           0,
-          0, // Elements 0 through 11
+          0,
           dPdT_V,
           dPdT_U,
           dPdT_H,

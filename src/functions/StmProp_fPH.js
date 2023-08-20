@@ -10,8 +10,7 @@ import * as Boundary2_3 from "./Boundary2_3Calculations.js";
 
 export function SteamProperties(pressure, enthalpy) {
   // SteamPropertiesArray = [(0) Pressure, (1) Temperature, (2) Quality, (3) Enthalpy, (4) Entropy,
-  //  (5) InternalEnergy, (6) Volume, (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound
-  //  (10) Viscosity, (11) Thermal Conductivity]
+  //  (5) InternalEnergy, (6) Volume, (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound]
 
   const enthalpyMin = Region1Calculations.Properties_fPT(Constants.pTriple, Constants.Ttriple)[
     Units.VectorParameters.Enthalpy

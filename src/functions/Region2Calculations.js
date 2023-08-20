@@ -1,7 +1,5 @@
 import * as Constants from "./Constants.js";
 import * as Errors from "./Errors.js";
-// import * as Conductivity from "./Conductivity.js";
-// import * as Viscosity from "./Viscosity.js";
 import * as Region4Calculations from "./Region4Calculations.js";
 import * as Region4SatPressure from "./Region4SatPressure.js";
 import * as Boundary2_3 from "./Boundary2_3Calculations.js";
@@ -151,9 +149,6 @@ export function Properties_fPT(pressure, temperature, metastable = false) {
           Math.pow(1 + pi * gamma_r_pi - tau * pi * gamma_r_pi_tau, 2) /
             (Math.pow(tau, 2) * (gamma_0_tau_tau + gamma_r_tau_tau)))
     );
-    var visc = NaN; //Viscosity.Visc(temperature, Volume, pressure);
-
-    var ThermConductivity = NaN; //Conductivity.Cond(temperature, Volume, pressure);
 
     // Equations below calculate the various properties partial derivatives.  The derivate functions below the first group use IAPWS AN3-07 (2018) Equation 5
     var alpha_v = (1 / temperature) * ((1 + pi * gamma_r_pi - tau * pi * gamma_r_pi_tau) / (1 + pi * gamma_r_pi)); // IAPWS AN3-07 (2018) Eq 7
@@ -320,8 +315,7 @@ export function Properties_fPT(pressure, temperature, metastable = false) {
     var dSdH_U = (dSdP_T * dUdT_P - dSdT_P * dUdP_T) / (dHdP_T * dUdT_P - dHdT_P * dUdP_T); // Array Index 131
 
     // [(0) Pressure, (1) Temperature, (2) Quality, (3) Enthalpy, (4) Entropy,
-    //  (5) InternalEnergy, (6) Volume, (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound,
-    //  (10) Viscosity, (11) ThermConductivity]
+    //  (5) InternalEnergy, (6) Volume, (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound]
     return [
       pressure,
       temperature,
@@ -332,9 +326,9 @@ export function Properties_fPT(pressure, temperature, metastable = false) {
       Volume,
       IsobaricHeat,
       IsochoricHeat,
-      SpeedOfSound,
-      visc,
-      ThermConductivity, // Elements 0 through 11
+      SpeedOfSound, // Elements 0 through 9 (10 & 11 not used)
+      0,
+      0,
       dPdT_V,
       dPdT_U,
       dPdT_H,

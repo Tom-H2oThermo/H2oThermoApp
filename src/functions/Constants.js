@@ -1341,7 +1341,7 @@ export const ni = 0.63;
 export const gamma = 1.239;
 export const xi_0 = 0.13; // (nm)
 export const Gamma_0 = 0.06;
-export const T_R = 0.13; // (nm)
+export const T_R = 0.15; // (nm)
 
 // IAPWS R15-11 Thermal Conductivity Table 1 Equation 16 coefficients
 export const cond_Lk = [2.443221e-3, 1.323095e-2, 6.770357e-3, -3.454586e-3, 4.096266e-4];

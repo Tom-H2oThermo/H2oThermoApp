@@ -32,10 +32,8 @@ export function SteamPropertiesConversionReg4(inputProperties, units = Units.SI)
       outputProperties[Units.VectorParameters.IsochoricHeat] =
         inputProperties[Units.VectorParameters.IsochoricHeat] * BtuPerLbmR_Per_KjPerKgK; // Isochoric (constant volume) heat capacity - kJ/kg/K to BTU/lbm/R
       outputProperties[Units.VectorParameters.SpeedOfSound] = MetersPerSecondToFeetPerSecond(
-        inputProperties[Units.VectorParameters.SpeedOfSound]
-      ); // Speed of sound - m/s to ft/s
-      outputProperties[Units.VectorParameters.ThermalConductivity] =
-        inputProperties[Units.VectorParameters.ThermalConductivity] * BtuPerHrFtF_Per_WattPerMeterK; // Thermal Conductivity - milli W/m/K to BTU/hr/ft/F
+        inputProperties[Units.VectorParameters.SpeedOfSound] // Speed of sound - m/s to ft/s
+      );
       break;
     case Units.MetricBarA:
       outputProperties = inputProperties;
@@ -493,10 +491,10 @@ export function PascalSecond_To_Centipoise(PascalSecond) {
   return CentiPoise_Per_PascalSecond * PascalSecond;
 }
 
-// Thermal Conductivity conversions
-const BtuPerHrFtF_Per_WattPerMeterK = 5.777893e-1; // ASME Steam Tables Book - Table 2-9
-export function WattMeterKtoBtuHrFtF(WattMeterK) {
-  return (1000 * WattMeterK * 3600 * (5 / 9) * Constants.BtuPerKj) / FeetPerMeter;
+// Thermal Conductivity conversions ToDo come up with a first principals conversion factor
+const BtuPerHrFtF_Per_mWattPerMeterK = 578.176; // ASME Steam Tables Book - Table 2-9
+export function mWattPerMeterK_To_BtuPerHrFtF(mWattPerMeterK) {
+  return mWattPerMeterK * BtuPerHrFtF_Per_mWattPerMeterK;
 }
 
 // Surface Tension conversions

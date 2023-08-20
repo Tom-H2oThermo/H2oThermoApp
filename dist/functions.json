@@ -775,31 +775,6 @@
             "result": {}
         },
         {
-            "description": "Thermal Conductivity f(P,S): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "PSK",
-            "name": "PSK",
-            "parameters": [
-                {
-                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
-                    "name": "pressure",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-                    "name": "entropy",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
-                    "name": "units",
-                    "optional": true,
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
             "description": "Quality f(P,S): dimensionless",
             "helpUrl": "http://InfoPogo.com",
             "id": "PSQ",
@@ -1004,31 +979,6 @@
             "helpUrl": "http://InfoPogo.com",
             "id": "HSW",
             "name": "HSW",
-            "parameters": [
-                {
-                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-                    "name": "enthalpy",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-                    "name": "entropy",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
-                    "name": "units",
-                    "optional": true,
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Thermal Conductivity f(H,S): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "HSK",
-            "name": "HSK",
             "parameters": [
                 {
                     "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
@@ -1350,6 +1300,25 @@
             "result": {}
         },
         {
+            "description": "Viscosity f(T, v) used to verify the values in R12-08 Table 4 & 5.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TVM",
+            "name": "TVM",
+            "parameters": [
+                {
+                    "description": "K",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)m³/kg",
+                    "name": "volume",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
             "description": "Viscosity f(P,T): (0)Pa·s, (1)lbf·s/ft³, (2)cP, (3)cP",
             "helpUrl": "http://InfoPogo.com",
             "id": "PTM",
@@ -1375,29 +1344,10 @@
             "result": {}
         },
         {
-            "description": "Viscosity f(T, v) used to verify the values in R12-08 Table 4.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units",
+            "description": "dVdP_T f(P,T): (0)(m³/kg)/MPa, (1), (2), (3)",
             "helpUrl": "http://InfoPogo.com",
-            "id": "TVM",
-            "name": "TVM",
-            "parameters": [
-                {
-                    "description": "K",
-                    "name": "temperature",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)m³/kg",
-                    "name": "volume",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Thermal Conductivity f(P,T): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "PTK",
-            "name": "PTK",
+            "id": "DVDP_T_FPT",
+            "name": "DVDP_T_FPT",
             "parameters": [
                 {
                     "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
@@ -1419,25 +1369,38 @@
             "result": {}
         },
         {
-            "description": "Thermal Conductivity f(P,H): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)",
+            "description": "Conductivity f(V,T) without critical enhancement",
             "helpUrl": "http://InfoPogo.com",
-            "id": "PHK",
-            "name": "PHK",
+            "id": "TEST_TVK_WO_CRIT_ENH",
+            "name": "TEST_TVK_WO_CRIT_ENH",
             "parameters": [
                 {
-                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
-                    "name": "pressure",
+                    "description": "K",
+                    "name": "temperature",
                     "type": "number"
                 },
                 {
-                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-                    "name": "enthalpy",
+                    "description": "m³/kg",
+                    "name": "volume",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Conductivity f(V,T) without critical enhancement",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TEST_TVK_WITH_CRIT_ENH",
+            "name": "TEST_TVK_WITH_CRIT_ENH",
+            "parameters": [
+                {
+                    "description": "K",
+                    "name": "temperature",
                     "type": "number"
                 },
                 {
-                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
-                    "name": "units",
-                    "optional": true,
+                    "description": "m³/kg",
+                    "name": "volume",
                     "type": "number"
                 }
             ],

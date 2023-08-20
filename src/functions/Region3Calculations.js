@@ -1,7 +1,5 @@
 import * as Constants from "./Constants.js";
 import * as Errors from "./Errors.js";
-// import * as Conductivity from "./Conductivity.js";
-// import * as Viscosity from "./Viscosity.js";
 import * as Region4Calculations from "./Region4Calculations.js";
 import * as Region4SatPressure from "./Region4SatPressure.js";
 import * as Boundary2_3 from "./Boundary2_3Calculations.js";
@@ -551,14 +549,14 @@ export function Properties_fVT(volume, temperature) {
   const dPdV_T = -Pressure * Beta_p; // Array Index 16: IAPWS AN3-07 (2018) Table 1
   const dTdV_T = 0; // IAPWS AN3-07 (2018) Table 1
   const dVdV_T = 1; // IAPWS AN3-07 (2018) Table 1
-  const dUdV_T = 1000 * (Pressure * (temperature * alpha_p - 1)); // Array Index 81: IAPWS AN3-07 (2018) Table 1
-  const dHdV_T = 1000 * Pressure * (temperature * alpha_p - volume * Beta_p); // Array Index 101: IAPWS AN3-07 (2018) Table 1
-  const dSdV_T = 1000 * Pressure * alpha_p; // Array Index 121: IAPWS AN3-07 (2018) Table 1
+  const dUdV_T = 1000 * (Pressure * (temperature * alpha_p - 1)); // Array Index 81: IAPWS AN3-07 (2018) Table 1.  Not sure why times 1000
+  const dHdV_T = 1000 * Pressure * (temperature * alpha_p - volume * Beta_p); // Array Index 101: IAPWS AN3-07 (2018) Table 1.   Not sure why times 1000
+  const dSdV_T = 1000 * Pressure * alpha_p; // Array Index 121: IAPWS AN3-07 (2018) Table 1.   Not sure why times 1000
   const dPdT_V = Pressure * alpha_p; // Array Index 12: IAPWS AN3-07 (2018) Table 1
   const dTdT_V = 1; // IAPWS AN3-07 (2018) Table 1
   const dVdT_V = 0; // IAPWS AN3-07 (2018) Table 1
   const dUdT_V = IsochoricHeat; // Array Index 77: IAPWS AN3-07 (2018) Table 1
-  const dHdT_V = IsochoricHeat + 1000 * Pressure * volume * alpha_p; // Array Index 97: IAPWS AN3-07 (2018) Table 1
+  const dHdT_V = IsochoricHeat + 1000 * Pressure * volume * alpha_p; // Array Index 97: IAPWS AN3-07 (2018) Table 1.   Not sure why times 1000
   const dSdT_V = IsochoricHeat / temperature; // Array Index 117: IAPWS AN3-07 (2018) Table 1
 
   // The following five groups provide the partial derivatives of pressure.  Refer to IAPWS AN3-07 (2018) Equation 5
@@ -709,51 +707,8 @@ export function Properties_fVT(volume, temperature) {
   const dSdH_V = (dSdV_T * dVdT_V - dSdT_V * dVdV_T) / (dHdV_T * dVdT_V - dHdT_V * dVdV_T); // Array Index 130
   const dSdH_U = (dSdV_T * dUdT_V - dSdT_V * dUdV_T) / (dHdV_T * dUdT_V - dHdT_V * dUdV_T); // Array Index 131
 
-  // R12-08: Viscosity
-  const visc = NaN; //Viscosity.ViscR3(temperature, volume, dVdP_T, Pressure);
-
-  // Equations below calculate the thermal conductivity critical enhancement as defined in section 2.7 of IAPWS R15-11, and subsequently, the thermal conductivity
-  // var tau_crit = 1;
-
-  //var phi_delta_crit = Constants.reg3_HelmH_n[0] / delta;
-  //var phi_delta_delta_crit = -Constants.reg3_HelmH_n[0] / Math.pow(delta, 2);
-
-  //for (let i = 1; i < Constants.reg3_HelmH_I.length; i++) {
-  // phi_delta_crit +=
-  //   Constants.reg3_HelmH_n[i] *
-  //    Constants.reg3_HelmH_I[i] *
-  //   Math.pow(delta, Constants.reg3_HelmH_I[i] - 1) *
-  //   Math.pow(tau_crit, Constants.reg3_HelmH_J[i]);
-  //}
-
-  // for (let i = 1; i < Constants.reg3_HelmH_I.length; i++) {
-  //  phi_delta_delta_crit +=
-  //    Constants.reg3_HelmH_n[i] *
-  //   Constants.reg3_HelmH_I[i] *
-  //    (Constants.reg3_HelmH_I[i] - 1) *
-  //    Math.pow(delta, Constants.reg3_HelmH_I[i] - 2) *
-  //    Math.pow(tau_crit, Constants.reg3_HelmH_J[i]);
-  // }
-
-  // const Pressure_crit = (R * Constants.Tc_H2O * delta * phi_delta_crit) / volume / 1e6;
-  /* const Beta_p_crit = (1 / volume) * (2 + (delta * phi_delta_delta_crit) / phi_delta_crit); // IAPWS AN3-07 (2018) Eq 3
-  const dPdV_T_crit = -Pressure * Beta_p_crit; // Array Index 16: IAPWS AN3-07 (2018) Table 1
-  const dVdP_T_crit = 1 / dPdV_T_crit; */
-
-  const ThermConductivity = NaN; //Conductivity.CondR3(
-  /* temperature,
-    volume,
-    dVdP_T,
-    dVdP_T_crit,
-    Pressure,
-    visc,
-    IsobaricHeat,
-    IsochoricHeat
-  ); */
-
   // SteamPropertiesArray = [(0) Pressure, (1) Temperature, (2) Quality, (3) Enthalpy, (4) Entropy,
-  //  (5) InternalEnergy, (6) Volume, (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound,
-  //  (10) Viscosity, (11) ThermConductivity]
+  //  (5) InternalEnergy, (6) Volume, (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound]
   return [
     Pressure,
     temperature,
@@ -764,9 +719,9 @@ export function Properties_fVT(volume, temperature) {
     Volume,
     IsobaricHeat,
     IsochoricHeat,
-    SpeedOfSound,
-    visc,
-    ThermConductivity, // Elements 0 through 11
+    SpeedOfSound, // Elements 0 through 9 (10 & 11 not used)
+    0,
+    0,
     dPdT_V,
     dPdT_U,
     dPdT_H,

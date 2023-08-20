@@ -6,7 +6,6 @@ import * as Errors from "./Errors.js";
 // TODO: What about help? Returns, Summary, and Remarks?
 // TODO: Didn't document all return unit types...
 
-// Test to see if I can push changes to garrettmc/TomSteam
 // TODO: Dumb that this is a copy of Units.VectorParameters, just all lower case...
 const returnName = {
   pressure: 0,
@@ -19,8 +18,6 @@ const returnName = {
   isobaricheat: 7,
   isochoricheat: 8,
   speedofsound: 9,
-  // viscosity: 10,  ToDo delete if this still works
-  // thermalconductivity: 11,  ToDo delete if this still works
   dpdt_v: 12,
   dpdt_u: 13,
   dpdt_h: 14,
@@ -578,20 +575,6 @@ export function PSW(pressure, entropy, units) {
 
 // Function #30
 /**
- * Thermal Conductivity f(P,S): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)
- * @customfunction
- * @helpurl http://InfoPogo.com
- * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
- * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
- * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
- * @returns (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)
- */
-export function PSK(pressure, entropy, units) {
-  return H2o.CallStmProp_fPS(pressure, entropy, units, Units.VectorParameters.ThermalConductivity);
-}
-
-// Function #31
-/**
  * Quality f(P,S): dimensionless
  * @customfunction
  * @helpurl http://InfoPogo.com
@@ -604,7 +587,7 @@ export function PSQ(pressure, entropy, units) {
   return H2o.CallStmProp_fPS(pressure, entropy, units, Units.VectorParameters.Quality);
 }
 
-// Function #32
+// Function #31
 /**
  * Pressure f(H,S): (0)MPa, (1)psia, (2)bara, (3)kPa
  * @customfunction
@@ -618,7 +601,7 @@ export function HSP(enthalpy, entropy, units) {
   return H2o.CallStmProp_fHS(enthalpy, entropy, units, Units.VectorParameters.Pressure);
 }
 
-// Function #33
+// Function #32
 /**
  * Temperature f(H,S):  (0)K, (1)°F, (2)°C, (3)°C
  * @customfunction
@@ -632,7 +615,7 @@ export function HST(enthalpy, entropy, units) {
   return H2o.CallStmProp_fHS(enthalpy, entropy, units, Units.VectorParameters.Temperature);
 }
 
-// Function #34
+// Function #33
 /**
  * Quality f(H,S): dimensionless
  * @customfunction
@@ -646,7 +629,7 @@ export function HSQ(enthalpy, entropy, units) {
   return H2o.CallStmProp_fHS(enthalpy, entropy, units, Units.VectorParameters.Quality);
 }
 
-// Function #35
+// Function #34
 /**
  * Internal Energy f(H,S): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
@@ -660,7 +643,7 @@ export function HSU(enthalpy, entropy, units) {
   return H2o.CallStmProp_fHS(enthalpy, entropy, units, Units.VectorParameters.InternalEnergy);
 }
 
-// Function #36
+// Function #35
 /**
  * Specific Volume f(H,S): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @customfunction
@@ -674,7 +657,7 @@ export function HSV(enthalpy, entropy, units) {
   return H2o.CallStmProp_fHS(enthalpy, entropy, units, Units.VectorParameters.Volume);
 }
 
-// Function #37
+// Function #36
 /**
  * Constant Pressure Specific Heat f(H,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
@@ -688,7 +671,7 @@ export function HSCp(enthalpy, entropy, units) {
   return H2o.CallStmProp_fHS(enthalpy, entropy, units, Units.VectorParameters.IsobaricHeat);
 }
 
-// Function #38
+// Function #37
 /**
  * Constant Volumn Specific Heat f(H,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
@@ -702,7 +685,7 @@ export function HSCv(enthalpy, entropy, units) {
   return H2o.CallStmProp_fHS(enthalpy, entropy, units, Units.VectorParameters.IsochoricHeat);
 }
 
-// Function #39
+// Function #38
 /**
  * Speed of Sound f(H,S): (0)m/s, (1)ft/s, (2)m/s, (3)m/s
  * @customfunction
@@ -716,21 +699,7 @@ export function HSW(enthalpy, entropy, units) {
   return H2o.CallStmProp_fHS(enthalpy, entropy, units, Units.VectorParameters.SpeedOfSound);
 }
 
-// Function #40
-/**
- * Thermal Conductivity f(H,S): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)
- * @customfunction
- * @helpurl http://InfoPogo.com
- * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
- * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
- * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
- * @returns (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)
- */
-export function HSK(enthalpy, entropy, units) {
-  return H2o.CallStmProp_fHS(enthalpy, entropy, units, Units.VectorParameters.ThermalConductivity);
-}
-
-// Function #41
+// Function #39
 /**
  * Enthalpy f(P,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
@@ -744,7 +713,7 @@ export function PQH(pressure, quality, units) {
   return H2o.CallStmProp_fPQ(pressure, quality, units, Units.VectorParameters.Enthalpy);
 }
 
-// Function #42
+// Function #40
 /**
  * Entropy f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
@@ -758,7 +727,7 @@ export function PQS(pressure, quality, units) {
   return H2o.CallStmProp_fPQ(pressure, quality, units, Units.VectorParameters.Entropy);
 }
 
-// Function #43
+// Function #41
 /**
  * Internal Energy f(P,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
@@ -772,7 +741,7 @@ export function PQU(pressure, quality, units) {
   return H2o.CallStmProp_fPQ(pressure, quality, units, Units.VectorParameters.InternalEnergy);
 }
 
-// Function #44
+// Function #42
 /**
  * Specific Volume f(P,Q): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @customfunction
@@ -786,7 +755,7 @@ export function PQV(pressure, quality, units) {
   return H2o.CallStmProp_fPQ(pressure, quality, units, Units.VectorParameters.Volume);
 }
 
-// Function #45
+// Function #43
 /**
  * Constant Pressure Specific Heat f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
@@ -800,7 +769,7 @@ export function PQCp(pressure, quality, units) {
   return H2o.CallStmProp_fPQ(pressure, quality, units, Units.VectorParameters.IsobaricHeat);
 }
 
-// Function #46
+// Function #44
 /**
  * Constant Volumn Specific Heat f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
@@ -814,7 +783,7 @@ export function PQCv(pressure, quality, units) {
   return H2o.CallStmProp_fPQ(pressure, quality, units, Units.VectorParameters.IsochoricHeat);
 }
 
-// Function #47
+// Function #45
 /**
  * Enthalpy f(T,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
@@ -828,7 +797,7 @@ export function TQH(temperature, quality, units) {
   return H2o.CallStmProp_fTQ(temperature, quality, units, Units.VectorParameters.Enthalpy);
 }
 
-// Function #48
+// Function #46
 /**
  * Entropy f(T,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
@@ -842,7 +811,7 @@ export function TQS(temperature, quality, units) {
   return H2o.CallStmProp_fTQ(temperature, quality, units, Units.VectorParameters.Entropy);
 }
 
-// Function #49
+// Function #47
 /**
  * Internal Energy f(T,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
@@ -856,7 +825,7 @@ export function TQU(temperature, quality, units) {
   return H2o.CallStmProp_fTQ(temperature, quality, units, Units.VectorParameters.InternalEnergy);
 }
 
-// Function #50
+// Function #48
 /**
  * Specific Volume f(T,Q): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @customfunction
@@ -870,7 +839,7 @@ export function TQV(temperature, quality, units) {
   return H2o.CallStmProp_fTQ(temperature, quality, units, Units.VectorParameters.Volume);
 }
 
-// Function #51
+// Function #49
 /**
  * Constant Pressure Specific Heat f(T,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
@@ -884,7 +853,7 @@ export function TQCp(temperature, quality, units) {
   return H2o.CallStmProp_fTQ(temperature, quality, units, Units.VectorParameters.IsobaricHeat);
 }
 
-// Function #52
+// Function #50
 /**
  * Constant Volumn Specific Heat f(T,Q): (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
@@ -898,7 +867,20 @@ export function TQCv(temperature, quality, units) {
   return H2o.CallStmProp_fTQ(temperature, quality, units, Units.VectorParameters.IsochoricHeat);
 }
 
-// Function #53  TODO allow for other units
+// Function #51
+/**
+ * Viscosity f(T, v) used to verify the values in R12-08 Table 4 & 5.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units
+ * @customfunction
+ * @helpurl http://InfoPogo.com
+ * @param {number} temperature  K
+ * @param {number} volume (0)m³/kg
+ * @returns Pa·s (use with caution, see help url)
+ */
+export function TVM(temperature, volume) {
+  return H2o.Viscosity_fTV(temperature, volume);
+}
+
+// Function #52
 /**
  * Viscosity f(P,T): (0)Pa·s, (1)lbf·s/ft³, (2)cP, (3)cP
  * @customfunction
@@ -912,45 +894,46 @@ export function PTM(pressure, temperature, units) {
   return H2o.Viscosity_fPT(pressure, temperature, units);
 }
 
-// Function #54
+// Function #53
 /**
- * Viscosity f(T, v) used to verify the values in R12-08 Table 4.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units
- * @customfunction
- * @helpurl http://InfoPogo.com
- * @param {number} temperature  K
- * @param {number} volume (0)m³/kg
- * @returns Pa·s (use with caution, see help url)
- */
-export function TVM(temperature, volume) {
-  return H2o.Viscosity_fTV(temperature, volume);
-}
-
-// Function #55 TODO allow for other units
-/**
- * Thermal Conductivity f(P,T): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)
+ * dVdP_T f(P,T): (0)(m³/kg)/MPa, (1), (2), (3)
  * @customfunction
  * @helpurl http://InfoPogo.com
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
- * @returns (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)
+ * @returns (0)m³/kg, (1), (2), (3)
  */
-export function PTK(pressure, temperature, units) {
-  return H2o.Viscosity_fPT(pressure, temperature, units);
+export function dVdP_T_fPT(pressure, temperature, units) {
+  return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdP_T, false);
 }
 
-// Function #56
+// Debug function for Conductivity W/O the critical enhancement for verifying values in R15-11 table 4
+// Does not check to verify in a valid range, only for testing
 /**
- * Thermal Conductivity f(P,H): (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)
+ * Conductivity f(V,T) without critical enhancement
  * @customfunction
  * @helpurl http://InfoPogo.com
- * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
- * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
- * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
- * @returns (0)mW/(m·K), (1)BTU/(hr·ft·°F), (2)mW/(m·°C), (3)mW/(m·°C)
+ * @param {number} temperature K
+ * @param {number} volume m³/kg
+ * @returns mW/(m·K)
  */
-export function PHK(pressure, enthalpy, units) {
-  return H2o.CallStmProp_fPH(pressure, enthalpy, units, Units.VectorParameters.ThermalConductivity);
+export function Test_TVK_WO_Crit_Enh(temperature, volume) {
+  return H2o.Conductivity_fTV_WO_Crit_Enh(temperature, volume);
+}
+
+// Debug function for Conductivity With the critical enhancement for verifying values in R15-11 table 5
+// Assumes the input values are in Region 3.  Does not check in a valid range, only for testing
+/**
+ * Conductivity f(V,T) without critical enhancement
+ * @customfunction
+ * @helpurl http://InfoPogo.com
+ * @param {number} temperature K
+ * @param {number} volume m³/kg
+ * @returns mW/(m·K)
+ */
+export function Test_TVK_With_Crit_Enh(temperature, volume) {
+  return H2o.Conductivity_fTV_With_Crit_Enh(temperature, volume);
 }
 
 // Debug Functions for Region 3 f(v,T) to verify the values in R7-97 Table 33.
@@ -1150,36 +1133,6 @@ export function Test_Tb23HS(enthalpy, entropy) {
  */
 export function Test_TsatHS(enthalpy, entropy) {
   return H2o.TsatHS(enthalpy, entropy);
-}
-
-/*
-// Debug Function for Thermal Conductivity to verify the values in R15-11 Table 4
-// Comment out when done testing or add a check to make sure inputs within valid range
-/**
- * returns Thermal Conductivity f(T,v)
- * @customfunction
- * @helpurl http://InfoPogo.com
- * @param {number} temperature  K
- * @param {number} density  kg/m3
- * @returns Thermal Conductivity mW/(m·K)
- /*
-export function Test_Cond12Test(temperature, density) {
-  return Conductivity.Cond12Test(temperature, density);
-}
-/*
-
-// Debug Function for Thermal Conductivity to verify the values in R15-11 Table 5
-/**
- * Region 3 only: returns Thermal Conductivity f(v,T)
- * @customfunction
- * @helpurl http://InfoPogo.com
- * @param {number} volume (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
- * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
- * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
- * @returns Thermal Conductivity
- */
-export function Test_VTK(volume, temperature, units) {
-  return H2o.CallStmProp_fVT(volume, temperature, units, Units.VectorParameters.ThermalConductivity);
 }
 
 // Debug Function for T3ab(p) SR5-05 eq 2

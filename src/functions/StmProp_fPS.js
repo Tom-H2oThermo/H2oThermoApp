@@ -14,8 +14,7 @@ import * as Boundary2_3 from "./Boundary2_3Calculations.js";
 
 export function SteamProperties(pressure, entropy) {
   // SteamPropertiesArray = [(0) Pressure, (1) Temperature, (2) Quality, (3) Enthalpy, (4) Entropy,
-  //  (5) InternalEnergy, (6) Volume, (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound,
-  //  (10) Viscosity, (11) Thermal Conductivity]
+  //  (5) InternalEnergy, (6) Volume, (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound]
 
   const entropyCritical = 4.41202148223476; // kJ/kg/K
   const entropyMin = Region1Calculations.Properties_fPT(Constants.pTriple, 273.16)[Units.VectorParameters.Entropy];
