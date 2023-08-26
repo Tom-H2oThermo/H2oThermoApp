@@ -10,6 +10,7 @@ export const RHOc_H2O = 322; //kg/m3  critical density for water
 export const T13_boundary = 623.15; //Temperature boundary between regions 1 & 3
 export const T23_100MPa = 863.15; // Temperature at 100 MPa at the4 retion 2-3 boundary
 export const T25_boundary = 1073.15; // Temperature boundary between regions 2 & 5
+export const T_Cond_Max = 1173.15; // Maximum Temperature for Thermal Conductivity. R15-11 Eq 14
 export const T5max = 2273.15; // Maximum temperature in region 5
 export const Tmin = 273.15; // Minimum valid temperature for the IAPWS equations
 export const Ttriple = 273.16; // Triple poconst temperature
@@ -1341,7 +1342,7 @@ export const ni = 0.63;
 export const gamma = 1.239;
 export const xi_0 = 0.13; // (nm)
 export const Gamma_0 = 0.06;
-export const T_R = 0.15; // (nm)
+export const TR = 1.5 * Tc_H2O; // (nm).  IAPWS R12-08 Tabke 3
 
 // IAPWS R15-11 Thermal Conductivity Table 1 Equation 16 coefficients
 export const cond_Lk = [2.443221e-3, 1.323095e-2, 6.770357e-3, -3.454586e-3, 4.096266e-4];

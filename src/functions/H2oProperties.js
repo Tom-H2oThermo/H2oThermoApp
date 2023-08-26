@@ -11,6 +11,7 @@ import * as Errors from "./Errors.js";
 import * as Region3Calculations from "./Region3Calculations.js";
 import * as Viscosity from "./Viscosity.js";
 import * as Conductivity from "./Conductivity.js";
+import * as Constants from "./Constants.js";
 
 // TODO: Licensing??
 var licensing = {
@@ -463,7 +464,7 @@ export function Viscosity_fPT(pressure, temperature, units) {
   }
 }
 
-// Viscosity for testing, verifying values in R12-08 Table 4 & 5.  Doesn't check for valid pressure range (use with caution) except in Region 3.  SI units only
+// Viscosity for testing, verifying values in R12-08 Table 4 & 5.  Doesn't check for valid pressure range (use with caution).  SI units only
 // functions TVM(temperature, volume) calls this function
 export function Viscosity_fTV(temperature, volume) {
   return Viscosity.Visc_fTV(temperature, volume);
@@ -473,7 +474,7 @@ export function Viscosity_fTV(temperature, volume) {
 // function Test_VTK_WO_Crit_Enh(temperature, volume) calls this function
 // Does not check to verify in the inputs are in a valid range, for testing only
 export function Conductivity_fTV_WO_Crit_Enh(temperature, volume) {
-  return Conductivity.CondTest_WO_crit_enh(temperature, volume);
+  return Conductivity.Cond_WO_crit_enh(temperature, volume);
 }
 
 // Conductivity function for testing values in R15-11 table 5
@@ -481,17 +482,16 @@ export function Conductivity_fTV_WO_Crit_Enh(temperature, volume) {
 // Does not check to verify in the inputs are in a valid range, for testing only
 // Assumes input are in Region 3
 export function Conductivity_fTV_With_Crit_Enh(t, v) {
-  const TR = 970.644; // R15-11 fig 2
+  // const TR = Constants.TR; // R15-11 fig 2
   const p = Region3Calculations.Properties_fVT(v, t)[0];
-  const visc = Region3Calculations.Properties_fVT(v, t)[10];
-  const Cp = Region3Calculations.Properties_fVT(v, t)[7];
-  const Cv = Region3Calculations.Properties_fVT(v, t)[8];
-  const dVdP_T = Region3Calculations.Properties_fVT(v, t)[52];
-  const dVdP_TR = Region3Calculations.Properties_fVT(v, TR)[52];
-  return Conductivity.CondTest_With_crit_enh(t, v, p, visc, Cp, Cv, dVdP_T, dVdP_TR);
+  const visc = Viscosity.Visc_fTV(t, v);
+  const Cp = CallStmProp_fPT(p, t, 0, 7, false);
+  const Cv = CallStmProp_fPT(p, t, 0, 8, false);
+  const dVdP_T = CallStmProp_fPT(p, t, 0, 52, false);
+  const dVdP_TR = CallStmProp_fPT(p, Constants.Tc_H2O, 0, 52, false);
+  return Conductivity.Cond_With_crit_enh(t, v, p, visc, Cp, Cv, dVdP_T, dVdP_TR);
 }
 
-/*
 // Conductivity f(p,T) R15-11
 export function Conductivity_fPT(pressure, temperature, units) {
   try {
@@ -523,12 +523,13 @@ export function Conductivity_fPT(pressure, temperature, units) {
     }
 
     var volume = CallStmProp_fPT(p, t, 0, [6], false); // StmPproperties[6] is volume
-    var rho = 1 / volume;
-    var visc = Viscosity_fPT(p, t, 0);
-    var dVdP_T = CallStmProp_fPT(p, t, 0, [16], false); // StmPproperties[16] is dVdP_T
-    var dVdP_T_crit = 1 / Region3Calculations.Properties_fVT(volume_T_crit, Constants.Tc_H2O)[16]; // Properties index [16] is dPdV_T.  Use pressure and T_crit to calculate dVdP_T_crit
+    var viscosity = Viscosity.Visc(temperature, volume, pressure); // StmPproperties[6] is volume
+    var Cp = CallStmProp_fPT(p, t, 0, [7], false); // StmPproperties[6] is volume
+    var Cv = CallStmProp_fPT(p, t, 0, [8], false); // StmPproperties[6] is volume
+    var dVdP_T = CallStmProp_fPT(p, t, 0, [52], false); // StmPproperties[6] is volume
+    // var dVdP_TR = CallStmProp_fPT(p, Constants.TR, 0, [52], false); // StmPproperties[6] is volume
 
-    conductivity = Conductivity.ViscR3(temperature, volume, dVdP_T, pressure);
+    conductivity = Conductivity.Cond(temperature, volume, pressure, viscosity, Cp, Cv, dVdP_T);
 
     switch (units) {
       case Units.SI:
@@ -551,7 +552,6 @@ export function Conductivity_fPT(pressure, temperature, units) {
     return e;
   }
 }
-*/
 
 // Debug Function for Region 3 saturation pressure psat(h) to verify the values in 3R3-03 Table 18.
 export function R3Psat_fH(enthalpy) {

@@ -22,4 +22,4 @@ export function SatPressure(temperature) {
 const T3q3r3u3xPoint = 643.15; // point where subregions 3q, 3r, 3u and 3x meet
 export const reg4SatPressureT3q3r3u3xPoint = SatPressure(T3q3r3u3xPoint);
 export const satPressureT13Boundary = SatPressure(Constants.T13_boundary); // Saturation pressure at the Regions 1-3 boundary temperature of 623.15 K,  equals 16.5292 MPa
-export const satPressureTcH2O = SatPressure(Constants.Tc_H2O);  // Saturation pressure at the critical point
+export const satPressureTcH2O = SatPressure(Constants.Tc_H2O); // Saturation pressure at the critical point

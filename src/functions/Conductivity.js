@@ -1,12 +1,8 @@
 import * as Constants from "./Constants.js";
-/*
 import * as Errors from "./Errors.js";
-import * as Viscosity from "./Viscosity.js";
-import * as Ice from "./Ice.js";
-*/
 
 //const cond_ref = 1e-3; // W/K*m - R15-11 Eq 4
-const mu_ref = 1; // MPa*s Reference viscosity - R15-11 Eq 5
+const mu_ref = 1; // Pa*s Reference viscosity - R15-11 Eq 5
 const R = 0.46151805; // kJ/kg K Specific Gas Constant - R15-11 Eq 6
 const Lambda = 177.8514; // Critical Region Constant - R15-11 Table 3
 const xi0 = 0.13; // nm Table 3 Critical Region Constant correlation length- R15-11 Table 3
@@ -16,9 +12,29 @@ const Gamma0 = 0.06; // Critical Region Constant- R15-11 Table 3
 const gamma = 1.239; // Critical Region Constant- R15-11 Table 3
 const T_R = 1.5; // Critical Region Constant- R15-11 Table 3
 
+export function Cond(temperature, volume, pressure, visc, Cp, Cv, dVdP_T) {
+  try {
+    if (
+      (pressure > 0 &&
+        pressure < Constants.pTriple &&
+        temperature >= Constants.Ttriple &&
+        temperature <= Constants.T_Cond_Max) || // Pressure range from 0 to 101 MPa with temperature from the triple point to a max of 1173.15 K.  Note: Doesn't cover region below P Triple for temperature less than T Triple (down to sublimation line)
+      (pressure >= Constants.pTriple &&
+        pressure <= Constants.pmax &&
+        temperature >= Constants.Ttriple &&
+        temperature <= Constants.T_Cond_Max)
+    ) {
+      return Cond_With_crit_enh(temperature, volume, pressure, visc, Cp, Cv, dVdP_T);
+    }
+    throw Errors.TemperatureOrPressureNotValid;
+  } catch (e) {
+    return e;
+  }
+}
+
 // Debug function for Thermal Conductivity without the critical enhancement to verify values in R15-11 Tables 4
 // Does not check to see if in a valid range because pressure is not an input
-export function CondTest_WO_crit_enh(temperature, volume) {
+export function Cond_WO_crit_enh(temperature, volume) {
   const T_dim = temperature / Constants.Tc_H2O;
   const rho_dim = 1 / (volume * Constants.RHOc_H2O);
   var lambda_0 = 0;
@@ -42,94 +58,94 @@ export function CondTest_WO_crit_enh(temperature, volume) {
 }
 
 // Conductivity with the Critical Enhancement of R15-11 section 2.7
-export function CondTest_With_crit_enh(
+export function Cond_With_crit_enh(
   temperature,
   volume,
   pressure,
   viscosity,
   isobaricHeat,
   isochoricHeat,
-  dVdP_T,
-  dVdP_TR
+  dVdP_T
+  //dVdP_TR
 ) {
   const T_dim = temperature / Constants.Tc_H2O; // R15-11 eq 7
   const rho_dim = 1 / (volume * Constants.RHOc_H2O); // R15-11 eq 9
   const mu_dim = viscosity / mu_ref; // R15-11 eq 11
   const heat_cap_ratio = isobaricHeat / isochoricHeat; // R15-11 Eq. 13
-  const dRhoDp_T = (-(Constants.pc_H2O / Constants.RHOc_H2O) * dVdP_T) / Math.pow(volume, 2); // Conversion from dv_dp to dRho_dp.  Uses the derivative reciprocal rule.
-  const dRhoDp_TR = (-(Constants.pc_H2O / Constants.RHOc_H2O) * dVdP_TR) / Math.pow(volume, 2); // Conversion from dv_dp to dRho_dp.
+
+  var zetaTR = 0;
+  // the ranges in the if statements below are from R15-11 Eq. 26
+  var j = 0;
+  if (rho_dim > 0 && rho_dim <= 0.310559006) {
+    j = 0;
+  } else if (rho_dim > 0.310559006 && rho_dim <= 0.776397516) {
+    j = 1;
+  } else if (rho_dim > 0.776397516 && rho_dim <= 1.242236025) {
+    j = 2;
+  } else if (rho_dim > 1.242236025 && rho_dim <= 1.863354037) {
+    j = 3;
+  } else if (rho_dim > 1.863354037) {
+    j = 4;
+  } else {
+    j = NaN;
+  }
+  var Aij = 0;
+  for (let i = 0; i < 6; i++) {
+    Aij = Constants.cond_Aij[i][j];
+    zetaTR += Aij * Math.pow(rho_dim, i);
+  }
+  zetaTR = 1 / zetaTR;
+
+  const dRhoDp_T = -dVdP_T / Math.pow(volume, 2); // Conversion from dv_dp to dRho_dp.  Uses the derivative reciprocal rule.
+  const dRhoDp_TR = zetaTR * (Constants.Tc_H2O / Constants.RHOc_H2O); // Conversion from dv_dp to dRho_dp.
   var cp_rel = isobaricHeat / R; // cp relative R15-11 Eq. 12
   if (cp_rel < 0 || cp_rel > 1e13) {
     // If negative or greater than 10^13, then it set it to 10^13.  See IAPWS R15-11 note on bottom of page 12
     cp_rel = 1e13;
   }
 
-  var zeta1 = (dRhoDp_T * Constants.pc_H2O) / Constants.RHOc_H2O; // R15-11 Eq. 24 given actual process input values
-  if (zeta1 < 0 || zeta1 > 1e13) {
-    // If negative or greater than 10^13, then it set it to 10^13.  See IAPWS R15-11 note on bottom of page 12
-    zeta1 = 1e13;
+  var zeta = dRhoDp_T * (Constants.pc_H2O / Constants.RHOc_H2O); // R15-11 Eq. 24
+  if (zeta < 0 || zeta > 1e13) {
+    // If negative or greater than 10^13, then it set it to 10^13. IAPWS R15-11 note on bottom of page 12
+    zeta = 1e13;
   }
 
-  var zeta2 = (dRhoDp_TR * Constants.pc_H2O) / Constants.RHOc_H2O; // R15-11 Eq. 24 given actual process input values
+  // var zeta2 = dRhoDp_TR * (Constants.pc_H2O / Constants.RHOc_H2O); // R15-11 Eq. 24
 
-  /*
-  var j = 0;
-  if (rho_dim <= 0.310559006) {
-    j = 0;
-  }
-  if (rho_dim > 0.310559006 && rho_dim <= 0.776397516) {
-    j = 1;
-  }
-  if (rho_dim > 0.776397516 && rho_dim <= 1.242236025) {
-    j = 2;
-  }
-  if (rho_dim > 1.242236025 && rho_dim <= 1.863354037) {
-    j = 3;
-  }
-  if (rho_dim > 1.863354037) {
-    j = 4;
-  }
-  var zeta2 = 0;
-  var cond_Aij = 0;
-  var MathPow_rho_dim_i = 0;
-  for (let i = 0; i < 6; i++) {
-    cond_Aij = Constants.cond_Aij[i][j];
-    MathPow_rho_dim_i = Math.pow(rho_dim, i);
-    zeta2 += cond_Aij * MathPow_rho_dim_i;
-  }
-  zeta2 = 1 / zeta2;
-*/
-
-  // R15-11 Eq. 24 given actual process input values Constants.cond_Aij
-  if (zeta2 < 0 || zeta2 > 1e13) {
-    // If negative or greater than 10^13, then it set it to 10^13.  See IAPWS R15-11 note on bottom of page 12
-    zeta2 = 1e13;
+  // If zeta is negative or greater than 10^13, then it set it to 10^13
+  // See IAPWS R15-11 note on bottom of page 12
+  if (zetaTR < 0 || zetaTR > 1e13) {
+    zetaTR = 1e13;
   }
 
-  var chi = rho_dim * (zeta1 - zeta2 * (T_R / T_dim)); // R15 eq 23
+  // IAPWS R15-11 eq 23
+  var chi = rho_dim * (zeta - zetaTR * (T_R / T_dim));
+  // refer to comment at the top of page 8 in IAPWS R15-11
   if (chi < 0) {
-    // refer to comment at the top of page 8 in IAPWS R15-11
     chi = 0;
   }
 
-  var xi = xi0 * Math.pow(chi / Gamma0, nu / gamma); // R15 eq 22
-  if (xi < 0 || xi > 1e13) {
-    // see footnote 2 on IAPWS R15-11 page 12
-    xi = 1e13;
-  }
+  // R15 eq 22
+  var xi = xi0 * Math.pow(chi / Gamma0, nu / gamma);
 
   const y = xi * qD; // R15 eq 20
 
+  // R15 eq 19 & eq 21
   var Zy = 0;
   if (y >= 1.2e-7) {
     Zy =
       (2 / (Math.PI * y)) *
       ((1 - 1 / heat_cap_ratio) * Math.atan(y) +
         (1 / heat_cap_ratio) * y -
-        (1 - Math.exp(-1 / (1 / y + Math.pow(y, 2) / (3 * Math.pow(rho_dim, 2)))))); // R15 eq 19
+        (1 - Math.exp(-1 / (1 / y + Math.pow(y, 2) / (3 * Math.pow(rho_dim, 2))))));
   }
 
-  const lambda_2 = (Zy * Lambda * rho_dim * cp_rel * T_dim) / mu_dim; // R15 eq 18
-  const Lambda_01 = CondTest_WO_crit_enh(temperature, volume);
-  return Lambda_01 + lambda_2; // R15 eq 17
+  // R15 eq 18
+  const lambda_2_temp = Zy * Lambda * rho_dim * cp_rel * T_dim;
+  const lambda_2 = lambda_2_temp / mu_dim;
+
+  const Lambda_01 = Cond_WO_crit_enh(temperature, volume);
+
+  // R15 eq 17
+  return Lambda_01 + lambda_2;
 }

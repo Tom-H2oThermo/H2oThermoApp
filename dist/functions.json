@@ -1300,29 +1300,35 @@
             "result": {}
         },
         {
-            "description": "Viscosity f(T, v) used to verify the values in R12-08 Table 4 & 5.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units",
+            "description": "Viscosity f(P,T): (0)Pa·s, (1)lbf·s/ft³, (2)cP, (3)cP",
             "helpUrl": "http://InfoPogo.com",
-            "id": "TVM",
-            "name": "TVM",
+            "id": "PTM",
+            "name": "PTM",
             "parameters": [
                 {
-                    "description": "K",
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
                     "name": "temperature",
                     "type": "number"
                 },
                 {
-                    "description": "(0)m³/kg",
-                    "name": "volume",
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
                     "type": "number"
                 }
             ],
             "result": {}
         },
         {
-            "description": "Viscosity f(P,T): (0)Pa·s, (1)lbf·s/ft³, (2)cP, (3)cP",
+            "description": "Thermal Conductivity f(P,T): (0)mW/(m·K), (1) BTU/(hr⋅ft⋅°F), (2)mW/(m·K), (3)mW/(m·K)",
             "helpUrl": "http://InfoPogo.com",
-            "id": "PTM",
-            "name": "PTM",
+            "id": "PTK",
+            "name": "PTK",
             "parameters": [
                 {
                     "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
@@ -1363,6 +1369,25 @@
                     "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
                     "name": "units",
                     "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Viscosity f(T, v) used to verify the values in R12-08 Table 4 & 5.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "TVM",
+            "name": "TVM",
+            "parameters": [
+                {
+                    "description": "K",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)m³/kg",
+                    "name": "volume",
                     "type": "number"
                 }
             ],

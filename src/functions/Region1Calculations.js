@@ -242,275 +242,140 @@ export function Properties_fPT(pressure, temperature) {
       // [(0) Pressure, (1) Temperature, (2) Quality, (3) Enthalpy, (4) Entropy, (5) InternalEnergy, (6) Volume
       //  (7) IsobaricHeat, (8) IsochoricHeat, (9) SpeedOfSound
 
-      if (temperature >= 273.15) {
-        return [
-          pressure,
-          temperature,
-          0.0,
-          Enthalpy,
-          Entropy,
-          InternalEnergy,
-          Volume,
-          IsobaricHeat,
-          IsochoricHeat,
-          SpeedOfSound, // Elements 0 through 9 (10 & 11 not used)
-          dPdT_V,
-          dPdT_U,
-          dPdT_H,
-          dPdT_S,
-          dPdV_T,
-          dPdV_U,
-          dPdV_H,
-          dPdV_S,
-          dPdU_T,
-          dPdU_V,
-          dPdU_H,
-          dPdU_S,
-          dPdH_T,
-          dPdH_V,
-          dPdH_U,
-          dPdH_S,
-          dPdS_T,
-          dPdS_V,
-          dPdS_U,
-          dPdS_H, // Elements 12 through 31
-          dTdP_V,
-          dTdP_U,
-          dTdP_H,
-          dTdP_S,
-          dTdV_P,
-          dTdV_U,
-          dTdV_H,
-          dTdV_S,
-          dTdU_P,
-          dTdU_V,
-          dTdU_H,
-          dTdU_S,
-          dTdH_P,
-          dTdH_V,
-          dTdH_U,
-          dTdH_S,
-          dTdS_P,
-          dTdS_V,
-          dTdS_U,
-          dTdS_H, // Elements 32 through 51
-          dVdP_T,
-          dVdP_U,
-          dVdP_H,
-          dVdP_S,
-          dVdT_P,
-          dVdT_U,
-          dVdT_H,
-          dVdT_S,
-          dVdU_P,
-          dVdU_T,
-          dVdU_H,
-          dVdU_S,
-          dVdH_P,
-          dVdH_T,
-          dVdH_U,
-          dVdH_S,
-          dVdS_P,
-          dVdS_T,
-          dVdS_U,
-          dVdS_H, // Elements 52 through 71
-          dUdP_T,
-          dUdP_V,
-          dUdP_H,
-          dUdP_S,
-          dUdT_P,
-          dUdT_V,
-          dUdT_H,
-          dUdT_S,
-          dUdV_P,
-          dUdV_T,
-          dUdV_H,
-          dUdV_S,
-          dUdH_P,
-          dUdH_T,
-          dUdH_V,
-          dUdH_S,
-          dUdS_P,
-          dUdS_T,
-          dUdS_V,
-          dUdS_H, // Elements 72 through 91
-          dHdP_T,
-          dHdP_V,
-          dHdP_U,
-          dHdP_S,
-          dHdT_P,
-          dHdT_V,
-          dHdT_U,
-          dHdT_S,
-          dHdV_P,
-          dHdV_T,
-          dHdV_U,
-          dHdV_S,
-          dHdU_P,
-          dHdU_T,
-          dHdU_V,
-          dHdU_S,
-          dHdS_P,
-          dHdS_T,
-          dHdS_V,
-          dHdS_U, // Elements 92 through 111
-          dSdP_T,
-          dSdP_V,
-          dSdP_U,
-          dSdP_H,
-          dSdT_P,
-          dSdT_V,
-          dSdT_U,
-          dSdT_H,
-          dSdV_P,
-          dSdV_T,
-          dSdV_U,
-          dSdV_H,
-          dSdU_P,
-          dSdU_T,
-          dSdU_V,
-          dSdU_H,
-          dSdH_P,
-          dSdH_T,
-          dSdH_V,
-          dSdH_U,
-        ]; // Elements 112 through 131
-      } else {
-        return [
-          pressure,
-          temperature,
-          0.0,
-          Enthalpy,
-          Entropy,
-          InternalEnergy,
-          Volume,
-          IsobaricHeat,
-          IsochoricHeat,
-          SpeedOfSound, // Elements 0 through 9
-          0,
-          0,
-          dPdT_V,
-          dPdT_U,
-          dPdT_H,
-          dPdT_S,
-          dPdV_T,
-          dPdV_U,
-          dPdV_H,
-          dPdV_S,
-          dPdU_T,
-          dPdU_V,
-          dPdU_H,
-          dPdU_S,
-          dPdH_T,
-          dPdH_V,
-          dPdH_U,
-          dPdH_S,
-          dPdS_T,
-          dPdS_V,
-          dPdS_U,
-          dPdS_H, // Elements 12 through 31
-          dTdP_V,
-          dTdP_U,
-          dTdP_H,
-          dTdP_S,
-          dTdV_P,
-          dTdV_U,
-          dTdV_H,
-          dTdV_S,
-          dTdU_P,
-          dTdU_V,
-          dTdU_H,
-          dTdU_S,
-          dTdH_P,
-          dTdH_V,
-          dTdH_U,
-          dTdH_S,
-          dTdS_P,
-          dTdS_V,
-          dTdS_U,
-          dTdS_H, // Elements 32 through 51
-          dVdP_T,
-          dVdP_U,
-          dVdP_H,
-          dVdP_S,
-          dVdT_P,
-          dVdT_U,
-          dVdT_H,
-          dVdT_S,
-          dVdU_P,
-          dVdU_T,
-          dVdU_H,
-          dVdU_S,
-          dVdH_P,
-          dVdH_T,
-          dVdH_U,
-          dVdH_S,
-          dVdS_P,
-          dVdS_T,
-          dVdS_U,
-          dVdS_H, // Elements 52 through 71
-          dUdP_T,
-          dUdP_V,
-          dUdP_H,
-          dUdP_S,
-          dUdT_P,
-          dUdT_V,
-          dUdT_H,
-          dUdT_S,
-          dUdV_P,
-          dUdV_T,
-          dUdV_H,
-          dUdV_S,
-          dUdH_P,
-          dUdH_T,
-          dUdH_V,
-          dUdH_S,
-          dUdS_P,
-          dUdS_T,
-          dUdS_V,
-          dUdS_H, // Elements 72 through 91
-          dHdP_T,
-          dHdP_V,
-          dHdP_U,
-          dHdP_S,
-          dHdT_P,
-          dHdT_V,
-          dHdT_U,
-          dHdT_S,
-          dHdV_P,
-          dHdV_T,
-          dHdV_U,
-          dHdV_S,
-          dHdU_P,
-          dHdU_T,
-          dHdU_V,
-          dHdU_S,
-          dHdS_P,
-          dHdS_T,
-          dHdS_V,
-          dHdS_U, // Elements 92 through 111
-          dSdP_T,
-          dSdP_V,
-          dSdP_U,
-          dSdP_H,
-          dSdT_P,
-          dSdT_V,
-          dSdT_U,
-          dSdT_H,
-          dSdV_P,
-          dSdV_T,
-          dSdV_U,
-          dSdV_H,
-          dSdU_P,
-          dSdU_T,
-          dSdU_V,
-          dSdU_H,
-          dSdH_P,
-          dSdH_T,
-          dSdH_V,
-          dSdH_U,
-        ]; // Elements 112 through 131
-      }
+      return [
+        pressure, // 0
+        temperature, // 1
+        0.0, // 2
+        Enthalpy, // 3
+        Entropy, // 4
+        InternalEnergy, // 5
+        Volume, // 6
+        IsobaricHeat, // 7
+        IsochoricHeat, // 8
+        SpeedOfSound, // 9
+        0, // 10
+        0, // 11
+        dPdT_V, // 12
+        dPdT_U, // 13
+        dPdT_H, // 14
+        dPdT_S, // 15
+        dPdV_T, // 16
+        dPdV_U, // 17
+        dPdV_H, // 18
+        dPdV_S, // 19
+        dPdU_T, // 20
+        dPdU_V, // 21
+        dPdU_H, // 22
+        dPdU_S, // 23
+        dPdH_T, // 24
+        dPdH_V, // 25
+        dPdH_U, // 26
+        dPdH_S, // 27
+        dPdS_T, // 28
+        dPdS_V, // 29
+        dPdS_U, // 30
+        dPdS_H, // 31
+        dTdP_V, // 32
+        dTdP_U, // 33
+        dTdP_H, // 34
+        dTdP_S, // 35
+        dTdV_P, // 36
+        dTdV_U, // 37
+        dTdV_H, // 38
+        dTdV_S, // 39
+        dTdU_P, // 40
+        dTdU_V, // 41
+        dTdU_H, // 42
+        dTdU_S, // 43
+        dTdH_P, // 44
+        dTdH_V, // 45
+        dTdH_U, // 46
+        dTdH_S, // 47
+        dTdS_P, // 48
+        dTdS_V, // 49
+        dTdS_U, // 50
+        dTdS_H, // 51
+        dVdP_T, // 52
+        dVdP_U, // 53
+        dVdP_H, // 54
+        dVdP_S, // 55
+        dVdT_P, // 56
+        dVdT_U, // 57
+        dVdT_H, // 58
+        dVdT_S, // 59
+        dVdU_P, // 60
+        dVdU_T, // 61
+        dVdU_H, // 62
+        dVdU_S, // 63
+        dVdH_P, // 64
+        dVdH_T, // 65
+        dVdH_U, // 66
+        dVdH_S, // 67
+        dVdS_P, // 68
+        dVdS_T, // 69
+        dVdS_U, // 70
+        dVdS_H, // 71
+        dUdP_T, // 72
+        dUdP_V, // 73
+        dUdP_H, // 71
+        dUdP_S, // 72
+        dUdT_P, // 73
+        dUdT_V, // 74
+        dUdT_H, // 75
+        dUdT_S, // 76
+        dUdV_P, // 77
+        dUdV_T, // 78
+        dUdV_H, // 79
+        dUdV_S, // 80
+        dUdH_P, // 81
+        dUdH_T, // 82
+        dUdH_V, // 83
+        dUdH_S, // 84
+        dUdS_P, // 85
+        dUdS_T, // 86
+        dUdS_V, // 87
+        dUdS_H, // 88
+        dHdP_T, // 89
+        dHdP_V, // 90
+        dHdP_U, // 91
+        dHdP_S, // 92
+        dHdT_P, // 93
+        dHdT_V, // 94
+        dHdT_U, // 95
+        dHdT_S, // 96
+        dHdV_P, // 97
+        dHdV_T, // 98
+        dHdV_U, // 99
+        dHdV_S, // 100
+        dHdU_P, // 101
+        dHdU_T, // 102
+        dHdU_V, // 103
+        dHdU_S, // 104
+        dHdS_P, // 105
+        dHdS_T, // 106
+        dHdS_V, // 107
+        dHdS_U, // 108
+        dSdP_T, // 109
+        dSdP_V, // 110
+        dSdP_U, // 111
+        dSdP_H, // 112
+        dSdT_P, // 113
+        dSdT_V, // 114
+        dSdT_U, // 115
+        dSdT_H, // 116
+        dSdV_P, // 117
+        dSdV_T, // 118
+        dSdV_U, // 119
+        dSdV_H, // 120
+        dSdU_P, // 121
+        dSdU_T, // 122
+        dSdU_V, // 123
+        dSdU_H, // 124
+        dSdH_P, // 125
+        dSdH_T, // 126
+        dSdH_V, // 127
+        dSdH_U, // 128
+      ];
     }
     throw Errors.TemperatureOrPressureNotInRegion1;
   } catch (err) {

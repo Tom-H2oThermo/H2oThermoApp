@@ -869,19 +869,6 @@ export function TQCv(temperature, quality, units) {
 
 // Function #51
 /**
- * Viscosity f(T, v) used to verify the values in R12-08 Table 4 & 5.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units
- * @customfunction
- * @helpurl http://InfoPogo.com
- * @param {number} temperature  K
- * @param {number} volume (0)m³/kg
- * @returns Pa·s (use with caution, see help url)
- */
-export function TVM(temperature, volume) {
-  return H2o.Viscosity_fTV(temperature, volume);
-}
-
-// Function #52
-/**
  * Viscosity f(P,T): (0)Pa·s, (1)lbf·s/ft³, (2)cP, (3)cP
  * @customfunction
  * @helpurl http://InfoPogo.com
@@ -892,6 +879,20 @@ export function TVM(temperature, volume) {
  */
 export function PTM(pressure, temperature, units) {
   return H2o.Viscosity_fPT(pressure, temperature, units);
+}
+
+// Function #52
+/**
+ * Thermal Conductivity f(P,T): (0)mW/(m·K), (1) BTU/(hr⋅ft⋅°F), (2)mW/(m·K), (3)mW/(m·K)
+ * @customfunction
+ * @helpurl http://InfoPogo.com
+ * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
+ * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
+ * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
+ * @returns (0)mW/(m·K), (1) BTU/(hr⋅ft⋅°F), (2)mW/(m·K), (3)mW/(m·K)
+ */
+export function PTK(pressure, temperature, units) {
+  return H2o.Conductivity_fPT(pressure, temperature, units);
 }
 
 // Function #53
@@ -908,8 +909,21 @@ export function dVdP_T_fPT(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdP_T, false);
 }
 
+// Debug Function for Viscosity
+/**
+ * Viscosity f(T, v) used to verify the values in R12-08 Table 4 & 5.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units
+ * @customfunction
+ * @helpurl http://InfoPogo.com
+ * @param {number} temperature  K
+ * @param {number} volume (0)m³/kg
+ * @returns Pa·s (use with caution, see help url)
+ */
+export function TVM(temperature, volume) {
+  return H2o.Viscosity_fTV(temperature, volume);
+}
+
 // Debug function for Conductivity W/O the critical enhancement for verifying values in R15-11 table 4
-// Does not check to verify in a valid range, only for testing
+// Does not check to verify in a valid range, only used for testing
 /**
  * Conductivity f(V,T) without critical enhancement
  * @customfunction
