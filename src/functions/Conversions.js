@@ -59,7 +59,6 @@ export function SteamPropertiesConversion(inputProperties, units = Units.SI) {
       // Nothing to do
       break;
     case Units.USCustomary:
-      // TODO: Don't hardcode all these indices...
       outputProperties[12] = inputProperties[12] * MPa_per_K_To_psia_per_R; // dPdT_V
       outputProperties[13] = inputProperties[13] * MPa_per_K_To_psia_per_R; // dPdT_U
       outputProperties[14] = inputProperties[14] * MPa_per_K_To_psia_per_R; // dPdT_H
@@ -491,7 +490,7 @@ export function PascalSecond_To_Centipoise(PascalSecond) {
   return CentiPoise_Per_PascalSecond * PascalSecond;
 }
 
-// Thermal Conductivity conversions ToDo come up with a first principals conversion factor
+// Thermal Conductivity conversions
 const BtuPerHrFtF_Per_mWattPerMeterK = 578.176; // ASME Steam Tables Book - Table 2-9
 export function mWattPerMeterK_To_BtuPerHrFtF(mWattPerMeterK) {
   return mWattPerMeterK * BtuPerHrFtF_Per_mWattPerMeterK;

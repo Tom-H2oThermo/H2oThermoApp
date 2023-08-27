@@ -1,5 +1,3 @@
-// TODO: Move to Constants...
-
 export const SI = 0;
 export const USCustomary = 1;
 export const MetricBarA = 2;

@@ -137,7 +137,6 @@ export function Properties_fPT(pressure, temperature, metastable = false) {
     var Entropy = (R / 1000) * (tau * (gamma_0_tau + gamma_r_tau) - (gamma_0 + gamma_r));
     var Enthalpy = (R / 1000) * temperature * tau * (gamma_0_tau + gamma_r_tau);
     var IsobaricHeat = -(R / 1000) * Math.pow(tau, 2) * (gamma_0_tau_tau + gamma_r_tau_tau);
-    // TODO: Was defined but not used... var IsobaricHeat_G = -R * Math.pow(tau, 2) * (gamma_0_tau_tau + gamma_r_tau_tau);
     var IsochoricHeat =
       (R / 1000) *
       (-Math.pow(tau, 2) * (gamma_0_tau_tau + gamma_r_tau_tau) -

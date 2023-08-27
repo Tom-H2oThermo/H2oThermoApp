@@ -61,128 +61,6 @@
             "result": {}
         },
         {
-            "description": "Returns requested parameter f(P,T): Specified Return Parameter in Units Specified",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "FPT",
-            "name": "FPT",
-            "parameters": [
-                {
-                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
-                    "name": "pressure",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
-                    "name": "temperature",
-                    "type": "number"
-                },
-                {
-                    "name": "returnName",
-                    "type": "any"
-                },
-                {
-                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
-                    "name": "units",
-                    "optional": true,
-                    "type": "number"
-                },
-                {
-                    "description": "false=normal, true=metastable",
-                    "name": "metastable",
-                    "optional": true,
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Returns requested parameter f(P,h): Specified Return Parameter in Units Specified",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "FPH",
-            "name": "FPH",
-            "parameters": [
-                {
-                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
-                    "name": "pressure",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-                    "name": "enthalpy",
-                    "type": "number"
-                },
-                {
-                    "name": "returnName",
-                    "type": "any"
-                },
-                {
-                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
-                    "name": "units",
-                    "optional": true,
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Returns requested parameter f(P,S): Specified Return Parameter in Units Specified",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "FPS",
-            "name": "FPS",
-            "parameters": [
-                {
-                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
-                    "name": "pressure",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-                    "name": "entropy",
-                    "type": "number"
-                },
-                {
-                    "name": "returnName",
-                    "type": "any"
-                },
-                {
-                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
-                    "name": "units",
-                    "optional": true,
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Returns requested parameter f(H,S): Specified Return Parameter in Units Specified",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "FHS",
-            "name": "FHS",
-            "parameters": [
-                {
-                    "description": "(0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-                    "name": "enthalpy",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-                    "name": "entropy",
-                    "type": "number"
-                },
-                {
-                    "name": "returnName",
-                    "type": "any"
-                },
-                {
-                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
-                    "name": "units",
-                    "optional": true,
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
             "description": "Enthalpy f(P,T): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
             "helpUrl": "http://InfoPogo.com",
             "id": "PTH",
@@ -1350,7 +1228,1007 @@
             "result": {}
         },
         {
-            "description": "dVdP_T f(P,T): (0)(m³/kg)/MPa, (1), (2), (3)",
+            "description": "dPdT_V f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDT_V_FPT",
+            "name": "DPDT_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdT_U f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDT_U_FPT",
+            "name": "DPDT_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdT_H f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDT_H_FPT",
+            "name": "DPDT_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdT_S f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDT_S_FPT",
+            "name": "DPDT_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdV_T f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDV_T_FPT",
+            "name": "DPDV_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdV_U f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDV_U_FPT",
+            "name": "DPDV_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdV_H f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDV_H_FPT",
+            "name": "DPDV_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdV_S f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDV_S_FPT",
+            "name": "DPDV_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdU_T f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDU_T_FPT",
+            "name": "DPDU_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdU_V f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDU_V_FPT",
+            "name": "DPDU_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdU_H f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDU_H_FPT",
+            "name": "DPDU_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdU_S f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDU_S_FPT",
+            "name": "DPDU_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdH_T f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDH_T_FPT",
+            "name": "DPDH_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdH_V f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDH_V_FPT",
+            "name": "DPDH_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdH_U f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDH_U_FPT",
+            "name": "DPDH_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdH_S f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDH_S_FPT",
+            "name": "DPDH_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdS_T f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDS_T_FPT",
+            "name": "DPDS_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdS_V f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDS_V_FPT",
+            "name": "DPDS_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdS_U f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDS_U_FPT",
+            "name": "DPDS_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dPdS_H f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DPDS_H_FPT",
+            "name": "DPDS_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdP_V f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDP_V_FPT",
+            "name": "DTDP_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdP_U f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDP_U_FPT",
+            "name": "DTDP_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdP_H f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDP_H_FPT",
+            "name": "DTDP_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdP_S f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDP_S_FPT",
+            "name": "DTDP_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdV_P f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDV_P_FPT",
+            "name": "DTDV_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdV_U f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDV_U_FPT",
+            "name": "DTDV_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdV_H f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDV_H_FPT",
+            "name": "DTDV_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdV_S f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDV_S_FPT",
+            "name": "DTDV_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdU_P f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDU_P_FPT",
+            "name": "DTDU_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdU_V f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDU_V_FPT",
+            "name": "DTDU_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdU_H f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDU_H_FPT",
+            "name": "DTDU_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdU_S f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDU_S_FPT",
+            "name": "DTDU_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdH_P f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDH_P_FPT",
+            "name": "DTDH_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdH_V f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDH_V_FPT",
+            "name": "DTDH_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdH_U f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDH_U_FPT",
+            "name": "DTDH_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdH_S f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDH_S_FPT",
+            "name": "DTDH_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdS_P f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDS_P_FPT",
+            "name": "DTDS_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdS_V f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDS_V_FPT",
+            "name": "DTDS_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdS_U f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDS_U_FPT",
+            "name": "DTDS_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dTdS_H f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DTDS_H_FPT",
+            "name": "DTDS_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdP_T f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa",
             "helpUrl": "http://InfoPogo.com",
             "id": "DVDP_T_FPT",
             "name": "DVDP_T_FPT",
@@ -1375,71 +2253,14 @@
             "result": {}
         },
         {
-            "description": "Viscosity f(T, v) used to verify the values in R12-08 Table 4 & 5.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units",
+            "description": "dVdP_U f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa",
             "helpUrl": "http://InfoPogo.com",
-            "id": "TVM",
-            "name": "TVM",
+            "id": "DVDP_U_FPT",
+            "name": "DVDP_U_FPT",
             "parameters": [
                 {
-                    "description": "K",
-                    "name": "temperature",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)m³/kg",
-                    "name": "volume",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Conductivity f(V,T) without critical enhancement",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_TVK_WO_CRIT_ENH",
-            "name": "TEST_TVK_WO_CRIT_ENH",
-            "parameters": [
-                {
-                    "description": "K",
-                    "name": "temperature",
-                    "type": "number"
-                },
-                {
-                    "description": "m³/kg",
-                    "name": "volume",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Conductivity f(V,T) without critical enhancement",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_TVK_WITH_CRIT_ENH",
-            "name": "TEST_TVK_WITH_CRIT_ENH",
-            "parameters": [
-                {
-                    "description": "K",
-                    "name": "temperature",
-                    "type": "number"
-                },
-                {
-                    "description": "m³/kg",
-                    "name": "volume",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns pressure f(v,T)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_VTP",
-            "name": "TEST_VTP",
-            "parameters": [
-                {
-                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-                    "name": "volume",
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
                     "type": "number"
                 },
                 {
@@ -1457,14 +2278,14 @@
             "result": {}
         },
         {
-            "description": "Region 3 only: returns enthalpy f(v,T)",
+            "description": "dVdP_H f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa",
             "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_VTH",
-            "name": "TEST_VTH",
+            "id": "DVDP_H_FPT",
+            "name": "DVDP_H_FPT",
             "parameters": [
                 {
-                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-                    "name": "volume",
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
                     "type": "number"
                 },
                 {
@@ -1482,14 +2303,14 @@
             "result": {}
         },
         {
-            "description": "Region 3 only: returns internal energy f(v,T)",
+            "description": "dVdP_S f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa",
             "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_VTU",
-            "name": "TEST_VTU",
+            "id": "DVDP_S_FPT",
+            "name": "DVDP_S_FPT",
             "parameters": [
                 {
-                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-                    "name": "volume",
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
                     "type": "number"
                 },
                 {
@@ -1507,14 +2328,14 @@
             "result": {}
         },
         {
-            "description": "Region 3 only: returns entropy f(v,T)",
+            "description": "dVdT_P f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C",
             "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_VTS",
-            "name": "TEST_VTS",
+            "id": "DVDT_P_FPT",
+            "name": "DVDT_P_FPT",
             "parameters": [
                 {
-                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-                    "name": "volume",
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
                     "type": "number"
                 },
                 {
@@ -1532,14 +2353,14 @@
             "result": {}
         },
         {
-            "description": "Region 3 only: returns isobaric specific heat f(v,T)",
+            "description": "dVdT_U f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C",
             "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_VTCP",
-            "name": "TEST_VTCP",
+            "id": "DVDT_U_FPT",
+            "name": "DVDT_U_FPT",
             "parameters": [
                 {
-                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-                    "name": "volume",
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
                     "type": "number"
                 },
                 {
@@ -1557,14 +2378,14 @@
             "result": {}
         },
         {
-            "description": "Region 3 only: returns speed of sound f(v,T)",
+            "description": "dVdT_H f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C",
             "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_VTW",
-            "name": "TEST_VTW",
+            "id": "DVDT_H_FPT",
+            "name": "DVDT_H_FPT",
             "parameters": [
                 {
-                    "description": "(0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-                    "name": "volume",
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
                     "type": "number"
                 },
                 {
@@ -1582,301 +2403,1860 @@
             "result": {}
         },
         {
-            "description": "returns Region 3 saturation pressure psat(h)",
+            "description": "dVdT_S f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C",
             "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_R3_H_PSAT",
-            "name": "TEST_R3_H_PSAT",
+            "id": "DVDT_S_FPT",
+            "name": "DVDT_S_FPT",
             "parameters": [
                 {
-                    "description": "kJ/kg",
-                    "name": "enthalpy",
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
                     "type": "number"
                 }
             ],
             "result": {}
         },
         {
-            "description": "returns Region 1 to Region 4 boundary: h(s)",
+            "description": "dVdU_P f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
             "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_R3_S_PSAT",
-            "name": "TEST_R3_S_PSAT",
+            "id": "DVDU_P_FPT",
+            "name": "DVDU_P_FPT",
             "parameters": [
                 {
-                    "name": "enthalpy",
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdU_T f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDU_T_FPT",
+            "name": "DVDU_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdU_H f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDU_H_FPT",
+            "name": "DVDU_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdU_S f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDU_S_FPT",
+            "name": "DVDU_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdH_P f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDH_P_FPT",
+            "name": "DVDH_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdH_T f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDH_T_FPT",
+            "name": "DVDH_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdH_U f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDH_U_FPT",
+            "name": "DVDH_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdH_S f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDH_S_FPT",
+            "name": "DVDH_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdS_P f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDS_P_FPT",
+            "name": "DVDS_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdS_T f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDS_T_FPT",
+            "name": "DVDS_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdS_U f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDS_U_FPT",
+            "name": "DVDS_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dVdS_H f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DVDS_H_FPT",
+            "name": "DVDS_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdP_T f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDP_T_FPT",
+            "name": "DUDP_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdP_V f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDP_V_FPT",
+            "name": "DUDP_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdP_H f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDP_H_FPT",
+            "name": "DUDP_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdP_S f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDP_S_FPT",
+            "name": "DUDP_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdT_P f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDT_P_FPT",
+            "name": "DUDT_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdT_V f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDT_V_FPT",
+            "name": "DUDT_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdT_H f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDT_H_FPT",
+            "name": "DUDT_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdT_S f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDT_S_FPT",
+            "name": "DUDT_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdV_P f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDV_P_FPT",
+            "name": "DUDV_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdV_T f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDV_T_FPT",
+            "name": "DUDV_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdV_H f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDV_H_FPT",
+            "name": "DUDV_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdV_S f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDV_S_FPT",
+            "name": "DUDV_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdH_P f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDH_P_FPT",
+            "name": "DUDH_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdH_T f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDH_T_FPT",
+            "name": "DUDH_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdH_V f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDH_V_FPT",
+            "name": "DUDH_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdH_S f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDH_S_FPT",
+            "name": "DUDH_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdS_P f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDS_P_FPT",
+            "name": "DUDS_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdS_T f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDS_T_FPT",
+            "name": "DUDS_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdS_V f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDS_V_FPT",
+            "name": "DUDS_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dUdS_H f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DUDS_H_FPT",
+            "name": "DUDS_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdP_T f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDP_T_FPT",
+            "name": "DHDP_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdP_V f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDP_V_FPT",
+            "name": "DHDP_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdP_U f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDP_U_FPT",
+            "name": "DHDP_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdP_S f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDP_S_FPT",
+            "name": "DHDP_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdT_P f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDT_P_FPT",
+            "name": "DHDT_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdT_V f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDT_V_FPT",
+            "name": "DHDT_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdT_U f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDT_U_FPT",
+            "name": "DHDT_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdT_S f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDT_S_FPT",
+            "name": "DHDT_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdV_P f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDV_P_FPT",
+            "name": "DHDV_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdV_T f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDV_T_FPT",
+            "name": "DHDV_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdV_U f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDV_U_FPT",
+            "name": "DHDV_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdV_S f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDV_S_FPT",
+            "name": "DHDV_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdU_P f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDU_P_FPT",
+            "name": "DHDU_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdU_T f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDU_T_FPT",
+            "name": "DHDU_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdU_V f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDU_V_FPT",
+            "name": "DHDU_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdU_S f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDU_S_FPT",
+            "name": "DHDU_S_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdS_P f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDS_P_FPT",
+            "name": "DHDS_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdS_T f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDS_T_FPT",
+            "name": "DHDS_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdS_V f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDS_V_FPT",
+            "name": "DHDS_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dHdS_U f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DHDS_U_FPT",
+            "name": "DHDS_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdP_T f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDP_T_FPT",
+            "name": "DSDP_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdP_V f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDP_V_FPT",
+            "name": "DSDP_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdP_U f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDP_U_FPT",
+            "name": "DSDP_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdP_H f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDP_H_FPT",
+            "name": "DSDP_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdT_P f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDT_P_FPT",
+            "name": "DSDT_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdT_V f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDT_V_FPT",
+            "name": "DSDT_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdT_U f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDT_U_FPT",
+            "name": "DSDT_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdT_H f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDT_H_FPT",
+            "name": "DSDT_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdV_P f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDV_P_FPT",
+            "name": "DSDV_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdV_T f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDV_T_FPT",
+            "name": "DSDV_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdV_U f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDV_U_FPT",
+            "name": "DSDV_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdV_H f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDV_H_FPT",
+            "name": "DSDV_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdU_P f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDU_P_FPT",
+            "name": "DSDU_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdU_T f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDU_T_FPT",
+            "name": "DSDU_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdU_V f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDU_V_FPT",
+            "name": "DSDU_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdU_H f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDU_H_FPT",
+            "name": "DSDU_H_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdH_P f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDH_P_FPT",
+            "name": "DSDH_P_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdH_T f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDH_T_FPT",
+            "name": "DSDH_T_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdH_V f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDH_V_FPT",
+            "name": "DSDH_V_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "dSdH_U f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "DSDH_U_FPT",
+            "name": "DSDH_U_FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Returns requested parameter f(P,T): Specified Return Parameter in Units Specified",
+            "helpUrl": "http://InfoPogo.com",
+            "id": "FPT",
+            "name": "FPT",
+            "parameters": [
+                {
+                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
+                    "name": "pressure",
+                    "type": "number"
+                },
+                {
+                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
+                    "name": "temperature",
+                    "type": "number"
+                },
+                {
+                    "name": "returnName",
                     "type": "any"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "returns Region 1 to Region 4 boundary: h(s)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_H1_SAT_LIQS",
-            "name": "TEST_H1_SAT_LIQS",
-            "parameters": [
+                },
                 {
-                    "name": "enthalpy",
-                    "type": "any"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "returns Region 3 to Region 4 saturated liquid boundary: h(s)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_H3A_SAT_LIQS",
-            "name": "TEST_H3A_SAT_LIQS",
-            "parameters": [
-                {
-                    "name": "enthalpy",
-                    "type": "any"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "returns Region 1 to Region 4 boundary: h(s)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_H2AB_SAT_VAPS",
-            "name": "TEST_H2AB_SAT_VAPS",
-            "parameters": [
-                {
-                    "description": "kJ/(kg·K)",
-                    "name": "entropy",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "returns Region 3 to Region 4 saturated liquid boundary: h(s)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_H2C3B_SAT_VAPS",
-            "name": "TEST_H2C3B_SAT_VAPS",
-            "parameters": [
-                {
-                    "description": "kJ/(kg·K)",
-                    "name": "entropy",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "returns boundary between Regions 1 & 3 f(s)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_HB13S",
-            "name": "TEST_HB13S",
-            "parameters": [
-                {
-                    "description": "kJ/(kg·K)",
-                    "name": "entropy",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "returns boundary between Regions 2 & 3 T(h,s)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_TB23HS",
-            "name": "TEST_TB23HS",
-            "parameters": [
-                {
-                    "description": "kJ/kg",
-                    "name": "enthalpy",
+                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
+                    "name": "units",
+                    "optional": true,
                     "type": "number"
                 },
                 {
-                    "description": "kJ/(kg·K)",
-                    "name": "entropy",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "returns boundary between Regions 2 & 3 T(h,s)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_TSATHS",
-            "name": "TEST_TSATHS",
-            "parameters": [
-                {
-                    "description": "kJ/kg",
-                    "name": "enthalpy",
-                    "type": "number"
-                },
-                {
-                    "description": "kJ/(kg·K)",
-                    "name": "entropy",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3ab(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3AB",
-            "name": "TEST_T3AB",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3op(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3OP",
-            "name": "TEST_T3OP",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3ef(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3EF",
-            "name": "TEST_T3EF",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3cd(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3CD",
-            "name": "TEST_T3CD",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3gh(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3GH",
-            "name": "TEST_T3GH",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3ij(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3IJ",
-            "name": "TEST_T3IJ",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3jk(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3JK",
-            "name": "TEST_T3JK",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3mn(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3MN",
-            "name": "TEST_T3MN",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3qu(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3QU",
-            "name": "TEST_T3QU",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3rx(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3RX",
-            "name": "TEST_T3RX",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3uv(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3UV",
-            "name": "TEST_T3UV",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Region 3 only: returns T3wx(p)",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "TEST_T3WX",
-            "name": "TEST_T3WX",
-            "parameters": [
-                {
-                    "description": "MPa",
-                    "name": "pressure",
+                    "description": "false=normal, true=metastable",
+                    "name": "metastable",
+                    "optional": true,
                     "type": "number"
                 }
             ],

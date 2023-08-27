@@ -55,11 +55,10 @@ export function CallStmProp_fPT(pressure, temperature, units, returnIndex, metas
       default:
         throw Errors.ErrorUnitsNotInRange;
     }
-    // TODO: Seems innefficient to calculate everything and then return just one item...
+
     // Get Steam properties, convert to correct units and return the one element.
     return Conversions.SteamPropertiesConversion(StmProp_fPT.SteamProperties(p, t, metastable), units)[returnIndex]; // calls the steam properties with standard SI units and then converts to the desired units.
   } catch (e) {
-    // TODO: This is the documented way to return errors, but I couldn't get the error text to show...
     // We throw strings. Convert to an Excel error
     // let error = new CustomFunctions.Error(CustomFunctions.ErrorCode.invalidValue, e);
     // throw error;
