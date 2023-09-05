@@ -1,6 +1,6 @@
 ﻿import * as H2o from "./H2oProperties.js";
 import * as Units from "./Units.js";
-import * as Errors from "./Errors.js";
+// import * as Errors from "./Errors.js";
 
 const returnName = {
   pressure: 0,
@@ -136,9 +136,10 @@ const returnName = {
 };
 
 // Given a string, return the index from Units.VectorParameters. Throws if can't find the value.
-function nameToIndex(name) {
+/* function nameToIndex(name) {
   return returnName[name.toLowerCase()];
 }
+*/
 
 // Function #1
 /**
