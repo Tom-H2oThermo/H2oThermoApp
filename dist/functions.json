@@ -2,7 +2,7 @@
     "functions": [
         {
             "description": "Sat Pressure f(T): (0)MPa, (1)psia, (2)bara, (3)kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/saturation-pressure-f_t/",
             "id": "TP",
             "name": "TP",
             "parameters": [
@@ -22,7 +22,7 @@
         },
         {
             "description": "Sat Temperature f(P):  (0)K, (1)°F, (2)°C, (3)°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/saturation-temperature-f_p/",
             "id": "PT",
             "name": "PT",
             "parameters": [
@@ -42,7 +42,7 @@
         },
         {
             "description": "Surface Tension f(T): (0)mN/m, (1)lbf/ft, (2)mN/m, (3)mN/m",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/surface-tension-f_t/",
             "id": "TY",
             "name": "TY",
             "parameters": [
@@ -62,7 +62,7 @@
         },
         {
             "description": "Enthalpy f(P,T): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/enthalpy-f_pt/",
             "id": "PTH",
             "name": "PTH",
             "parameters": [
@@ -93,7 +93,7 @@
         },
         {
             "description": "Entropy f(P,T): (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/entropy-f_pt/",
             "id": "PTS",
             "name": "PTS",
             "parameters": [
@@ -124,7 +124,7 @@
         },
         {
             "description": "Internal Energy f(P,T): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/internal-energy-f_pt/",
             "id": "PTU",
             "name": "PTU",
             "parameters": [
@@ -155,7 +155,7 @@
         },
         {
             "description": "Specific Volume f(P,T): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/specific-volume-f_pt/",
             "id": "PTV",
             "name": "PTV",
             "parameters": [
@@ -186,7 +186,7 @@
         },
         {
             "description": "Constant Pressure Specific Heat f(P,T): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-pressure-specific-heat-f_pt/",
             "id": "PTCP",
             "name": "PTCP",
             "parameters": [
@@ -217,7 +217,7 @@
         },
         {
             "description": "Constant Volumn Specific Heat f(P,T): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-volume-specific-heat-f_pt/",
             "id": "PTCV",
             "name": "PTCV",
             "parameters": [
@@ -248,7 +248,7 @@
         },
         {
             "description": "Speed of Sound f(P,T): (0)m/s, (1)ft/s, (2)m/s, (3)m/s",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/speed-of-sound-f_pt/",
             "id": "PTW",
             "name": "PTW",
             "parameters": [
@@ -279,7 +279,7 @@
         },
         {
             "description": "Temperature f(P,H):  (0)K, (1)°F, (2)°C, (3)°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/temperature-f_ph/",
             "id": "PHT",
             "name": "PHT",
             "parameters": [
@@ -304,7 +304,7 @@
         },
         {
             "description": "Specific Entropy f(P,H): (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/entropy-f_ph/",
             "id": "PHS",
             "name": "PHS",
             "parameters": [
@@ -329,7 +329,7 @@
         },
         {
             "description": "Internal Energy f(P,H): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/internal-energy-f_ph/",
             "id": "PHU",
             "name": "PHU",
             "parameters": [
@@ -354,7 +354,7 @@
         },
         {
             "description": "Specific Volume f(P,H): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/specific-volume-f_ph/",
             "id": "PHV",
             "name": "PHV",
             "parameters": [
@@ -379,7 +379,7 @@
         },
         {
             "description": "Constant Pressure Specific Heat f(P,H): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-pressure-specific-heat-f_ph/",
             "id": "PHCP",
             "name": "PHCP",
             "parameters": [
@@ -404,7 +404,7 @@
         },
         {
             "description": "Constant Volumn Specific Heat f(P,H): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-volume-specific-heat-f_ph/",
             "id": "PHCV",
             "name": "PHCV",
             "parameters": [
@@ -429,7 +429,7 @@
         },
         {
             "description": "Speed of Sound f(P,H): (0)m/s, (1)ft/s, (2)m/s, (3)m/s",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/speed-of-sound-f_ph/",
             "id": "PHW",
             "name": "PHW",
             "parameters": [
@@ -454,7 +454,7 @@
         },
         {
             "description": "Quality f(P,H): dimensionless",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/quality-f_ph/",
             "id": "PHQ",
             "name": "PHQ",
             "parameters": [
@@ -479,7 +479,7 @@
         },
         {
             "description": "Temperature f(P,S):  (0)K, (1)°F, (2)°C, (3)°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/temperature-f_ps/",
             "id": "PST",
             "name": "PST",
             "parameters": [
@@ -504,7 +504,7 @@
         },
         {
             "description": "Enthalpy f(P,S): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/enthalpy-f_ps/",
             "id": "PSH",
             "name": "PSH",
             "parameters": [
@@ -529,7 +529,7 @@
         },
         {
             "description": "Internal Energy f(P,S): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/internal-energy-f_ps/",
             "id": "PSU",
             "name": "PSU",
             "parameters": [
@@ -554,7 +554,7 @@
         },
         {
             "description": "Specific Volume f(P,S): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/specific-volume-f_ps/",
             "id": "PSV",
             "name": "PSV",
             "parameters": [
@@ -579,7 +579,7 @@
         },
         {
             "description": "Constant Pressure Specific Heat f(P,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-pressure-specific-heat-f_ps/",
             "id": "PSCP",
             "name": "PSCP",
             "parameters": [
@@ -604,7 +604,7 @@
         },
         {
             "description": "Constant Volumn Specific Heat f(P,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-volume-specific-heat-f_ps/",
             "id": "PSCV",
             "name": "PSCV",
             "parameters": [
@@ -629,7 +629,7 @@
         },
         {
             "description": "Speed of Sound f(P,S): (0)m/s, (1)ft/s, (2)m/s, (3)m/s",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/speed-of-sound-f_ps/",
             "id": "PSW",
             "name": "PSW",
             "parameters": [
@@ -654,7 +654,7 @@
         },
         {
             "description": "Quality f(P,S): dimensionless",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/quality-f_ps/",
             "id": "PSQ",
             "name": "PSQ",
             "parameters": [
@@ -679,7 +679,7 @@
         },
         {
             "description": "Pressure f(H,S): (0)MPa, (1)psia, (2)bara, (3)kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/pressure-f_hs/",
             "id": "HSP",
             "name": "HSP",
             "parameters": [
@@ -704,7 +704,7 @@
         },
         {
             "description": "Temperature f(H,S):  (0)K, (1)°F, (2)°C, (3)°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/temperature-f_hs/",
             "id": "HST",
             "name": "HST",
             "parameters": [
@@ -729,7 +729,7 @@
         },
         {
             "description": "Quality f(H,S): dimensionless",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/quality-f_hs/",
             "id": "HSQ",
             "name": "HSQ",
             "parameters": [
@@ -754,7 +754,7 @@
         },
         {
             "description": "Internal Energy f(H,S): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/internal-energy-f_hs/",
             "id": "HSU",
             "name": "HSU",
             "parameters": [
@@ -779,7 +779,7 @@
         },
         {
             "description": "Specific Volume f(H,S): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/specific-volume-f_hs/",
             "id": "HSV",
             "name": "HSV",
             "parameters": [
@@ -804,7 +804,7 @@
         },
         {
             "description": "Constant Pressure Specific Heat f(H,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-pressure-specific-heat-f_hs/",
             "id": "HSCP",
             "name": "HSCP",
             "parameters": [
@@ -829,7 +829,7 @@
         },
         {
             "description": "Constant Volumn Specific Heat f(H,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-volume-specific-heat-f_hs/",
             "id": "HSCV",
             "name": "HSCV",
             "parameters": [
@@ -854,7 +854,7 @@
         },
         {
             "description": "Speed of Sound f(H,S): (0)m/s, (1)ft/s, (2)m/s, (3)m/s",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/speed-of-sound-f_hs/",
             "id": "HSW",
             "name": "HSW",
             "parameters": [
@@ -879,7 +879,7 @@
         },
         {
             "description": "Enthalpy f(P,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/enthalpy-f_pq/",
             "id": "PQH",
             "name": "PQH",
             "parameters": [
@@ -904,7 +904,7 @@
         },
         {
             "description": "Entropy f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/entropy-f_pq/",
             "id": "PQS",
             "name": "PQS",
             "parameters": [
@@ -929,7 +929,7 @@
         },
         {
             "description": "Internal Energy f(P,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/internal-energy-f_pq/",
             "id": "PQU",
             "name": "PQU",
             "parameters": [
@@ -954,7 +954,7 @@
         },
         {
             "description": "Specific Volume f(P,Q): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/specific-volume-f_pq/",
             "id": "PQV",
             "name": "PQV",
             "parameters": [
@@ -979,7 +979,7 @@
         },
         {
             "description": "Constant Pressure Specific Heat f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-pressure-specific-heat-f_pq/",
             "id": "PQCP",
             "name": "PQCP",
             "parameters": [
@@ -1004,7 +1004,7 @@
         },
         {
             "description": "Constant Volumn Specific Heat f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-volume-specific-heat-f_pq/",
             "id": "PQCV",
             "name": "PQCV",
             "parameters": [
@@ -1029,7 +1029,7 @@
         },
         {
             "description": "Enthalpy f(T,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/enthalpy-f_tq/",
             "id": "TQH",
             "name": "TQH",
             "parameters": [
@@ -1054,7 +1054,7 @@
         },
         {
             "description": "Entropy f(T,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/entropy-f_tq/",
             "id": "TQS",
             "name": "TQS",
             "parameters": [
@@ -1079,7 +1079,7 @@
         },
         {
             "description": "Internal Energy f(T,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/internal-energy-f_tq/",
             "id": "TQU",
             "name": "TQU",
             "parameters": [
@@ -1104,7 +1104,7 @@
         },
         {
             "description": "Specific Volume f(T,Q): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/specific-volume-f_tq/",
             "id": "TQV",
             "name": "TQV",
             "parameters": [
@@ -1129,7 +1129,7 @@
         },
         {
             "description": "Constant Pressure Specific Heat f(T,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-pressure-specific-heat-f_tq/",
             "id": "TQCP",
             "name": "TQCP",
             "parameters": [
@@ -1154,7 +1154,7 @@
         },
         {
             "description": "Constant Volumn Specific Heat f(T,Q): (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/constant-volume-specific-heat-f_tq/",
             "id": "TQCV",
             "name": "TQCV",
             "parameters": [
@@ -1179,7 +1179,7 @@
         },
         {
             "description": "Viscosity f(P,T): (0)Pa·s, (1)lbf·s/ft³, (2)cP, (3)cP",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/viscosity-f_pt/",
             "id": "PTM",
             "name": "PTM",
             "parameters": [
@@ -1204,7 +1204,7 @@
         },
         {
             "description": "Thermal Conductivity f(P,T): (0)mW/(m·K), (1) BTU/(hr⋅ft⋅°F), (2)mW/(m·K), (3)mW/(m·K)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/thermal-conductivity-f_pt/",
             "id": "PTK",
             "name": "PTK",
             "parameters": [
@@ -1229,7 +1229,7 @@
         },
         {
             "description": "dPdT_V f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdt_v-f_pt/",
             "id": "DPDT_V_FPT",
             "name": "DPDT_V_FPT",
             "parameters": [
@@ -1254,7 +1254,7 @@
         },
         {
             "description": "dPdT_U f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdt_u-f_pt/",
             "id": "DPDT_U_FPT",
             "name": "DPDT_U_FPT",
             "parameters": [
@@ -1279,7 +1279,7 @@
         },
         {
             "description": "dPdT_H f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdt_h-f_pt/",
             "id": "DPDT_H_FPT",
             "name": "DPDT_H_FPT",
             "parameters": [
@@ -1304,7 +1304,7 @@
         },
         {
             "description": "dPdT_S f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdt_s-f_pt/",
             "id": "DPDT_S_FPT",
             "name": "DPDT_S_FPT",
             "parameters": [
@@ -1329,7 +1329,7 @@
         },
         {
             "description": "dPdV_T f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdv_t-f_pt/",
             "id": "DPDV_T_FPT",
             "name": "DPDV_T_FPT",
             "parameters": [
@@ -1354,7 +1354,7 @@
         },
         {
             "description": "dPdV_U f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdv_u-f_pt/",
             "id": "DPDV_U_FPT",
             "name": "DPDV_U_FPT",
             "parameters": [
@@ -1379,7 +1379,7 @@
         },
         {
             "description": "dPdV_H f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdv_h-f_pt/",
             "id": "DPDV_H_FPT",
             "name": "DPDV_H_FPT",
             "parameters": [
@@ -1404,7 +1404,7 @@
         },
         {
             "description": "dPdV_S f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdv_s-f_pt/",
             "id": "DPDV_S_FPT",
             "name": "DPDV_S_FPT",
             "parameters": [
@@ -1429,7 +1429,7 @@
         },
         {
             "description": "dPdU_T f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdu_t-f_pt/",
             "id": "DPDU_T_FPT",
             "name": "DPDU_T_FPT",
             "parameters": [
@@ -1454,7 +1454,7 @@
         },
         {
             "description": "dPdU_V f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdu_v-f_pt/",
             "id": "DPDU_V_FPT",
             "name": "DPDU_V_FPT",
             "parameters": [
@@ -1479,7 +1479,7 @@
         },
         {
             "description": "dPdU_H f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdu_h-f_pt/",
             "id": "DPDU_H_FPT",
             "name": "DPDU_H_FPT",
             "parameters": [
@@ -1504,7 +1504,7 @@
         },
         {
             "description": "dPdU_S f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdu_s-f_pt/",
             "id": "DPDU_S_FPT",
             "name": "DPDU_S_FPT",
             "parameters": [
@@ -1529,7 +1529,7 @@
         },
         {
             "description": "dPdH_T f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdh_t-f_pt/",
             "id": "DPDH_T_FPT",
             "name": "DPDH_T_FPT",
             "parameters": [
@@ -1554,7 +1554,7 @@
         },
         {
             "description": "dPdH_V f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdh_v-f_pt/",
             "id": "DPDH_V_FPT",
             "name": "DPDH_V_FPT",
             "parameters": [
@@ -1579,7 +1579,7 @@
         },
         {
             "description": "dPdH_U f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdh_u-f_pt/",
             "id": "DPDH_U_FPT",
             "name": "DPDH_U_FPT",
             "parameters": [
@@ -1604,7 +1604,7 @@
         },
         {
             "description": "dPdH_S f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpdh_s-f_pt/",
             "id": "DPDH_S_FPT",
             "name": "DPDH_S_FPT",
             "parameters": [
@@ -1629,7 +1629,7 @@
         },
         {
             "description": "dPdS_T f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpds_t-f_pt/",
             "id": "DPDS_T_FPT",
             "name": "DPDS_T_FPT",
             "parameters": [
@@ -1654,7 +1654,7 @@
         },
         {
             "description": "dPdS_V f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpds_v-f_pt/",
             "id": "DPDS_V_FPT",
             "name": "DPDS_V_FPT",
             "parameters": [
@@ -1679,7 +1679,7 @@
         },
         {
             "description": "dPdS_U f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpds_u-f_pt/",
             "id": "DPDS_U_FPT",
             "name": "DPDS_U_FPT",
             "parameters": [
@@ -1704,7 +1704,7 @@
         },
         {
             "description": "dPdS_H f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dpds_h-f_pt/",
             "id": "DPDS_H_FPT",
             "name": "DPDS_H_FPT",
             "parameters": [
@@ -1729,7 +1729,7 @@
         },
         {
             "description": "dTdP_V f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdp_v-f_pt/",
             "id": "DTDP_V_FPT",
             "name": "DTDP_V_FPT",
             "parameters": [
@@ -1754,7 +1754,7 @@
         },
         {
             "description": "dTdP_U f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdp_u-f_pt/",
             "id": "DTDP_U_FPT",
             "name": "DTDP_U_FPT",
             "parameters": [
@@ -1779,7 +1779,7 @@
         },
         {
             "description": "dTdP_H f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdp_h-f_pt/",
             "id": "DTDP_H_FPT",
             "name": "DTDP_H_FPT",
             "parameters": [
@@ -1804,7 +1804,7 @@
         },
         {
             "description": "dTdP_S f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdp_s-f_pt/",
             "id": "DTDP_S_FPT",
             "name": "DTDP_S_FPT",
             "parameters": [
@@ -1829,7 +1829,7 @@
         },
         {
             "description": "dTdV_P f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdv_p-f_pt/",
             "id": "DTDV_P_FPT",
             "name": "DTDV_P_FPT",
             "parameters": [
@@ -1854,7 +1854,7 @@
         },
         {
             "description": "dTdV_U f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdv_u-f_pt/",
             "id": "DTDV_U_FPT",
             "name": "DTDV_U_FPT",
             "parameters": [
@@ -1879,7 +1879,7 @@
         },
         {
             "description": "dTdV_H f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdv_h-f_pt/",
             "id": "DTDV_H_FPT",
             "name": "DTDV_H_FPT",
             "parameters": [
@@ -1904,7 +1904,7 @@
         },
         {
             "description": "dTdV_S f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdv_s-f_pt/",
             "id": "DTDV_S_FPT",
             "name": "DTDV_S_FPT",
             "parameters": [
@@ -1929,7 +1929,7 @@
         },
         {
             "description": "dTdU_P f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdu_p-f_pt/",
             "id": "DTDU_P_FPT",
             "name": "DTDU_P_FPT",
             "parameters": [
@@ -1954,7 +1954,7 @@
         },
         {
             "description": "dTdU_V f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdu_v-f_pt/",
             "id": "DTDU_V_FPT",
             "name": "DTDU_V_FPT",
             "parameters": [
@@ -1979,7 +1979,7 @@
         },
         {
             "description": "dTdU_H f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdu_h-f_pt/",
             "id": "DTDU_H_FPT",
             "name": "DTDU_H_FPT",
             "parameters": [
@@ -2004,7 +2004,7 @@
         },
         {
             "description": "dTdU_S f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdu_s-f_pt/",
             "id": "DTDU_S_FPT",
             "name": "DTDU_S_FPT",
             "parameters": [
@@ -2029,7 +2029,7 @@
         },
         {
             "description": "dTdH_P f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdh_p-f_pt/",
             "id": "DTDH_P_FPT",
             "name": "DTDH_P_FPT",
             "parameters": [
@@ -2054,7 +2054,7 @@
         },
         {
             "description": "dTdH_V f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdh_v-f_pt/",
             "id": "DTDH_V_FPT",
             "name": "DTDH_V_FPT",
             "parameters": [
@@ -2079,7 +2079,7 @@
         },
         {
             "description": "dTdH_U f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdh_u-f_pt/",
             "id": "DTDH_U_FPT",
             "name": "DTDH_U_FPT",
             "parameters": [
@@ -2104,7 +2104,7 @@
         },
         {
             "description": "dTdH_S f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtdh_s-f_pt/",
             "id": "DTDH_S_FPT",
             "name": "DTDH_S_FPT",
             "parameters": [
@@ -2129,7 +2129,7 @@
         },
         {
             "description": "dTdS_P f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtds_p-f_pt/",
             "id": "DTDS_P_FPT",
             "name": "DTDS_P_FPT",
             "parameters": [
@@ -2154,7 +2154,7 @@
         },
         {
             "description": "dTdS_V f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtds_v-f_pt/",
             "id": "DTDS_V_FPT",
             "name": "DTDS_V_FPT",
             "parameters": [
@@ -2179,7 +2179,7 @@
         },
         {
             "description": "dTdS_U f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtds_u-f_pt/",
             "id": "DTDS_U_FPT",
             "name": "DTDS_U_FPT",
             "parameters": [
@@ -2204,7 +2204,7 @@
         },
         {
             "description": "dTdS_H f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dtds_h-f_pt/",
             "id": "DTDS_H_FPT",
             "name": "DTDS_H_FPT",
             "parameters": [
@@ -2229,7 +2229,7 @@
         },
         {
             "description": "dVdP_T f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdp_t-f_pt/",
             "id": "DVDP_T_FPT",
             "name": "DVDP_T_FPT",
             "parameters": [
@@ -2254,7 +2254,7 @@
         },
         {
             "description": "dVdP_U f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdp_u-f_pt/",
             "id": "DVDP_U_FPT",
             "name": "DVDP_U_FPT",
             "parameters": [
@@ -2279,7 +2279,7 @@
         },
         {
             "description": "dVdP_H f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdp_h-f_pt/",
             "id": "DVDP_H_FPT",
             "name": "DVDP_H_FPT",
             "parameters": [
@@ -2304,7 +2304,7 @@
         },
         {
             "description": "dVdP_S f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdp_s-f_pt/",
             "id": "DVDP_S_FPT",
             "name": "DVDP_S_FPT",
             "parameters": [
@@ -2329,7 +2329,7 @@
         },
         {
             "description": "dVdT_P f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdt_p-f_pt/",
             "id": "DVDT_P_FPT",
             "name": "DVDT_P_FPT",
             "parameters": [
@@ -2354,7 +2354,7 @@
         },
         {
             "description": "dVdT_U f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdt_u-f_pt/",
             "id": "DVDT_U_FPT",
             "name": "DVDT_U_FPT",
             "parameters": [
@@ -2379,7 +2379,7 @@
         },
         {
             "description": "dVdT_H f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdt_h-f_pt/",
             "id": "DVDT_H_FPT",
             "name": "DVDT_H_FPT",
             "parameters": [
@@ -2404,7 +2404,7 @@
         },
         {
             "description": "dVdT_S f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdt_s-f_pt/",
             "id": "DVDT_S_FPT",
             "name": "DVDT_S_FPT",
             "parameters": [
@@ -2429,7 +2429,7 @@
         },
         {
             "description": "dVdU_P f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdu_p-f_pt/",
             "id": "DVDU_P_FPT",
             "name": "DVDU_P_FPT",
             "parameters": [
@@ -2454,7 +2454,7 @@
         },
         {
             "description": "dVdU_T f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdu_t-f_pt/",
             "id": "DVDU_T_FPT",
             "name": "DVDU_T_FPT",
             "parameters": [
@@ -2479,7 +2479,7 @@
         },
         {
             "description": "dVdU_H f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdu_h-f_pt/",
             "id": "DVDU_H_FPT",
             "name": "DVDU_H_FPT",
             "parameters": [
@@ -2504,7 +2504,7 @@
         },
         {
             "description": "dVdU_S f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdu_s-f_pt/",
             "id": "DVDU_S_FPT",
             "name": "DVDU_S_FPT",
             "parameters": [
@@ -2529,7 +2529,7 @@
         },
         {
             "description": "dVdH_P f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdh_p-f_pt/",
             "id": "DVDH_P_FPT",
             "name": "DVDH_P_FPT",
             "parameters": [
@@ -2554,7 +2554,7 @@
         },
         {
             "description": "dVdH_T f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdh_t-f_pt/",
             "id": "DVDH_T_FPT",
             "name": "DVDH_T_FPT",
             "parameters": [
@@ -2579,7 +2579,7 @@
         },
         {
             "description": "dVdH_U f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdh_u-f_pt/",
             "id": "DVDH_U_FPT",
             "name": "DVDH_U_FPT",
             "parameters": [
@@ -2629,7 +2629,7 @@
         },
         {
             "description": "dVdS_P f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvdh_s-f_pt/",
             "id": "DVDS_P_FPT",
             "name": "DVDS_P_FPT",
             "parameters": [
@@ -2654,7 +2654,7 @@
         },
         {
             "description": "dVdS_T f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvds_t-f_pt/",
             "id": "DVDS_T_FPT",
             "name": "DVDS_T_FPT",
             "parameters": [
@@ -2679,7 +2679,7 @@
         },
         {
             "description": "dVdS_U f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvds_u-f_pt/",
             "id": "DVDS_U_FPT",
             "name": "DVDS_U_FPT",
             "parameters": [
@@ -2704,7 +2704,7 @@
         },
         {
             "description": "dVdS_H f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dvds_h-f_pt/",
             "id": "DVDS_H_FPT",
             "name": "DVDS_H_FPT",
             "parameters": [
@@ -2729,7 +2729,7 @@
         },
         {
             "description": "dUdP_T f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudp_t-f_pt/",
             "id": "DUDP_T_FPT",
             "name": "DUDP_T_FPT",
             "parameters": [
@@ -2754,7 +2754,7 @@
         },
         {
             "description": "dUdP_V f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudp_v-f_pt/",
             "id": "DUDP_V_FPT",
             "name": "DUDP_V_FPT",
             "parameters": [
@@ -2779,7 +2779,7 @@
         },
         {
             "description": "dUdP_H f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudp_h-f_pt/",
             "id": "DUDP_H_FPT",
             "name": "DUDP_H_FPT",
             "parameters": [
@@ -2804,7 +2804,7 @@
         },
         {
             "description": "dUdP_S f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudp_s-f_pt/",
             "id": "DUDP_S_FPT",
             "name": "DUDP_S_FPT",
             "parameters": [
@@ -2829,7 +2829,7 @@
         },
         {
             "description": "dUdT_P f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudt_p-f_pt/",
             "id": "DUDT_P_FPT",
             "name": "DUDT_P_FPT",
             "parameters": [
@@ -2854,7 +2854,7 @@
         },
         {
             "description": "dUdT_V f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudt_v-f_pt/",
             "id": "DUDT_V_FPT",
             "name": "DUDT_V_FPT",
             "parameters": [
@@ -2879,7 +2879,7 @@
         },
         {
             "description": "dUdT_H f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudt_h-f_pt/",
             "id": "DUDT_H_FPT",
             "name": "DUDT_H_FPT",
             "parameters": [
@@ -2904,7 +2904,7 @@
         },
         {
             "description": "dUdT_S f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudt_s-f_pt/",
             "id": "DUDT_S_FPT",
             "name": "DUDT_S_FPT",
             "parameters": [
@@ -2929,7 +2929,7 @@
         },
         {
             "description": "dUdV_P f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudv_p-f_pt/",
             "id": "DUDV_P_FPT",
             "name": "DUDV_P_FPT",
             "parameters": [
@@ -2954,7 +2954,7 @@
         },
         {
             "description": "dUdV_T f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudv_t-f_pt/",
             "id": "DUDV_T_FPT",
             "name": "DUDV_T_FPT",
             "parameters": [
@@ -2979,7 +2979,7 @@
         },
         {
             "description": "dUdV_H f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudv_h-f_pt/",
             "id": "DUDV_H_FPT",
             "name": "DUDV_H_FPT",
             "parameters": [
@@ -3004,7 +3004,7 @@
         },
         {
             "description": "dUdV_S f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudv_s-f_pt/",
             "id": "DUDV_S_FPT",
             "name": "DUDV_S_FPT",
             "parameters": [
@@ -3029,7 +3029,7 @@
         },
         {
             "description": "dUdH_P f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudh_p-f_pt/",
             "id": "DUDH_P_FPT",
             "name": "DUDH_P_FPT",
             "parameters": [
@@ -3054,7 +3054,7 @@
         },
         {
             "description": "dUdH_T f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudh_t-f_pt/",
             "id": "DUDH_T_FPT",
             "name": "DUDH_T_FPT",
             "parameters": [
@@ -3079,7 +3079,7 @@
         },
         {
             "description": "dUdH_V f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudh_v-f_pt/",
             "id": "DUDH_V_FPT",
             "name": "DUDH_V_FPT",
             "parameters": [
@@ -3104,7 +3104,7 @@
         },
         {
             "description": "dUdH_S f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dudh_s-f_pt/",
             "id": "DUDH_S_FPT",
             "name": "DUDH_S_FPT",
             "parameters": [
@@ -3129,7 +3129,7 @@
         },
         {
             "description": "dUdS_P f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/duds_p-f_pt/",
             "id": "DUDS_P_FPT",
             "name": "DUDS_P_FPT",
             "parameters": [
@@ -3154,7 +3154,7 @@
         },
         {
             "description": "dUdS_T f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/duds_t-f_pt/",
             "id": "DUDS_T_FPT",
             "name": "DUDS_T_FPT",
             "parameters": [
@@ -3179,7 +3179,7 @@
         },
         {
             "description": "dUdS_V f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/duds_v-f_pt/",
             "id": "DUDS_V_FPT",
             "name": "DUDS_V_FPT",
             "parameters": [
@@ -3204,7 +3204,7 @@
         },
         {
             "description": "dUdS_H f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/duds_h-f_pt/",
             "id": "DUDS_H_FPT",
             "name": "DUDS_H_FPT",
             "parameters": [
@@ -3229,7 +3229,7 @@
         },
         {
             "description": "dHdP_T f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdp_t-f_pt/",
             "id": "DHDP_T_FPT",
             "name": "DHDP_T_FPT",
             "parameters": [
@@ -3254,7 +3254,7 @@
         },
         {
             "description": "dHdP_V f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdp_v-f_pt/",
             "id": "DHDP_V_FPT",
             "name": "DHDP_V_FPT",
             "parameters": [
@@ -3279,7 +3279,7 @@
         },
         {
             "description": "dHdP_U f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdp_u-f_pt/",
             "id": "DHDP_U_FPT",
             "name": "DHDP_U_FPT",
             "parameters": [
@@ -3304,7 +3304,7 @@
         },
         {
             "description": "dHdP_S f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdp_s-f_pt/",
             "id": "DHDP_S_FPT",
             "name": "DHDP_S_FPT",
             "parameters": [
@@ -3329,7 +3329,7 @@
         },
         {
             "description": "dHdT_P f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdt_p-f_pt/",
             "id": "DHDT_P_FPT",
             "name": "DHDT_P_FPT",
             "parameters": [
@@ -3354,7 +3354,7 @@
         },
         {
             "description": "dHdT_V f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdt_v-f_pt/",
             "id": "DHDT_V_FPT",
             "name": "DHDT_V_FPT",
             "parameters": [
@@ -3379,7 +3379,7 @@
         },
         {
             "description": "dHdT_U f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdt_u-f_pt/",
             "id": "DHDT_U_FPT",
             "name": "DHDT_U_FPT",
             "parameters": [
@@ -3404,7 +3404,7 @@
         },
         {
             "description": "dHdT_S f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdt_s-f_pt/",
             "id": "DHDT_S_FPT",
             "name": "DHDT_S_FPT",
             "parameters": [
@@ -3429,7 +3429,7 @@
         },
         {
             "description": "dHdV_P f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdv_p-f_pt/",
             "id": "DHDV_P_FPT",
             "name": "DHDV_P_FPT",
             "parameters": [
@@ -3454,7 +3454,7 @@
         },
         {
             "description": "dHdV_T f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdv_t-f_pt/",
             "id": "DHDV_T_FPT",
             "name": "DHDV_T_FPT",
             "parameters": [
@@ -3479,7 +3479,7 @@
         },
         {
             "description": "dHdV_U f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdv_u-f_pt/",
             "id": "DHDV_U_FPT",
             "name": "DHDV_U_FPT",
             "parameters": [
@@ -3504,7 +3504,7 @@
         },
         {
             "description": "dHdV_S f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdv_s-f_pt/",
             "id": "DHDV_S_FPT",
             "name": "DHDV_S_FPT",
             "parameters": [
@@ -3529,7 +3529,7 @@
         },
         {
             "description": "dHdU_P f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdu_p-f_pt/",
             "id": "DHDU_P_FPT",
             "name": "DHDU_P_FPT",
             "parameters": [
@@ -3554,7 +3554,7 @@
         },
         {
             "description": "dHdU_T f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdu_t-f_pt/",
             "id": "DHDU_T_FPT",
             "name": "DHDU_T_FPT",
             "parameters": [
@@ -3579,7 +3579,7 @@
         },
         {
             "description": "dHdU_V f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdu_v-f_pt/",
             "id": "DHDU_V_FPT",
             "name": "DHDU_V_FPT",
             "parameters": [
@@ -3604,7 +3604,7 @@
         },
         {
             "description": "dHdU_S f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhdu_s-f_pt/",
             "id": "DHDU_S_FPT",
             "name": "DHDU_S_FPT",
             "parameters": [
@@ -3629,7 +3629,7 @@
         },
         {
             "description": "dHdS_P f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhds_p-f_pt/",
             "id": "DHDS_P_FPT",
             "name": "DHDS_P_FPT",
             "parameters": [
@@ -3654,7 +3654,7 @@
         },
         {
             "description": "dHdS_T f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhds_t-f_pt/",
             "id": "DHDS_T_FPT",
             "name": "DHDS_T_FPT",
             "parameters": [
@@ -3679,7 +3679,7 @@
         },
         {
             "description": "dHdS_V f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhds_v-f_pt/",
             "id": "DHDS_V_FPT",
             "name": "DHDS_V_FPT",
             "parameters": [
@@ -3704,7 +3704,7 @@
         },
         {
             "description": "dHdS_U f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dhds_u-f_pt/",
             "id": "DHDS_U_FPT",
             "name": "DHDS_U_FPT",
             "parameters": [
@@ -3729,7 +3729,7 @@
         },
         {
             "description": "dSdP_T f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdp_t-f_pt/",
             "id": "DSDP_T_FPT",
             "name": "DSDP_T_FPT",
             "parameters": [
@@ -3754,7 +3754,7 @@
         },
         {
             "description": "dSdP_V f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdp_v-f_pt/",
             "id": "DSDP_V_FPT",
             "name": "DSDP_V_FPT",
             "parameters": [
@@ -3779,7 +3779,7 @@
         },
         {
             "description": "dSdP_U f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdp_u-f_pt/",
             "id": "DSDP_U_FPT",
             "name": "DSDP_U_FPT",
             "parameters": [
@@ -3804,7 +3804,7 @@
         },
         {
             "description": "dSdP_H f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdp_h-f_pt/",
             "id": "DSDP_H_FPT",
             "name": "DSDP_H_FPT",
             "parameters": [
@@ -3829,7 +3829,7 @@
         },
         {
             "description": "dSdT_P f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdt_p-f_pt/",
             "id": "DSDT_P_FPT",
             "name": "DSDT_P_FPT",
             "parameters": [
@@ -3854,7 +3854,7 @@
         },
         {
             "description": "dSdT_V f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdt_v-f_pt/",
             "id": "DSDT_V_FPT",
             "name": "DSDT_V_FPT",
             "parameters": [
@@ -3879,7 +3879,7 @@
         },
         {
             "description": "dSdT_U f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdt_u-f_pt/",
             "id": "DSDT_U_FPT",
             "name": "DSDT_U_FPT",
             "parameters": [
@@ -3904,7 +3904,7 @@
         },
         {
             "description": "dSdT_H f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdt_h-f_pt/",
             "id": "DSDT_H_FPT",
             "name": "DSDT_H_FPT",
             "parameters": [
@@ -3929,7 +3929,7 @@
         },
         {
             "description": "dSdV_P f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdv_p-f_pt/",
             "id": "DSDV_P_FPT",
             "name": "DSDV_P_FPT",
             "parameters": [
@@ -3954,7 +3954,7 @@
         },
         {
             "description": "dSdV_T f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdv_t-f_pt/",
             "id": "DSDV_T_FPT",
             "name": "DSDV_T_FPT",
             "parameters": [
@@ -3979,7 +3979,7 @@
         },
         {
             "description": "dSdV_U f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdv_u-f_pt/",
             "id": "DSDV_U_FPT",
             "name": "DSDV_U_FPT",
             "parameters": [
@@ -4004,7 +4004,7 @@
         },
         {
             "description": "dSdV_H f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdv_h-f_pt/",
             "id": "DSDV_H_FPT",
             "name": "DSDV_H_FPT",
             "parameters": [
@@ -4029,7 +4029,7 @@
         },
         {
             "description": "dSdU_P f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdu_p-f_pt/",
             "id": "DSDU_P_FPT",
             "name": "DSDU_P_FPT",
             "parameters": [
@@ -4054,7 +4054,7 @@
         },
         {
             "description": "dSdU_T f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdu_t-f_pt/",
             "id": "DSDU_T_FPT",
             "name": "DSDU_T_FPT",
             "parameters": [
@@ -4079,7 +4079,7 @@
         },
         {
             "description": "dSdU_V f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdu_v-f_pt/",
             "id": "DSDU_V_FPT",
             "name": "DSDU_V_FPT",
             "parameters": [
@@ -4104,7 +4104,7 @@
         },
         {
             "description": "dSdU_H f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdu_h-f_pt/",
             "id": "DSDU_H_FPT",
             "name": "DSDU_H_FPT",
             "parameters": [
@@ -4129,7 +4129,7 @@
         },
         {
             "description": "dSdH_P f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdh_p-f_pt/",
             "id": "DSDH_P_FPT",
             "name": "DSDH_P_FPT",
             "parameters": [
@@ -4154,7 +4154,7 @@
         },
         {
             "description": "dSdH_T f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdh_t-f_pt/",
             "id": "DSDH_T_FPT",
             "name": "DSDH_T_FPT",
             "parameters": [
@@ -4179,7 +4179,7 @@
         },
         {
             "description": "dSdH_V f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdh_v-f_pt/",
             "id": "DSDH_V_FPT",
             "name": "DSDH_V_FPT",
             "parameters": [
@@ -4204,7 +4204,7 @@
         },
         {
             "description": "dSdH_U f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "https://h2othermo/functions/dsdh_u-f_pt/",
             "id": "DSDH_U_FPT",
             "name": "DSDH_U_FPT",
             "parameters": [
@@ -4221,41 +4221,6 @@
                 {
                     "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
                     "name": "units",
-                    "optional": true,
-                    "type": "number"
-                }
-            ],
-            "result": {}
-        },
-        {
-            "description": "Returns requested parameter f(P,T): Specified Return Parameter in Units Specified",
-            "helpUrl": "http://InfoPogo.com",
-            "id": "FPT",
-            "name": "FPT",
-            "parameters": [
-                {
-                    "description": "(0)MPa, (1)psia, (2)bara, (3)kPa",
-                    "name": "pressure",
-                    "type": "number"
-                },
-                {
-                    "description": "(0)K, (1)°F, (2)°C, (3)°C",
-                    "name": "temperature",
-                    "type": "number"
-                },
-                {
-                    "name": "returnName",
-                    "type": "any"
-                },
-                {
-                    "description": "(0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa",
-                    "name": "units",
-                    "optional": true,
-                    "type": "number"
-                },
-                {
-                    "description": "false=normal, true=metastable",
-                    "name": "metastable",
                     "optional": true,
                     "type": "number"
                 }
