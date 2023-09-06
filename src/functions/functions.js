@@ -145,7 +145,7 @@ const returnName = {
 /**
  * Sat Pressure f(T): (0)MPa, (1)psia, (2)bara, (3)kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/saturation-pressure-f_t/
+ * @helpurl https://h2othermo/functions/saturation-pressure-f_t/
  * @param {number} temperature (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa, (1)psia, (2)bara, (3)kPa
@@ -158,7 +158,7 @@ export function TP(temperature, units) {
 /**
  * Sat Temperature f(P):  (0)K, (1)°F, (2)°C, (3)°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/saturation-temperature-f_p/
+ * @helpurl https://h2othermo/functions/saturation-temperature-f_p/
  * @param {number} pressure(0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns  (0)K, (1)°F, (2)°C, (3)°C
@@ -172,7 +172,7 @@ export function PT(pressure, units) {
 /**
  * Surface Tension f(T): (0)mN/m, (1)lbf/ft, (2)mN/m, (3)mN/m
  * @customfunction
- * @helpurl https://www.h2othermo/functions/surface-tension-f_t/
+ * @helpurl https://h2othermo/functions/surface-tension-f_t/
  * @param {number} temperature (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)mN/m, (1)lbf/ft, (2)mN/m, (3)mN/m
@@ -185,7 +185,7 @@ export function TY(temperature, units) {
 /**
  * Enthalpy f(P,T): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/enthalpy-f_pt/
+ * @helpurl https://h2othermo/functions/enthalpy-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -200,7 +200,7 @@ export function PTH(pressure, temperature, units, metastable) {
 /**
  * Entropy f(P,T): (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/entropy-f_pt/
+ * @helpurl https://h2othermo/functions/entropy-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -215,7 +215,7 @@ export function PTS(pressure, temperature, units, metastable) {
 /**
  * Internal Energy f(P,T): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/internal-energy-f_pt/
+ * @helpurl https://h2othermo/functions/internal-energy-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -230,7 +230,7 @@ export function PTU(pressure, temperature, units, metastable) {
 /**
  * Specific Volume f(P,T): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/specific-volume-f_pt/
+ * @helpurl https://h2othermo/functions/specific-volume-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -245,7 +245,7 @@ export function PTV(pressure, temperature, units, metastable) {
 /**
  * Constant Pressure Specific Heat f(P,T): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-pressure-specific-heat-f_pt/
+ * @helpurl https://h2othermo/functions/constant-pressure-specific-heat-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -260,7 +260,7 @@ export function PTCp(pressure, temperature, units, metastable) {
 /**
  * Constant Volumn Specific Heat f(P,T): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-volume-specific-heat-f_pt/
+ * @helpurl https://h2othermo/functions/constant-volume-specific-heat-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -275,7 +275,7 @@ export function PTCv(pressure, temperature, units, metastable) {
 /**
  * Speed of Sound f(P,T): (0)m/s, (1)ft/s, (2)m/s, (3)m/s
  * @customfunction
- * @helpurl https://www.h2othermo/functions/speed-of-sound-f_pt/
+ * @helpurl https://h2othermo/functions/speed-of-sound-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -290,7 +290,7 @@ export function PTW(pressure, temperature, units, metastable) {
 /**
  * Temperature f(P,H):  (0)K, (1)°F, (2)°C, (3)°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/temperature-f_ph/
+ * @helpurl https://h2othermo/functions/temperature-f_ph/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -304,7 +304,7 @@ export function PHT(pressure, enthalpy, units) {
 /**
  * Specific Entropy f(P,H): (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/entropy-f_ph/
+ * @helpurl https://h2othermo/functions/entropy-f_ph/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -318,7 +318,7 @@ export function PHS(pressure, enthalpy, units) {
 /**
  * Internal Energy f(P,H): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/internal-energy-f_ph/
+ * @helpurl https://h2othermo/functions/internal-energy-f_ph/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -332,7 +332,7 @@ export function PHU(pressure, enthalpy, units) {
 /**
  * Specific Volume f(P,H): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/specific-volume-f_ph/
+ * @helpurl https://h2othermo/functions/specific-volume-f_ph/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -346,7 +346,7 @@ export function PHV(pressure, enthalpy, units) {
 /**
  * Constant Pressure Specific Heat f(P,H): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-pressure-specific-heat-f_ph/
+ * @helpurl https://h2othermo/functions/constant-pressure-specific-heat-f_ph/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -360,7 +360,7 @@ export function PHCp(pressure, enthalpy, units) {
 /**
  * Constant Volumn Specific Heat f(P,H): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-volume-specific-heat-f_ph/
+ * @helpurl https://h2othermo/functions/constant-volume-specific-heat-f_ph/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -374,7 +374,7 @@ export function PHCv(pressure, enthalpy, units) {
 /**
  * Speed of Sound f(P,H): (0)m/s, (1)ft/s, (2)m/s, (3)m/s
  * @customfunction
- * @helpurl https://www.h2othermo/functions/speed-of-sound-f_ph/
+ * @helpurl https://h2othermo/functions/speed-of-sound-f_ph/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -388,7 +388,7 @@ export function PHW(pressure, enthalpy, units) {
 /**
  * Quality f(P,H): dimensionless
  * @customfunction
- * @helpurl https://www.h2othermo/functions/quality-f_ph/
+ * @helpurl https://h2othermo/functions/quality-f_ph/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -402,7 +402,7 @@ export function PHQ(pressure, enthalpy, units) {
 /**
  * Temperature f(P,S):  (0)K, (1)°F, (2)°C, (3)°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/temperature-f_ps/
+ * @helpurl https://h2othermo/functions/temperature-f_ps/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -416,7 +416,7 @@ export function PST(pressure, entropy, units) {
 /**
  * Enthalpy f(P,S): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/enthalpy-f_ps/
+ * @helpurl https://h2othermo/functions/enthalpy-f_ps/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -430,7 +430,7 @@ export function PSH(pressure, entropy, units) {
 /**
  * Internal Energy f(P,S): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/internal-energy-f_ps/
+ * @helpurl https://h2othermo/functions/internal-energy-f_ps/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -444,7 +444,7 @@ export function PSU(pressure, entropy, units) {
 /**
  * Specific Volume f(P,S): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/specific-volume-f_ps/
+ * @helpurl https://h2othermo/functions/specific-volume-f_ps/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -458,7 +458,7 @@ export function PSV(pressure, entropy, units) {
 /**
  * Constant Pressure Specific Heat f(P,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-pressure-specific-heat-f_ps/
+ * @helpurl https://h2othermo/functions/constant-pressure-specific-heat-f_ps/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -472,7 +472,7 @@ export function PSCp(pressure, entropy, units) {
 /**
  * Constant Volumn Specific Heat f(P,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-volume-specific-heat-f_ps/
+ * @helpurl https://h2othermo/functions/constant-volume-specific-heat-f_ps/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -486,7 +486,7 @@ export function PSCv(pressure, entropy, units) {
 /**
  * Speed of Sound f(P,S): (0)m/s, (1)ft/s, (2)m/s, (3)m/s
  * @customfunction
- * @helpurl https://www.h2othermo/functions/speed-of-sound-f_ps/
+ * @helpurl https://h2othermo/functions/speed-of-sound-f_ps/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -500,7 +500,7 @@ export function PSW(pressure, entropy, units) {
 /**
  * Quality f(P,S): dimensionless
  * @customfunction
- * @helpurl https://www.h2othermo/functions/quality-f_ps/
+ * @helpurl https://h2othermo/functions/quality-f_ps/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -514,7 +514,7 @@ export function PSQ(pressure, entropy, units) {
 /**
  * Pressure f(H,S): (0)MPa, (1)psia, (2)bara, (3)kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/pressure-f_hs/
+ * @helpurl https://h2othermo/functions/pressure-f_hs/
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -528,7 +528,7 @@ export function HSP(enthalpy, entropy, units) {
 /**
  * Temperature f(H,S):  (0)K, (1)°F, (2)°C, (3)°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/temperature-f_hs/
+ * @helpurl https://h2othermo/functions/temperature-f_hs/
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -542,7 +542,7 @@ export function HST(enthalpy, entropy, units) {
 /**
  * Quality f(H,S): dimensionless
  * @customfunction
- * @helpurl https://www.h2othermo/functions/quality-f_hs/
+ * @helpurl https://h2othermo/functions/quality-f_hs/
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -556,7 +556,7 @@ export function HSQ(enthalpy, entropy, units) {
 /**
  * Internal Energy f(H,S): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/internal-energy-f_hs/
+ * @helpurl https://h2othermo/functions/internal-energy-f_hs/
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -570,7 +570,7 @@ export function HSU(enthalpy, entropy, units) {
 /**
  * Specific Volume f(H,S): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/specific-volume-f_hs/
+ * @helpurl https://h2othermo/functions/specific-volume-f_hs/
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -584,7 +584,7 @@ export function HSV(enthalpy, entropy, units) {
 /**
  * Constant Pressure Specific Heat f(H,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-pressure-specific-heat-f_hs/
+ * @helpurl https://h2othermo/functions/constant-pressure-specific-heat-f_hs/
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -598,7 +598,7 @@ export function HSCp(enthalpy, entropy, units) {
 /**
  * Constant Volumn Specific Heat f(H,S): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-volume-specific-heat-f_hs/
+ * @helpurl https://h2othermo/functions/constant-volume-specific-heat-f_hs/
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -612,7 +612,7 @@ export function HSCv(enthalpy, entropy, units) {
 /**
  * Speed of Sound f(H,S): (0)m/s, (1)ft/s, (2)m/s, (3)m/s
  * @customfunction
- * @helpurl https://www.h2othermo/functions/speed-of-sound-f_hs/
+ * @helpurl https://h2othermo/functions/speed-of-sound-f_hs/
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -626,7 +626,7 @@ export function HSW(enthalpy, entropy, units) {
 /**
  * Enthalpy f(P,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/enthalpy-f_pq/
+ * @helpurl https://h2othermo/functions/enthalpy-f_pq/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -640,7 +640,7 @@ export function PQH(pressure, quality, units) {
 /**
  * Entropy f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/entropy-f_pq/
+ * @helpurl https://h2othermo/functions/entropy-f_pq/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -654,7 +654,7 @@ export function PQS(pressure, quality, units) {
 /**
  * Internal Energy f(P,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/internal-energy-f_pq/
+ * @helpurl https://h2othermo/functions/internal-energy-f_pq/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -668,7 +668,7 @@ export function PQU(pressure, quality, units) {
 /**
  * Specific Volume f(P,Q): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/specific-volume-f_pq/
+ * @helpurl https://h2othermo/functions/specific-volume-f_pq/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -682,7 +682,7 @@ export function PQV(pressure, quality, units) {
 /**
  * Constant Pressure Specific Heat f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-pressure-specific-heat-f_pq/
+ * @helpurl https://h2othermo/functions/constant-pressure-specific-heat-f_pq/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -696,7 +696,7 @@ export function PQCp(pressure, quality, units) {
 /**
  * Constant Volumn Specific Heat f(P,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-volume-specific-heat-f_pq/
+ * @helpurl https://h2othermo/functions/constant-volume-specific-heat-f_pq/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -710,7 +710,7 @@ export function PQCv(pressure, quality, units) {
 /**
  * Enthalpy f(T,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/enthalpy-f_tq/
+ * @helpurl https://h2othermo/functions/enthalpy-f_tq/
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -724,7 +724,7 @@ export function TQH(temperature, quality, units) {
 /**
  * Entropy f(T,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/entropy-f_tq/
+ * @helpurl https://h2othermo/functions/entropy-f_tq/
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -738,7 +738,7 @@ export function TQS(temperature, quality, units) {
 /**
  * Internal Energy f(T,Q): (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/internal-energy-f_tq/
+ * @helpurl https://h2othermo/functions/internal-energy-f_tq/
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -752,7 +752,7 @@ export function TQU(temperature, quality, units) {
 /**
  * Specific Volume f(T,Q): (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @customfunction
- * @helpurl https://www.h2othermo/functions/specific-volume-f_tq/
+ * @helpurl https://h2othermo/functions/specific-volume-f_tq/
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -766,7 +766,7 @@ export function TQV(temperature, quality, units) {
 /**
  * Constant Pressure Specific Heat f(T,Q): 0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-pressure-specific-heat-f_tq/
+ * @helpurl https://h2othermo/functions/constant-pressure-specific-heat-f_tq/
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -780,7 +780,7 @@ export function TQCp(temperature, quality, units) {
 /**
  * Constant Volumn Specific Heat f(T,Q): (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/constant-volume-specific-heat-f_tq/
+ * @helpurl https://h2othermo/functions/constant-volume-specific-heat-f_tq/
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} quality dimensionless
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -794,7 +794,7 @@ export function TQCv(temperature, quality, units) {
 /**
  * Viscosity f(P,T): (0)Pa·s, (1)lbf·s/ft³, (2)cP, (3)cP
  * @customfunction
- * @helpurl https://www.h2othermo/functions/viscosity-f_pt/
+ * @helpurl https://h2othermo/functions/viscosity-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -808,7 +808,7 @@ export function PTM(pressure, temperature, units) {
 /**
  * Thermal Conductivity f(P,T): (0)mW/(m·K), (1) BTU/(hr⋅ft⋅°F), (2)mW/(m·K), (3)mW/(m·K)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/thermal-conductivity-f_pt/
+ * @helpurl https://h2othermo/functions/thermal-conductivity-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -822,7 +822,7 @@ export function PTK(pressure, temperature, units) {
 /**
  * dPdT_V f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdt_v-f_pt/
+ * @helpurl https://h2othermo/functions/dpdt_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -836,7 +836,7 @@ export function dPdT_V_fPT(pressure, temperature, units) {
 /**
  * dPdT_U f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdt_u-f_pt/
+ * @helpurl https://h2othermo/functions/dpdt_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -850,7 +850,7 @@ export function dPdT_U_fPT(pressure, temperature, units) {
 /**
  * dPdT_H f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdt_h-f_pt/
+ * @helpurl https://h2othermo/functions/dpdt_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -864,7 +864,7 @@ export function dPdT_H_fPT(pressure, temperature, units) {
 /**
  * dPdT_S f(P,T): (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdt_s-f_pt/
+ * @helpurl https://h2othermo/functions/dpdt_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -878,7 +878,7 @@ export function dPdT_S_fPT(pressure, temperature, units) {
 /**
  * dPdV_T f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdv_t-f_pt/
+ * @helpurl https://h2othermo/functions/dpdv_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -892,7 +892,7 @@ export function dPdV_T_fPT(pressure, temperature, units) {
 /**
  * dPdV_U f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdv_u-f_pt/
+ * @helpurl https://h2othermo/functions/dpdv_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -906,7 +906,7 @@ export function dPdV_U_fPT(pressure, temperature, units) {
 /**
  * dPdV_H f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdv_h-f_pt/
+ * @helpurl https://h2othermo/functions/dpdv_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -920,7 +920,7 @@ export function dPdV_H_fPT(pressure, temperature, units) {
 /**
  * dPdV_S f(P,T): (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdv_s-f_pt/
+ * @helpurl https://h2othermo/functions/dpdv_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -934,7 +934,7 @@ export function dPdV_S_fPT(pressure, temperature, units) {
 /**
  * dPdU_T f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdu_t-f_pt/
+ * @helpurl https://h2othermo/functions/dpdu_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -948,7 +948,7 @@ export function dPdU_T_fPT(pressure, temperature, units) {
 /**
  * dPdU_V f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdu_v-f_pt/
+ * @helpurl https://h2othermo/functions/dpdu_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -962,7 +962,7 @@ export function dPdU_V_fPT(pressure, temperature, units) {
 /**
  * dPdU_H f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdu_h-f_pt/
+ * @helpurl https://h2othermo/functions/dpdu_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -976,7 +976,7 @@ export function dPdU_H_fPT(pressure, temperature, units) {
 /**
  * dPdU_S f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdu_s-f_pt/
+ * @helpurl https://h2othermo/functions/dpdu_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -990,7 +990,7 @@ export function dPdU_S_fPT(pressure, temperature, units) {
 /**
  * dPdH_T f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdh_t-f_pt/
+ * @helpurl https://h2othermo/functions/dpdh_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1004,7 +1004,7 @@ export function dPdH_T_fPT(pressure, temperature, units) {
 /**
  * dPdH_V f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdh_v-f_pt/
+ * @helpurl https://h2othermo/functions/dpdh_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1018,7 +1018,7 @@ export function dPdH_V_fPT(pressure, temperature, units) {
 /**
  * dPdH_U f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdh_u-f_pt/
+ * @helpurl https://h2othermo/functions/dpdh_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1032,7 +1032,7 @@ export function dPdH_U_fPT(pressure, temperature, units) {
 /**
  * dPdH_S f(P,T): (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpdh_s-f_pt/
+ * @helpurl https://h2othermo/functions/dpdh_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1046,7 +1046,7 @@ export function dPdH_S_fPT(pressure, temperature, units) {
 /**
  * dPdS_T f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpds_t-f_pt/
+ * @helpurl https://h2othermo/functions/dpds_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1060,7 +1060,7 @@ export function dPdS_T_fPT(pressure, temperature, units) {
 /**
  * dPdS_V f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpds_v-f_pt/
+ * @helpurl https://h2othermo/functions/dpds_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1074,7 +1074,7 @@ export function dPdS_V_fPT(pressure, temperature, units) {
 /**
  * dPdS_U f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpds_u-f_pt/
+ * @helpurl https://h2othermo/functions/dpds_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1088,7 +1088,7 @@ export function dPdS_U_fPT(pressure, temperature, units) {
 /**
  * dPdS_H f(P,T): (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dpds_h-f_pt/
+ * @helpurl https://h2othermo/functions/dpds_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1102,7 +1102,7 @@ export function dPdS_H_fPT(pressure, temperature, units) {
 /**
  * dTdP_V f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdp_v-f_pt/
+ * @helpurl https://h2othermo/functions/dtdp_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1116,7 +1116,7 @@ export function dTdP_V_fPT(pressure, temperature, units) {
 /**
  * dTdP_U f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdp_u-f_pt/
+ * @helpurl https://h2othermo/functions/dtdp_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1130,7 +1130,7 @@ export function dTdP_U_fPT(pressure, temperature, units) {
 /**
  * dTdP_H f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdp_h-f_pt/
+ * @helpurl https://h2othermo/functions/dtdp_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1144,7 +1144,7 @@ export function dTdP_H_fPT(pressure, temperature, units) {
 /**
  * dTdP_S f(P,T): (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdp_s-f_pt/
+ * @helpurl https://h2othermo/functions/dtdp_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1158,7 +1158,7 @@ export function dTdP_S_fPT(pressure, temperature, units) {
 /**
  * dTdV_P f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdv_p-f_pt/
+ * @helpurl https://h2othermo/functions/dtdv_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1172,7 +1172,7 @@ export function dTdV_P_fPT(pressure, temperature, units) {
 /**
  * dTdV_U f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdv_u-f_pt/
+ * @helpurl https://h2othermo/functions/dtdv_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1186,7 +1186,7 @@ export function dTdV_U_fPT(pressure, temperature, units) {
 /**
  * dTdV_H f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdv_h-f_pt/
+ * @helpurl https://h2othermo/functions/dtdv_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1200,7 +1200,7 @@ export function dTdV_H_fPT(pressure, temperature, units) {
 /**
  * dTdV_S f(P,T): (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdv_s-f_pt/
+ * @helpurl https://h2othermo/functions/dtdv_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1214,7 +1214,7 @@ export function dTdV_S_fPT(pressure, temperature, units) {
 /**
  * dTdU_P f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdu_p-f_pt/
+ * @helpurl https://h2othermo/functions/dtdu_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1228,7 +1228,7 @@ export function dTdU_P_fPT(pressure, temperature, units) {
 /**
  * dTdU_V f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdu_v-f_pt/
+ * @helpurl https://h2othermo/functions/dtdu_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1242,7 +1242,7 @@ export function dTdU_V_fPT(pressure, temperature, units) {
 /**
  * dTdU_H f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdu_h-f_pt/
+ * @helpurl https://h2othermo/functions/dtdu_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1256,7 +1256,7 @@ export function dTdU_H_fPT(pressure, temperature, units) {
 /**
  * dTdU_S f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdu_s-f_pt/
+ * @helpurl https://h2othermo/functions/dtdu_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1270,7 +1270,7 @@ export function dTdU_S_fPT(pressure, temperature, units) {
 /**
  * dTdH_P f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdh_p-f_pt/
+ * @helpurl https://h2othermo/functions/dtdh_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1284,7 +1284,7 @@ export function dTdH_P_fPT(pressure, temperature, units) {
 /**
  * dTdH_V f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdh_v-f_pt/
+ * @helpurl https://h2othermo/functions/dtdh_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1298,7 +1298,7 @@ export function dTdH_V_fPT(pressure, temperature, units) {
 /**
  * dTdH_U f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdh_u-f_pt/
+ * @helpurl https://h2othermo/functions/dtdh_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1312,7 +1312,7 @@ export function dTdH_U_fPT(pressure, temperature, units) {
 /**
  * dTdH_S f(P,T): (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtdh_s-f_pt/
+ * @helpurl https://h2othermo/functions/dtdh_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1326,7 +1326,7 @@ export function dTdH_S_fPT(pressure, temperature, units) {
 /**
  * dTdS_P f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtds_p-f_pt/
+ * @helpurl https://h2othermo/functions/dtds_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1340,7 +1340,7 @@ export function dTdS_P_fPT(pressure, temperature, units) {
 /**
  * dTdS_V f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtds_v-f_pt/
+ * @helpurl https://h2othermo/functions/dtds_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1354,7 +1354,7 @@ export function dTdS_V_fPT(pressure, temperature, units) {
 /**
  * dTdS_U f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtds_u-f_pt/
+ * @helpurl https://h2othermo/functions/dtds_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1368,7 +1368,7 @@ export function dTdS_U_fPT(pressure, temperature, units) {
 /**
  * dTdS_H f(P,T): (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dtds_h-f_pt/
+ * @helpurl https://h2othermo/functions/dtds_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1382,7 +1382,7 @@ export function dTdS_H_fPT(pressure, temperature, units) {
 /**
  * dVdP_T f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdp_t-f_pt/
+ * @helpurl https://h2othermo/functions/dvdp_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1396,7 +1396,7 @@ export function dVdP_T_fPT(pressure, temperature, units) {
 /**
  * dVdP_U f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdp_u-f_pt/
+ * @helpurl https://h2othermo/functions/dvdp_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1410,7 +1410,7 @@ export function dVdP_U_fPT(pressure, temperature, units) {
 /**
  * dVdP_H f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdp_h-f_pt/
+ * @helpurl https://h2othermo/functions/dvdp_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1424,7 +1424,7 @@ export function dVdP_H_fPT(pressure, temperature, units) {
 /**
  * dVdP_S f(P,T): (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdp_s-f_pt/
+ * @helpurl https://h2othermo/functions/dvdp_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1438,7 +1438,7 @@ export function dVdP_S_fPT(pressure, temperature, units) {
 /**
  * dVdT_P f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdt_p-f_pt/
+ * @helpurl https://h2othermo/functions/dvdt_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1452,7 +1452,7 @@ export function dVdT_P_fPT(pressure, temperature, units) {
 /**
  * dVdT_U f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdt_u-f_pt/
+ * @helpurl https://h2othermo/functions/dvdt_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1466,7 +1466,7 @@ export function dVdT_U_fPT(pressure, temperature, units) {
 /**
  * dVdT_H f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdt_h-f_pt/
+ * @helpurl https://h2othermo/functions/dvdt_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1480,7 +1480,7 @@ export function dVdT_H_fPT(pressure, temperature, units) {
 /**
  * dVdT_S f(P,T): (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdt_s-f_pt/
+ * @helpurl https://h2othermo/functions/dvdt_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1494,7 +1494,7 @@ export function dVdT_S_fPT(pressure, temperature, units) {
 /**
  * dVdU_P f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdu_p-f_pt/
+ * @helpurl https://h2othermo/functions/dvdu_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1508,7 +1508,7 @@ export function dVdU_P_fPT(pressure, temperature, units) {
 /**
  * dVdU_T f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdu_t-f_pt/
+ * @helpurl https://h2othermo/functions/dvdu_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1522,7 +1522,7 @@ export function dVdU_T_fPT(pressure, temperature, units) {
 /**
  * dVdU_H f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdu_h-f_pt/
+ * @helpurl https://h2othermo/functions/dvdu_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1536,7 +1536,7 @@ export function dVdU_H_fPT(pressure, temperature, units) {
 /**
  * dVdU_S f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdu_s-f_pt/
+ * @helpurl https://h2othermo/functions/dvdu_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1550,7 +1550,7 @@ export function dVdU_S_fPT(pressure, temperature, units) {
 /**
  * dVdH_P f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdh_p-f_pt/
+ * @helpurl https://h2othermo/functions/dvdh_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1564,7 +1564,7 @@ export function dVdH_P_fPT(pressure, temperature, units) {
 /**
  * dVdH_T f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdh_t-f_pt/
+ * @helpurl https://h2othermo/functions/dvdh_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1578,7 +1578,7 @@ export function dVdH_T_fPT(pressure, temperature, units) {
 /**
  * dVdH_U f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdh_u-f_pt/
+ * @helpurl https://h2othermo/functions/dvdh_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1592,7 +1592,7 @@ export function dVdH_U_fPT(pressure, temperature, units) {
 /**
  * dVdH_S f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  * @customfunction
- * @helpurl http://www.h2othermo.com
+ * @helpurl http://InfoPogo.com
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1606,7 +1606,7 @@ export function dVdH_S_fPT(pressure, temperature, units) {
 /**
  * dVdS_P f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvdh_s-f_pt/
+ * @helpurl https://h2othermo/functions/dvdh_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1620,7 +1620,7 @@ export function dVdS_P_fPT(pressure, temperature, units) {
 /**
  * dVdS_T f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvds_t-f_pt/
+ * @helpurl https://h2othermo/functions/dvds_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1634,7 +1634,7 @@ export function dVdS_T_fPT(pressure, temperature, units) {
 /**
  * dVdS_U f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvds_u-f_pt/
+ * @helpurl https://h2othermo/functions/dvds_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1648,7 +1648,7 @@ export function dVdS_U_fPT(pressure, temperature, units) {
 /**
  * dVdS_H f(P,T): (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dvds_h-f_pt/
+ * @helpurl https://h2othermo/functions/dvds_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1662,7 +1662,7 @@ export function dVdS_H_fPT(pressure, temperature, units) {
 /**
  * dUdP_T f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudp_t-f_pt/
+ * @helpurl https://h2othermo/functions/dudp_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1676,7 +1676,7 @@ export function dUdP_T_fPT(pressure, temperature, units) {
 /**
  * dUdP_V f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudp_v-f_pt/
+ * @helpurl https://h2othermo/functions/dudp_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1690,7 +1690,7 @@ export function dUdP_V_fPT(pressure, temperature, units) {
 /**
  * dUdP_H f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudp_h-f_pt/
+ * @helpurl https://h2othermo/functions/dudp_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1704,7 +1704,7 @@ export function dUdP_H_fPT(pressure, temperature, units) {
 /**
  * dUdP_S f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudp_s-f_pt/
+ * @helpurl https://h2othermo/functions/dudp_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1718,7 +1718,7 @@ export function dUdP_S_fPT(pressure, temperature, units) {
 /**
  * dUdT_P f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudt_p-f_pt/
+ * @helpurl https://h2othermo/functions/dudt_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1732,7 +1732,7 @@ export function dUdT_P_fPT(pressure, temperature, units) {
 /**
  * dUdT_V f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudt_v-f_pt/
+ * @helpurl https://h2othermo/functions/dudt_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1746,7 +1746,7 @@ export function dUdT_V_fPT(pressure, temperature, units) {
 /**
  * dUdT_H f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudt_h-f_pt/
+ * @helpurl https://h2othermo/functions/dudt_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1760,7 +1760,7 @@ export function dUdT_H_fPT(pressure, temperature, units) {
 /**
  * dUdT_S f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudt_s-f_pt/
+ * @helpurl https://h2othermo/functions/dudt_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1774,7 +1774,7 @@ export function dUdT_S_fPT(pressure, temperature, units) {
 /**
  * dUdV_P f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudv_p-f_pt/
+ * @helpurl https://h2othermo/functions/dudv_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1788,7 +1788,7 @@ export function dUdV_P_fPT(pressure, temperature, units) {
 /**
  * dUdV_T f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudv_t-f_pt/
+ * @helpurl https://h2othermo/functions/dudv_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1802,7 +1802,7 @@ export function dUdV_T_fPT(pressure, temperature, units) {
 /**
  * dUdV_H f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudv_h-f_pt/
+ * @helpurl https://h2othermo/functions/dudv_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1816,7 +1816,7 @@ export function dUdV_H_fPT(pressure, temperature, units) {
 /**
  * dUdV_S f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudv_s-f_pt/
+ * @helpurl https://h2othermo/functions/dudv_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1830,7 +1830,7 @@ export function dUdV_S_fPT(pressure, temperature, units) {
 /**
  * dUdH_P f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudh_p-f_pt/
+ * @helpurl https://h2othermo/functions/dudh_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1844,7 +1844,7 @@ export function dUdH_P_fPT(pressure, temperature, units) {
 /**
  * dUdH_T f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudh_t-f_pt/
+ * @helpurl https://h2othermo/functions/dudh_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1858,7 +1858,7 @@ export function dUdH_T_fPT(pressure, temperature, units) {
 /**
  * dUdH_V f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudh_v-f_pt/
+ * @helpurl https://h2othermo/functions/dudh_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1872,7 +1872,7 @@ export function dUdH_V_fPT(pressure, temperature, units) {
 /**
  * dUdH_S f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dudh_s-f_pt/
+ * @helpurl https://h2othermo/functions/dudh_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1886,7 +1886,7 @@ export function dUdH_S_fPT(pressure, temperature, units) {
 /**
  * dUdS_P f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/duds_p-f_pt/
+ * @helpurl https://h2othermo/functions/duds_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1900,7 +1900,7 @@ export function dUdS_P_fPT(pressure, temperature, units) {
 /**
  * dUdS_T f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/duds_t-f_pt/
+ * @helpurl https://h2othermo/functions/duds_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1914,7 +1914,7 @@ export function dUdS_T_fPT(pressure, temperature, units) {
 /**
  * dUdS_V f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/duds_v-f_pt/
+ * @helpurl https://h2othermo/functions/duds_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1928,7 +1928,7 @@ export function dUdS_V_fPT(pressure, temperature, units) {
 /**
  * dUdS_H f(P,T): (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/duds_h-f_pt/
+ * @helpurl https://h2othermo/functions/duds_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1942,7 +1942,7 @@ export function dUdS_H_fPT(pressure, temperature, units) {
 /**
  * dHdP_T f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdp_t-f_pt/
+ * @helpurl https://h2othermo/functions/dhdp_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1956,7 +1956,7 @@ export function dHdP_T_fPT(pressure, temperature, units) {
 /**
  * dHdP_V f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdp_v-f_pt/
+ * @helpurl https://h2othermo/functions/dhdp_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1970,7 +1970,7 @@ export function dHdP_V_fPT(pressure, temperature, units) {
 /**
  * dHdP_U f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdp_u-f_pt/
+ * @helpurl https://h2othermo/functions/dhdp_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1984,7 +1984,7 @@ export function dHdP_U_fPT(pressure, temperature, units) {
 /**
  * dHdP_S f(P,T): (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdp_s-f_pt/
+ * @helpurl https://h2othermo/functions/dhdp_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -1998,7 +1998,7 @@ export function dHdP_S_fPT(pressure, temperature, units) {
 /**
  * dHdT_P f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdt_p-f_pt/
+ * @helpurl https://h2othermo/functions/dhdt_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2012,7 +2012,7 @@ export function dHdT_P_fPT(pressure, temperature, units) {
 /**
  * dHdT_V f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdt_v-f_pt/
+ * @helpurl https://h2othermo/functions/dhdt_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2026,7 +2026,7 @@ export function dHdT_V_fPT(pressure, temperature, units) {
 /**
  * dHdT_U f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdt_u-f_pt/
+ * @helpurl https://h2othermo/functions/dhdt_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2040,7 +2040,7 @@ export function dHdT_U_fPT(pressure, temperature, units) {
 /**
  * dHdT_S f(P,T): (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdt_s-f_pt/
+ * @helpurl https://h2othermo/functions/dhdt_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2054,7 +2054,7 @@ export function dHdT_S_fPT(pressure, temperature, units) {
 /**
  * dHdV_P f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdv_p-f_pt/
+ * @helpurl https://h2othermo/functions/dhdv_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2068,7 +2068,7 @@ export function dHdV_P_fPT(pressure, temperature, units) {
 /**
  * dHdV_T f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdv_t-f_pt/
+ * @helpurl https://h2othermo/functions/dhdv_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2082,7 +2082,7 @@ export function dHdV_T_fPT(pressure, temperature, units) {
 /**
  * dHdV_U f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdv_u-f_pt/
+ * @helpurl https://h2othermo/functions/dhdv_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2096,7 +2096,7 @@ export function dHdV_U_fPT(pressure, temperature, units) {
 /**
  * dHdV_S f(P,T): (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdv_s-f_pt/
+ * @helpurl https://h2othermo/functions/dhdv_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2110,7 +2110,7 @@ export function dHdV_S_fPT(pressure, temperature, units) {
 /**
  * dHdU_P f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdu_p-f_pt/
+ * @helpurl https://h2othermo/functions/dhdu_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2124,7 +2124,7 @@ export function dHdU_P_fPT(pressure, temperature, units) {
 /**
  * dHdU_T f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdu_t-f_pt/
+ * @helpurl https://h2othermo/functions/dhdu_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2138,7 +2138,7 @@ export function dHdU_T_fPT(pressure, temperature, units) {
 /**
  * dHdU_V f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdu_v-f_pt/
+ * @helpurl https://h2othermo/functions/dhdu_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2152,7 +2152,7 @@ export function dHdU_V_fPT(pressure, temperature, units) {
 /**
  * dHdU_S f(P,T): (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhdu_s-f_pt/
+ * @helpurl https://h2othermo/functions/dhdu_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2166,7 +2166,7 @@ export function dHdU_S_fPT(pressure, temperature, units) {
 /**
  * dHdS_P f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhds_p-f_pt/
+ * @helpurl https://h2othermo/functions/dhds_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2180,7 +2180,7 @@ export function dHdS_P_fPT(pressure, temperature, units) {
 /**
  * dHdS_T f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhds_t-f_pt/
+ * @helpurl https://h2othermo/functions/dhds_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2194,7 +2194,7 @@ export function dHdS_T_fPT(pressure, temperature, units) {
 /**
  * dHdS_V f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhds_v-f_pt/
+ * @helpurl https://h2othermo/functions/dhds_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2208,7 +2208,7 @@ export function dHdS_V_fPT(pressure, temperature, units) {
 /**
  * dHdS_U f(P,T): (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dhds_u-f_pt/
+ * @helpurl https://h2othermo/functions/dhds_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2222,7 +2222,7 @@ export function dHdS_U_fPT(pressure, temperature, units) {
 /**
  * dSdP_T f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdp_t-f_pt/
+ * @helpurl https://h2othermo/functions/dsdp_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2236,7 +2236,7 @@ export function dSdP_T_fPT(pressure, temperature, units) {
 /**
  * dSdP_V f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdp_v-f_pt/
+ * @helpurl https://h2othermo/functions/dsdp_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2250,7 +2250,7 @@ export function dSdP_V_fPT(pressure, temperature, units) {
 /**
  * dSdP_U f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdp_u-f_pt/
+ * @helpurl https://h2othermo/functions/dsdp_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2264,7 +2264,7 @@ export function dSdP_U_fPT(pressure, temperature, units) {
 /**
  * dSdP_H f(P,T): (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdp_h-f_pt/
+ * @helpurl https://h2othermo/functions/dsdp_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2278,7 +2278,7 @@ export function dSdP_H_fPT(pressure, temperature, units) {
 /**
  * dSdT_P f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdt_p-f_pt/
+ * @helpurl https://h2othermo/functions/dsdt_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2292,7 +2292,7 @@ export function dSdT_P_fPT(pressure, temperature, units) {
 /**
  * dSdT_V f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdt_v-f_pt/
+ * @helpurl https://h2othermo/functions/dsdt_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2306,7 +2306,7 @@ export function dSdT_V_fPT(pressure, temperature, units) {
 /**
  * dSdT_U f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdt_u-f_pt/
+ * @helpurl https://h2othermo/functions/dsdt_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2320,7 +2320,7 @@ export function dSdT_U_fPT(pressure, temperature, units) {
 /**
  * dSdT_H f(P,T): (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdt_h-f_pt/
+ * @helpurl https://h2othermo/functions/dsdt_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2334,7 +2334,7 @@ export function dSdT_H_fPT(pressure, temperature, units) {
 /**
  * dSdV_P f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdv_p-f_pt/
+ * @helpurl https://h2othermo/functions/dsdv_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2348,7 +2348,7 @@ export function dSdV_P_fPT(pressure, temperature, units) {
 /**
  * dSdV_T f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdv_t-f_pt/
+ * @helpurl https://h2othermo/functions/dsdv_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2362,7 +2362,7 @@ export function dSdV_T_fPT(pressure, temperature, units) {
 /**
  * dSdV_U f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdv_u-f_pt/
+ * @helpurl https://h2othermo/functions/dsdv_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2376,7 +2376,7 @@ export function dSdV_U_fPT(pressure, temperature, units) {
 /**
  * dSdV_H f(P,T): (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdv_h-f_pt/
+ * @helpurl https://h2othermo/functions/dsdv_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2390,7 +2390,7 @@ export function dSdV_H_fPT(pressure, temperature, units) {
 /**
  * dSdU_P f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdu_p-f_pt/
+ * @helpurl https://h2othermo/functions/dsdu_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2404,7 +2404,7 @@ export function dSdU_P_fPT(pressure, temperature, units) {
 /**
  * dSdU_T f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdu_t-f_pt/
+ * @helpurl https://h2othermo/functions/dsdu_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2418,7 +2418,7 @@ export function dSdU_T_fPT(pressure, temperature, units) {
 /**
  * dSdU_V f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdu_v-f_pt/
+ * @helpurl https://h2othermo/functions/dsdu_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2432,7 +2432,7 @@ export function dSdU_V_fPT(pressure, temperature, units) {
 /**
  * dSdU_H f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdu_h-f_pt/
+ * @helpurl https://h2othermo/functions/dsdu_h-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2446,7 +2446,7 @@ export function dSdU_H_fPT(pressure, temperature, units) {
 /**
  * dSdH_P f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdh_p-f_pt/
+ * @helpurl https://h2othermo/functions/dsdh_p-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2460,7 +2460,7 @@ export function dSdH_P_fPT(pressure, temperature, units) {
 /**
  * dSdH_T f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdh_t-f_pt/
+ * @helpurl https://h2othermo/functions/dsdh_t-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2474,7 +2474,7 @@ export function dSdH_T_fPT(pressure, temperature, units) {
 /**
  * dSdH_V f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdh_v-f_pt/
+ * @helpurl https://h2othermo/functions/dsdh_v-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2488,7 +2488,7 @@ export function dSdH_V_fPT(pressure, temperature, units) {
 /**
  * dSdH_U f(P,T): (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/dsdh_u-f_pt/
+ * @helpurl https://h2othermo/functions/dsdh_u-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2499,7 +2499,7 @@ export function dSdH_U_fPT(pressure, temperature, units) {
 }
 
 /* @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure(0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {string} return What to return ("enthalpy", "entropy", etc.)
@@ -2520,7 +2520,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Returns requested parameter f(P,h): Specified Return Parameter in Units Specified
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure(0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {string} return What to return ("enthalpy", "entropy", etc.)
@@ -2537,7 +2537,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Returns requested parameter f(P,S): Specified Return Parameter in Units Specified
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure(0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param {string} return What to return ("enthalpy", "entropy", etc.)
@@ -2554,7 +2554,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Returns requested parameter f(H,S): Specified Return Parameter in Units Specified
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param {string} return What to return ("enthalpy", "entropy", etc.)
@@ -2572,7 +2572,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Viscosity f(T, v) used to verify the values in R12-08 Table 4 & 5.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} temperature  K
  * @param {number} volume (0)m³/kg
  * @returns Pa·s (use with caution, see help url)
@@ -2586,7 +2586,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Conductivity f(V,T) without critical enhancement
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} temperature K
  * @param {number} volume m³/kg
  * @returns mW/(m·K)
@@ -2600,7 +2600,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Conductivity f(V,T) without critical enhancement
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} temperature K
  * @param {number} volume m³/kg
  * @returns mW/(m·K)
@@ -2614,7 +2614,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns pressure f(v,T)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} volume (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2627,7 +2627,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns enthalpy f(v,T)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} volume (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2640,7 +2640,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns internal energy f(v,T)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} volume (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2653,7 +2653,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns entropy f(v,T)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} volume (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2666,7 +2666,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns isobaric specific heat f(v,T)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} volume (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2679,7 +2679,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns speed of sound f(v,T)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} volume (0)m³/kg, (1)ft³/lbm, (2)m³/kg, (3)m³/kg
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
@@ -2694,7 +2694,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * returns Region 3 saturation pressure psat(h)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} enthalpy  kJ/kg
  * @returns MPa
  */
@@ -2707,7 +2707,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * returns Region 1 to Region 4 boundary: h(s)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
  */
@@ -2720,7 +2720,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * returns Region 1 to Region 4 boundary: h(s)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
  */
@@ -2733,7 +2733,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * returns Region 3 to Region 4 saturated liquid boundary: h(s)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
  */
@@ -2746,7 +2746,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * returns Region 1 to Region 4 boundary: h(s)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
  */
@@ -2759,7 +2759,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * returns Region 3 to Region 4 saturated liquid boundary: h(s)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
  */
@@ -2772,7 +2772,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * returns boundary between Regions 1 & 3 f(s)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
  */
@@ -2785,7 +2785,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * returns boundary between Regions 2 & 3 T(h,s)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} enthalpy  kJ/kg
  * @param {number} entropy  kJ/(kg·K)
  * @returns Temperature K
@@ -2799,7 +2799,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * returns boundary between Regions 2 & 3 T(h,s)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} enthalpy  kJ/kg
  * @param {number} entropy  kJ/(kg·K)
  * @returns Saturation Temperature K
@@ -2812,7 +2812,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3ab(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3ab K
  */
@@ -2824,7 +2824,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3op(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3op K
  */
@@ -2836,7 +2836,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3ef(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3ef K
  */
@@ -2848,7 +2848,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3cd(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3cd K
  */
@@ -2860,7 +2860,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3gh(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3gh K
  */
@@ -2872,7 +2872,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3ij(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3ij K
  */
@@ -2884,7 +2884,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3jk(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3jk K
  */
@@ -2896,7 +2896,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3mn(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3mn K
  */
@@ -2908,7 +2908,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3qu(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3qu K
  */
@@ -2920,7 +2920,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3rx(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3rx K
  */
@@ -2932,7 +2932,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3uv(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3uv K
  */
@@ -2944,7 +2944,7 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 /**
  * Region 3 only: returns T3wx(p)
  * @customfunction
- * @helpurl https://www.h2othermo/functions/
+ * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3wx K
  */
