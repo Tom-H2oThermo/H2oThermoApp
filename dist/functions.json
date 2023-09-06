@@ -2604,7 +2604,7 @@
         },
         {
             "description": "dVdH_S f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)",
-            "helpUrl": "http://InfoPogo.com",
+            "helpUrl": "http://h2othermo.com",
             "id": "DVDH_S_FPT",
             "name": "DVDH_S_FPT",
             "parameters": [
