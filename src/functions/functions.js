@@ -2,7 +2,7 @@
 import * as Units from "./Units.js";
 // import * as Errors from "./Errors.js";
 
-const returnName = {
+/* const returnName = {
   pressure: 0,
   temperature: 1,
   quality: 2,
@@ -133,7 +133,7 @@ const returnName = {
   dsdh_t: 129,
   dsdh_v: 130,
   dsdh_u: 131,
-};
+}; 
 
 // Given a string, return the index from Units.VectorParameters. Throws if can't find the value.
 /* function nameToIndex(name) {
@@ -1592,7 +1592,7 @@ export function dVdH_U_fPT(pressure, temperature, units) {
 /**
  * dVdH_S f(P,T): (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  * @customfunction
- * @helpurl http://InfoPogo.com
+ * @helpurl https://h2othermo/functions/dvdh_s-f_pt/
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
