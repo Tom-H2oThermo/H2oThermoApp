@@ -828,7 +828,7 @@ export function PTK(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C
  */
-export function dPdT_V_fPT(pressure, temperature, units) {
+export function PT_dPdT_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdT_V, false);
 }
 
@@ -842,7 +842,7 @@ export function dPdT_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C
  */
-export function dPdT_U_fPT(pressure, temperature, units) {
+export function PT_dPdT_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdT_U, false);
 }
 
@@ -856,7 +856,7 @@ export function dPdT_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C
  */
-export function dPdT_H_fPT(pressure, temperature, units) {
+export function PT_dPdT_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdT_H, false);
 }
 
@@ -870,7 +870,7 @@ export function dPdT_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/K, (1)psia/°R, (2)bara/°C, (3)kPa/°C
  */
-export function dPdT_S_fPT(pressure, temperature, units) {
+export function PT_dPdT_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdT_S, false);
 }
 
@@ -884,7 +884,7 @@ export function dPdT_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)
  */
-export function dPdV_T_fPT(pressure, temperature, units) {
+export function PT_dPdV_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdV_T, false);
 }
 
@@ -898,7 +898,7 @@ export function dPdV_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)
  */
-export function dPdV_U_fPT(pressure, temperature, units) {
+export function PT_dPdV_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdV_U, false);
 }
 
@@ -912,7 +912,7 @@ export function dPdV_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)
  */
-export function dPdV_H_fPT(pressure, temperature, units) {
+export function PT_dPdV_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdV_H, false);
 }
 
@@ -926,7 +926,7 @@ export function dPdV_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(m³/kg), (1)psia/(ft³/lbm), (2)bara/(m³/kg), (3)kPa/(m³/kg)
  */
-export function dPdV_S_fPT(pressure, temperature, units) {
+export function PT_dPdV_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdV_S, false);
 }
 
@@ -940,7 +940,7 @@ export function dPdV_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  */
-export function dPdU_T_fPT(pressure, temperature, units) {
+export function PT_dPdU_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdU_T, false);
 }
 
@@ -954,7 +954,7 @@ export function dPdU_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  */
-export function dPdU_V_fPT(pressure, temperature, units) {
+export function PT_dPdU_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdU_V, false);
 }
 
@@ -968,7 +968,7 @@ export function dPdU_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  */
-export function dPdU_H_fPT(pressure, temperature, units) {
+export function PT_dPdU_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdU_H, false);
 }
 
@@ -982,7 +982,7 @@ export function dPdU_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  */
-export function dPdU_S_fPT(pressure, temperature, units) {
+export function PT_dPdU_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdU_S, false);
 }
 
@@ -996,7 +996,7 @@ export function dPdU_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  */
-export function dPdH_T_fPT(pressure, temperature, units) {
+export function PT_dPdH_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdH_T, false);
 }
 
@@ -1010,7 +1010,7 @@ export function dPdH_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  */
-export function dPdH_V_fPT(pressure, temperature, units) {
+export function PT_dPdH_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdH_V, false);
 }
 
@@ -1024,7 +1024,7 @@ export function dPdH_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  */
-export function dPdH_U_fPT(pressure, temperature, units) {
+export function PT_dPdH_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdH_U, false);
 }
 
@@ -1038,7 +1038,7 @@ export function dPdH_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/(kJ/kg), (1)psia/(BTU/lbm), (2)bara/(kJ/kg), (3)kPa/(kJ/kg)
  */
-export function dPdH_S_fPT(pressure, temperature, units) {
+export function PT_dPdH_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdH_S, false);
 }
 
@@ -1052,7 +1052,7 @@ export function dPdH_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]
  */
-export function dPdS_T_fPT(pressure, temperature, units) {
+export function PT_dPdS_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdS_T, false);
 }
 
@@ -1066,7 +1066,7 @@ export function dPdS_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]
  */
-export function dPdS_V_fPT(pressure, temperature, units) {
+export function PT_dPdS_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdS_V, false);
 }
 
@@ -1080,7 +1080,7 @@ export function dPdS_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]
  */
-export function dPdS_U_fPT(pressure, temperature, units) {
+export function PT_dPdS_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdS_U, false);
 }
 
@@ -1094,7 +1094,7 @@ export function dPdS_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa/[kJ/(kg·K)], (1)psia/[BTU/(lbm·°R)], (2)bara/[kJ/(kg·°C)], (3)kPa/[kJ/(kg·°C)]
  */
-export function dPdS_H_fPT(pressure, temperature, units) {
+export function PT_dPdS_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dPdS_H, false);
 }
 
@@ -1108,7 +1108,7 @@ export function dPdS_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa
  */
-export function dTdP_V_fPT(pressure, temperature, units) {
+export function PT_dTdP_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdP_V, false);
 }
 
@@ -1122,7 +1122,7 @@ export function dTdP_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa
  */
-export function dTdP_U_fPT(pressure, temperature, units) {
+export function PT_dTdP_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdP_U, false);
 }
 
@@ -1136,7 +1136,7 @@ export function dTdP_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa
  */
-export function dTdP_H_fPT(pressure, temperature, units) {
+export function PT_dTdP_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdP_H, false);
 }
 
@@ -1150,7 +1150,7 @@ export function dTdP_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/MPa, (1)°R/psia, (2)°C/bara, (3)°C/kPa
  */
-export function dTdP_S_fPT(pressure, temperature, units) {
+export function PT_dTdP_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdP_S, false);
 }
 
@@ -1164,7 +1164,7 @@ export function dTdP_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)
  */
-export function dTdV_P_fPT(pressure, temperature, units) {
+export function PT_dTdV_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdV_P, false);
 }
 
@@ -1178,7 +1178,7 @@ export function dTdV_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)
  */
-export function dTdV_U_fPT(pressure, temperature, units) {
+export function PT_dTdV_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdV_U, false);
 }
 
@@ -1192,7 +1192,7 @@ export function dTdV_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)
  */
-export function dTdV_H_fPT(pressure, temperature, units) {
+export function PT_dTdV_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdV_H, false);
 }
 
@@ -1206,7 +1206,7 @@ export function dTdV_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(m³/kg), (1)°R/(ft³/lbm), (2)°C/(m³/kg), (3)°C/(m³/kg)
  */
-export function dTdV_S_fPT(pressure, temperature, units) {
+export function PT_dTdV_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdV_S, false);
 }
 
@@ -1220,7 +1220,7 @@ export function dTdV_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  */
-export function dTdU_P_fPT(pressure, temperature, units) {
+export function PT_dTdU_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdU_P, false);
 }
 
@@ -1234,7 +1234,7 @@ export function dTdU_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  */
-export function dTdU_V_fPT(pressure, temperature, units) {
+export function PT_dTdU_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdU_V, false);
 }
 
@@ -1248,7 +1248,7 @@ export function dTdU_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  */
-export function dTdU_H_fPT(pressure, temperature, units) {
+export function PT_dTdU_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdU_H, false);
 }
 
@@ -1262,7 +1262,7 @@ export function dTdU_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  */
-export function dTdU_S_fPT(pressure, temperature, units) {
+export function PT_dTdU_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdU_S, false);
 }
 
@@ -1276,7 +1276,7 @@ export function dTdU_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  */
-export function dTdH_P_fPT(pressure, temperature, units) {
+export function PT_dTdH_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdH_P, false);
 }
 
@@ -1304,7 +1304,7 @@ export function dTdH_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  */
-export function dTdH_U_fPT(pressure, temperature, units) {
+export function PT_dTdH_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdH_U, false);
 }
 
@@ -1318,7 +1318,7 @@ export function dTdH_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  */
-export function dTdH_S_fPT(pressure, temperature, units) {
+export function PT_dTdH_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdH_S, false);
 }
 
@@ -1332,7 +1332,7 @@ export function dTdH_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]
  */
-export function dTdS_P_fPT(pressure, temperature, units) {
+export function PT_dTdS_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdS_P, false);
 }
 
@@ -1346,7 +1346,7 @@ export function dTdS_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]
  */
-export function dTdS_V_fPT(pressure, temperature, units) {
+export function PT_dTdS_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdS_V, false);
 }
 
@@ -1360,7 +1360,7 @@ export function dTdS_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]
  */
-export function dTdS_U_fPT(pressure, temperature, units) {
+export function PT_dTdS_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdS_U, false);
 }
 
@@ -1374,7 +1374,7 @@ export function dTdS_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/[kJ/(kg·K)], (1)°R/[BTU/(lbm·°R)], (2)°C/[kJ/(kg·°C)], (3)°C/[kJ/(kg·°C)]
  */
-export function dTdS_H_fPT(pressure, temperature, units) {
+export function PT_dTdS_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdS_H, false);
 }
 
@@ -1388,7 +1388,7 @@ export function dTdS_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa
  */
-export function dVdP_T_fPT(pressure, temperature, units) {
+export function PT_dVdP_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdP_T, false);
 }
 
@@ -1402,7 +1402,7 @@ export function dVdP_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa
  */
-export function dVdP_U_fPT(pressure, temperature, units) {
+export function PT_dVdP_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdP_U, false);
 }
 
@@ -1416,7 +1416,7 @@ export function dVdP_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa
  */
-export function dVdP_H_fPT(pressure, temperature, units) {
+export function PT_dVdP_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdP_H, false);
 }
 
@@ -1430,7 +1430,7 @@ export function dVdP_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/MPa, (1)(ft³/lbm)/psia, (2)(m³/kg)/bara, (3)(m³/kg)/kPa
  */
-export function dVdP_S_fPT(pressure, temperature, units) {
+export function PT_dVdP_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdP_S, false);
 }
 
@@ -1444,7 +1444,7 @@ export function dVdP_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C
  */
-export function dVdT_P_fPT(pressure, temperature, units) {
+export function PT_dVdT_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdT_P, false);
 }
 
@@ -1458,7 +1458,7 @@ export function dVdT_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C
  */
-export function dVdT_U_fPT(pressure, temperature, units) {
+export function PT_dVdT_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdT_U, false);
 }
 
@@ -1472,7 +1472,7 @@ export function dVdT_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C
  */
-export function dVdT_H_fPT(pressure, temperature, units) {
+export function PT_dVdT_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdT_H, false);
 }
 
@@ -1486,7 +1486,7 @@ export function dVdT_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/K, (1)(ft³/lbm)/°R, (2)(m³/kg)/°C, (3)(m³/kg)/°C
  */
-export function dVdT_S_fPT(pressure, temperature, units) {
+export function PT_dVdT_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdT_S, false);
 }
 
@@ -1500,7 +1500,7 @@ export function dVdT_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  */
-export function dVdU_P_fPT(pressure, temperature, units) {
+export function PT_dVdU_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdU_P, false);
 }
 
@@ -1514,7 +1514,7 @@ export function dVdU_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  */
-export function dVdU_T_fPT(pressure, temperature, units) {
+export function PT_dVdU_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdU_T, false);
 }
 
@@ -1528,7 +1528,7 @@ export function dVdU_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  */
-export function dVdU_H_fPT(pressure, temperature, units) {
+export function PT_dVdU_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdU_H, false);
 }
 
@@ -1542,7 +1542,7 @@ export function dVdU_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  */
-export function dVdU_S_fPT(pressure, temperature, units) {
+export function PT_dVdU_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdU_S, false);
 }
 
@@ -1556,7 +1556,7 @@ export function dVdU_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  */
-export function dVdH_P_fPT(pressure, temperature, units) {
+export function PT_dVdH_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdH_P, false);
 }
 
@@ -1570,7 +1570,7 @@ export function dVdH_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  */
-export function dVdH_T_fPT(pressure, temperature, units) {
+export function PT_dVdH_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdH_T, false);
 }
 
@@ -1584,7 +1584,7 @@ export function dVdH_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  */
-export function dVdH_U_fPT(pressure, temperature, units) {
+export function PT_dVdH_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdH_U, false);
 }
 
@@ -1598,7 +1598,7 @@ export function dVdH_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/(kJ/kg), (1)(ft³/lbm)/(BTU/lbm), (2)(m³/kg)/(kJ/kg), (3)(m³/kg)/(kJ/kg)
  */
-export function dVdH_S_fPT(pressure, temperature, units) {
+export function PT_dVdH_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdH_S, false);
 }
 
@@ -1612,7 +1612,7 @@ export function dVdH_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]
  */
-export function dVdS_P_fPT(pressure, temperature, units) {
+export function PT_dVdS_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdS_P, false);
 }
 
@@ -1626,7 +1626,7 @@ export function dVdS_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]
  */
-export function dVdS_T_fPT(pressure, temperature, units) {
+export function PT_dVdS_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdS_T, false);
 }
 
@@ -1640,7 +1640,7 @@ export function dVdS_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]
  */
-export function dVdS_U_fPT(pressure, temperature, units) {
+export function PT_dVdS_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdS_U, false);
 }
 
@@ -1654,7 +1654,7 @@ export function dVdS_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(m³/kg)/[kJ/(kg·K)], (1)(ft³/lbm)/[BTU/(lbm·°R)], (2)(m³/kg)/[kJ/(kg·°C)], (3)(m³/kg)/[kJ/(kg·°C)]
  */
-export function dVdS_H_fPT(pressure, temperature, units) {
+export function PT_dVdS_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dVdS_H, false);
 }
 
@@ -1668,7 +1668,7 @@ export function dVdS_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  */
-export function dUdP_T_fPT(pressure, temperature, units) {
+export function PT_dUdP_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdP_T, false);
 }
 
@@ -1682,7 +1682,7 @@ export function dUdP_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  */
-export function dUdP_V_fPT(pressure, temperature, units) {
+export function PT_dUdP_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdP_V, false);
 }
 
@@ -1696,7 +1696,7 @@ export function dUdP_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  */
-export function dUdP_H_fPT(pressure, temperature, units) {
+export function PT_dUdP_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdP_H, false);
 }
 
@@ -1710,7 +1710,7 @@ export function dUdP_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  */
-export function dUdP_S_fPT(pressure, temperature, units) {
+export function PT_dUdP_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdP_S, false);
 }
 
@@ -1724,7 +1724,7 @@ export function dUdP_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  */
-export function dUdT_P_fPT(pressure, temperature, units) {
+export function PT_dUdT_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdT_P, false);
 }
 
@@ -1738,7 +1738,7 @@ export function dUdT_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  */
-export function dUdT_V_fPT(pressure, temperature, units) {
+export function PT_dUdT_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdT_V, false);
 }
 
@@ -1752,7 +1752,7 @@ export function dUdT_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  */
-export function dUdT_H_fPT(pressure, temperature, units) {
+export function dUdT_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdT_H, false);
 }
 
@@ -1766,7 +1766,7 @@ export function dUdT_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns ((0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  */
-export function dUdT_S_fPT(pressure, temperature, units) {
+export function PT_dUdT_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdT_S, false);
 }
 
@@ -1780,7 +1780,7 @@ export function dUdT_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  */
-export function dUdV_P_fPT(pressure, temperature, units) {
+export function PT_dUdV_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdV_P, false);
 }
 
@@ -1794,7 +1794,7 @@ export function dUdV_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  */
-export function dUdV_T_fPT(pressure, temperature, units) {
+export function PT_dUdV_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdV_T, false);
 }
 
@@ -1808,7 +1808,7 @@ export function dUdV_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  */
-export function dUdV_H_fPT(pressure, temperature, units) {
+export function PT_dUdV_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdV_H, false);
 }
 
@@ -1822,7 +1822,7 @@ export function dUdV_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  */
-export function dUdV_S_fPT(pressure, temperature, units) {
+export function PT_dUdV_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdV_S, false);
 }
 
@@ -1836,7 +1836,7 @@ export function dUdV_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  */
-export function dUdH_P_fPT(pressure, temperature, units) {
+export function PT_dUdH_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdH_P, false);
 }
 
@@ -1850,7 +1850,7 @@ export function dUdH_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  */
-export function dUdH_T_fPT(pressure, temperature, units) {
+export function PT_dUdH_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdH_T, false);
 }
 
@@ -1864,7 +1864,7 @@ export function dUdH_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  */
-export function dUdH_V_fPT(pressure, temperature, units) {
+export function PT_dUdH_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdH_V, false);
 }
 
@@ -1878,7 +1878,7 @@ export function dUdH_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  */
-export function dUdH_S_fPT(pressure, temperature, units) {
+export function PT_dUdH_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdH_S, false);
 }
 
@@ -1892,7 +1892,7 @@ export function dUdH_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  */
-export function dUdS_P_fPT(pressure, temperature, units) {
+export function PT_dUdS_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdS_P, false);
 }
 
@@ -1906,7 +1906,7 @@ export function dUdS_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  */
-export function dUdS_T_fPT(pressure, temperature, units) {
+export function PT_dUdS_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdS_T, false);
 }
 
@@ -1920,7 +1920,7 @@ export function dUdS_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  */
-export function dUdS_V_fPT(pressure, temperature, units) {
+export function PT_dUdS_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdS_V, false);
 }
 
@@ -1934,7 +1934,7 @@ export function dUdS_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  */
-export function dUdS_H_fPT(pressure, temperature, units) {
+export function PT_dUdS_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdS_H, false);
 }
 
@@ -1948,7 +1948,7 @@ export function dUdS_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  */
-export function dHdP_T_fPT(pressure, temperature, units) {
+export function PT_dHdP_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdP_T, false);
 }
 
@@ -1962,7 +1962,7 @@ export function dHdP_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  */
-export function dHdP_V_fPT(pressure, temperature, units) {
+export function PT_dHdP_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdP_V, false);
 }
 
@@ -1976,7 +1976,7 @@ export function dHdP_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  */
-export function dHdP_U_fPT(pressure, temperature, units) {
+export function PT_dHdP_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdP_U, false);
 }
 
@@ -1990,7 +1990,7 @@ export function dHdP_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/MPa, (1)(BTU/lbm)/psia, (2)(kJ/kg)/bara, (3)(kJ/kg)/kPa
  */
-export function dHdP_S_fPT(pressure, temperature, units) {
+export function PT_dHdP_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdP_S, false);
 }
 
@@ -2004,7 +2004,7 @@ export function dHdP_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  */
-export function dHdT_P_fPT(pressure, temperature, units) {
+export function PT_dHdT_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdT_P, false);
 }
 
@@ -2018,7 +2018,7 @@ export function dHdT_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  */
-export function dHdT_V_fPT(pressure, temperature, units) {
+export function PT_dHdT_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdT_V, false);
 }
 
@@ -2032,7 +2032,7 @@ export function dHdT_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  */
-export function dHdT_U_fPT(pressure, temperature, units) {
+export function PT_dHdT_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdT_U, false);
 }
 
@@ -2046,7 +2046,7 @@ export function dHdT_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  */
-export function dHdT_S_fPT(pressure, temperature, units) {
+export function PT_dHdT_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdT_S, false);
 }
 
@@ -2060,7 +2060,7 @@ export function dHdT_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  */
-export function dHdV_P_fPT(pressure, temperature, units) {
+export function PT_dHdV_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdV_P, false);
 }
 
@@ -2074,7 +2074,7 @@ export function dHdV_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  */
-export function dHdV_T_fPT(pressure, temperature, units) {
+export function PT_dHdV_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdV_T, false);
 }
 
@@ -2088,7 +2088,7 @@ export function dHdV_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  */
-export function dHdV_U_fPT(pressure, temperature, units) {
+export function PT_dHdV_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdV_U, false);
 }
 
@@ -2102,7 +2102,7 @@ export function dHdV_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(m³/kg), (1)(BTU/lbm)/(ft³/lbm), (2)(kJ/kg)/(m³/kg), (3)(kJ/kg)/(m³/kg)
  */
-export function dHdV_S_fPT(pressure, temperature, units) {
+export function PT_dHdV_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdV_S, false);
 }
 
@@ -2116,7 +2116,7 @@ export function dHdV_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  */
-export function dHdU_P_fPT(pressure, temperature, units) {
+export function PT_dHdU_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdU_P, false);
 }
 
@@ -2130,7 +2130,7 @@ export function dHdU_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  */
-export function dHdU_T_fPT(pressure, temperature, units) {
+export function PT_dHdU_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdU_T, false);
 }
 
@@ -2144,7 +2144,7 @@ export function dHdU_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  */
-export function dHdU_V_fPT(pressure, temperature, units) {
+export function PT_dHdU_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdU_V, false);
 }
 
@@ -2158,7 +2158,7 @@ export function dHdU_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/(kJ/kg), (1)(BTU/lbm)/(BTU/lbm), (2)(kJ/kg)/(kJ/kg), (3)(kJ/kg)/(kJ/kg)
  */
-export function dHdU_S_fPT(pressure, temperature, units) {
+export function PT_dHdU_S(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdU_S, false);
 }
 
@@ -2172,7 +2172,7 @@ export function dHdU_S_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  */
-export function dHdS_P_fPT(pressure, temperature, units) {
+export function PT_dHdS_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdS_P, false);
 }
 
@@ -2186,7 +2186,7 @@ export function dHdS_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  */
-export function dHdS_T_fPT(pressure, temperature, units) {
+export function PT_dHdS_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdS_T, false);
 }
 
@@ -2200,7 +2200,7 @@ export function dHdS_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  */
-export function dHdS_V_fPT(pressure, temperature, units) {
+export function PT_dHdS_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdS_V, false);
 }
 
@@ -2214,7 +2214,7 @@ export function dHdS_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/[kJ/(kg·K)], (1)(BTU/lbm)/[BTU/(lbm·°R)], (2)(kJ/kg)/[kJ/(kg·°C)], (3)(kJ/kg)/[kJ/(kg·°C)]
  */
-export function dHdS_U_fPT(pressure, temperature, units) {
+export function PT_dHdS_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dHdS_U, false);
 }
 
@@ -2228,7 +2228,7 @@ export function dHdS_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa
  */
-export function dSdP_T_fPT(pressure, temperature, units) {
+export function PT_dSdP_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdP_T, false);
 }
 
@@ -2242,7 +2242,7 @@ export function dSdP_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa
  */
-export function dSdP_V_fPT(pressure, temperature, units) {
+export function PT_dSdP_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdP_V, false);
 }
 
@@ -2256,7 +2256,7 @@ export function dSdP_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa
  */
-export function dSdP_U_fPT(pressure, temperature, units) {
+export function PT_dSdP_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdP_U, false);
 }
 
@@ -2270,7 +2270,7 @@ export function dSdP_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/MPa, (1)[BTU/(lbm·°R)]/psia, (2)[kJ/(kg·°C)]/bara, (3)[kJ/(kg/°C)]/kPa
  */
-export function dSdP_H_fPT(pressure, temperature, units) {
+export function PT_dSdP_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdP_H, false);
 }
 
@@ -2284,7 +2284,7 @@ export function dSdP_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C
  */
-export function dSdT_P_fPT(pressure, temperature, units) {
+export function PT_dSdT_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdT_P, false);
 }
 
@@ -2298,7 +2298,7 @@ export function dSdT_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C
  */
-export function dSdT_V_fPT(pressure, temperature, units) {
+export function PT_dSdT_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdT_V, false);
 }
 
@@ -2312,7 +2312,7 @@ export function dSdT_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C
  */
-export function dSdT_U_fPT(pressure, temperature, units) {
+export function PT_dSdT_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdT_U, false);
 }
 
@@ -2326,7 +2326,7 @@ export function dSdT_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/K, (1)[BTU/(lbm·°R)]/°R, (2)[kJ/(kg·°C)]/°C, (3)[kJ/(kg·°C)]/°C
  */
-export function dSdT_H_fPT(pressure, temperature, units) {
+export function PT_dSdT_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdT_H, false);
 }
 
@@ -2340,7 +2340,7 @@ export function dSdT_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)
  */
-export function dSdV_P_fPT(pressure, temperature, units) {
+export function PT_dSdV_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdV_P, false);
 }
 
@@ -2354,7 +2354,7 @@ export function dSdV_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)
  */
-export function dSdV_T_fPT(pressure, temperature, units) {
+export function PT_dSdV_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdV_T, false);
 }
 
@@ -2368,7 +2368,7 @@ export function dSdV_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)
  */
-export function dSdV_U_fPT(pressure, temperature, units) {
+export function PT_dSdV_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdV_U, false);
 }
 
@@ -2382,7 +2382,7 @@ export function dSdV_U_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(m³/kg), (1)[BTU/(lbm·°R)]/(ft³/lbm), (2)[kJ/(kg·°C)]/(m³/kg), (3)[kJ/(kg·°C)]/(m³/kg)
  */
-export function dSdV_H_fPT(pressure, temperature, units) {
+export function PT_dSdV_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdV_H, false);
 }
 
@@ -2396,7 +2396,7 @@ export function dSdV_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  */
-export function dSdU_P_fPT(pressure, temperature, units) {
+export function PT_dSdU_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdU_P, false);
 }
 
@@ -2410,7 +2410,7 @@ export function dSdU_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  */
-export function dSdU_T_fPT(pressure, temperature, units) {
+export function PT_dSdU_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdU_T, false);
 }
 
@@ -2424,7 +2424,7 @@ export function dSdU_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  */
-export function dSdU_V_fPT(pressure, temperature, units) {
+export function PT_dSdU_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdU_V, false);
 }
 
@@ -2438,7 +2438,7 @@ export function dSdU_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  */
-export function dSdU_H_fPT(pressure, temperature, units) {
+export function PT_dSdU_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdU_H, false);
 }
 
@@ -2452,7 +2452,7 @@ export function dSdU_H_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  */
-export function dSdH_P_fPT(pressure, temperature, units) {
+export function PT_dSdH_P(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdH_P, false);
 }
 
@@ -2466,7 +2466,7 @@ export function dSdH_P_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  */
-export function dSdH_T_fPT(pressure, temperature, units) {
+export function PT_dSdH_T(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdH_T, false);
 }
 
@@ -2480,7 +2480,7 @@ export function dSdH_T_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  */
-export function dSdH_V_fPT(pressure, temperature, units) {
+export function PT_dSdH_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdH_V, false);
 }
 
@@ -2494,7 +2494,7 @@ export function dSdH_V_fPT(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)[kJ/(kg·K)]/(kJ/kg), (1)[BTU/(lbm·°R)]/(BTU/lbm), (2)[kJ/(kg·°C)]/(kJ/kg), (3)[kJ/(kg·°C)]/(kJ/kg)
  */
-export function dSdH_U_fPT(pressure, temperature, units) {
+export function PT_dSdH_U(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dSdH_U, false);
 }
 
