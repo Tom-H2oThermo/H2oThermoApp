@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" 
+  xsi:type="TaskPaneApp">
   <Id>86d3d898-bd66-4691-a678-5e7cbe87004b</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>H2oThermo</ProviderName>
+  <ProviderName>H2oThermo LLC</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="H2o"/>
   <Description DefaultValue="IAPWS Properties of Water and Steam formulations for industrial use."/>
   <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://www.h2othermo.com/steam/help"/>
+  <SupportUrl DefaultValue="https://www.h2othermo.com/help"/>
   <AppDomains>
-    <AppDomain>https://www.h2othermo.com/steam</AppDomain>
+    <AppDomain>https://www.h2othermo.com/</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
@@ -96,7 +100,7 @@
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Functions.Namespace" DefaultValue="H2o"/>
-        <bt:String id="GetStarted.Title" DefaultValue="IAPWS Properties of Water and Steam formulations for industrial use."/>
+        <bt:String id="GetStarted.Title" DefaultValue="Thermodynamic Properties of Water and Steam"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="Commands Group"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
       </bt:ShortStrings>
