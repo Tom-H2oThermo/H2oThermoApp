@@ -1290,7 +1290,7 @@ export function PT_dTdH_P(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)K/(kJ/kg), (1)°R/(BTU/lbm), (2)°C/(kJ/kg), (3)°C/(kJ/kg)
  */
-export function dTdH_V_fPT(pressure, temperature, units) {
+export function PT_dTdH_V(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dTdH_V, false);
 }
 
@@ -1752,7 +1752,7 @@ export function PT_dUdT_V(pressure, temperature, units) {
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)(kJ/kg)/K, (1)(BTU/lbm)/°R, (2)(kJ/kg)/°C, (3)(kJ/kg)/°C
  */
-export function dUdT_H(pressure, temperature, units) {
+export function PT_dUdT_H(pressure, temperature, units) {
   return H2o.CallStmProp_fPT(pressure, temperature, units, Units.VectorParameters.dUdT_H, false);
 }
 
