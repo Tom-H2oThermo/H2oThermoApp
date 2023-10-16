@@ -46,7 +46,6 @@ export function ViscR125(temperature, volume) {
   var T_dim = temperature / T_ref;
   var mu_0 = 0;
   var mu_1 = 0;
-  var mu_2 = 1;
 
   for (let i = 0; i < 4; i++) {
     mu_0 += Constants.visc_Hi[i] / Math.pow(T_dim, i);
@@ -62,14 +61,14 @@ export function ViscR125(temperature, volume) {
   }
   mu_1 = Math.exp(rho_dim * mu_1);
 
-  return mu_ref * (mu_0 * mu_1 * mu_2); // Pa seconds
+  return mu_ref * (mu_0 * mu_1); // Pa seconds
 }
 
 // Calculates the mu_2 term, the third visosity term, if appropriate
 // Otherwise mu_2 is set to a value of 1
 // Then calls the mu_0 & mu_1 calc and multiplies them all together
 export function Visc_fTV(temperature, volume) {
-  var T_dim = temperature / T_ref;
+  // var T_dim = temperature / T_ref;
   var rho_dim = 1 / (volume * rho_ref);
   var rho = 1 / volume;
   var mu_2 = 1;
@@ -81,31 +80,6 @@ export function Visc_fTV(temperature, volume) {
     var dVdP_TR = Region3Calculations.Properties_fVT(volume, Constants.TR)[52]; // Properties index [16] is dPdV_T.  Use pressure and T_crit to calculate dVdP_T_crit
     const zeta = -(Constants.pc_H2O / (Constants.RHOc_H2O * Math.pow(volume, 2))) * dVdP_T; // R12-08 Eq21a. The differential reciprocol rule is needed to convert from rho to v, hence the (1/v)^2 term
     var zetaTR = -(Constants.pc_H2O / (Constants.RHOc_H2O * Math.pow(volume, 2))) * dVdP_TR; // / R12-08 Eq21a.  Properties[52] is dv/dp_T
-
-    /*
-    var zetaTR = 0;
-    // the ranges in the if statements below are from R15-11 Eq. 26
-    var j = 0;
-    if (rho_dim > 0 && rho_dim <= 0.310559006) {
-      j = 0;
-    } else if (rho_dim > 0.310559006 && rho_dim <= 0.776397516) {
-      j = 1;
-    } else if (rho_dim > 0.776397516 && rho_dim <= 1.242236025) {
-      j = 2;
-    } else if (rho_dim > 1.242236025 && rho_dim <= 1.863354037) {
-      j = 3;
-    } else if (rho_dim > 1.863354037) {
-      j = 4;
-    } else {
-      j = NaN;
-    }
-    var Aij = 0;
-    for (let i = 0; i < 6; i++) {
-      Aij = Constants.cond_Aij[i][j];
-      zetaTR += Aij * Math.pow(rho_dim, i);
-    }
-    zetaTR = 1 / zetaTR;
-    */
 
     var delta_chi_dim = rho_dim * (zeta - zetaTR * (Constants.TR / temperature)); // R12-08 Eq. 21
     if (delta_chi_dim < 0) {

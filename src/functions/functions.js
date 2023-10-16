@@ -1,8 +1,8 @@
 ﻿import * as H2o from "./H2oProperties.js";
 import * as Units from "./Units.js";
-// import * as Errors from "./Errors.js";
+//import * as Errors from "./Errors.js";
 
-/* const returnName = {
+/*const returnName = {
   pressure: 0,
   temperature: 1,
   quality: 2,
@@ -133,10 +133,10 @@ import * as Units from "./Units.js";
   dsdh_t: 129,
   dsdh_v: 130,
   dsdh_u: 131,
-}; 
+};
 
 // Given a string, return the index from Units.VectorParameters. Throws if can't find the value.
-/* function nameToIndex(name) {
+function nameToIndex(name) {
   return returnName[name.toLowerCase()];
 }
 */
@@ -2517,7 +2517,6 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
 */
 
 /*
-/**
  * Returns requested parameter f(P,h): Specified Return Parameter in Units Specified
  * @customfunction
  * @helpurl https://h2othermo/functions/
@@ -2525,16 +2524,17 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
  * @param {number} enthalpy (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
  * @param {string} return What to return ("enthalpy", "entropy", etc.)
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
- */
-/*export function fPH(pressure, enthalpy, returnName, units) {
+ *
+export function fPH(pressure, enthalpy, returnName, units) {
   const index = nameToIndex(returnName);
   if (index == undefined) {
     return Errors.ErrorReturnTypeUnknown;
   }
   return H2o.CallStmProp_fPH(pressure, enthalpy, units, index);
 }
+*/
 
-/**
+/*
  * Returns requested parameter f(P,S): Specified Return Parameter in Units Specified
  * @customfunction
  * @helpurl https://h2othermo/functions/
@@ -2542,16 +2542,17 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param {string} return What to return ("enthalpy", "entropy", etc.)
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
- */
-/*export function fPS(pressure, entropy, returnName, units) {
+ *
+export function fPS(pressure, entropy, returnName, units) {
   const index = nameToIndex(returnName);
   if (index == undefined) {
     return Errors.ErrorReturnTypeUnknown;
   }
   return H2o.CallStmProp_fPS(pressure, entropy, units, index);
 }
+*/
 
-/**
+/*
  * Returns requested parameter f(H,S): Specified Return Parameter in Units Specified
  * @customfunction
  * @helpurl https://h2othermo/functions/
@@ -2559,59 +2560,63 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
  * @param {number} entropy (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
  * @param {string} return What to return ("enthalpy", "entropy", etc.)
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
- */
-/*export function fHS(enthalpy, entropy, returnName, units) {
+ *
+export function fHS(enthalpy, entropy, returnName, units) {
   const index = nameToIndex(returnName);
   if (index == undefined) {
     return Errors.ErrorReturnTypeUnknown;
   }
   return H2o.CallStmProp_fPS(enthalpy, entropy, units, index);
 }
+*/
 
 // Debug Function for Viscosity
-/**
+/*
  * Viscosity f(T, v) used to verify the values in R12-08 Table 4 & 5.  This does not check to see if the pressure is valid (use with caution).  Only supports SI units
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} temperature  K
  * @param {number} volume (0)m³/kg
  * @returns Pa·s (use with caution, see help url)
- */
-/*export function TVM(temperature, volume) {
+ *
+export function TVM(temperature, volume) {
   return H2o.Viscosity_fTV(temperature, volume);
 }
+*/
 
 // Debug function for Conductivity W/O the critical enhancement for verifying values in R15-11 table 4
 // Does not check to verify in a valid range, only used for testing
-/**
+/*
  * Conductivity f(V,T) without critical enhancement
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} temperature K
  * @param {number} volume m³/kg
  * @returns mW/(m·K)
- */
-/*export function Test_TVK_WO_Crit_Enh(temperature, volume) {
+ *
+export function Test_TVK_WO_Crit_Enh(temperature, volume) {
   return H2o.Conductivity_fTV_WO_Crit_Enh(temperature, volume);
 }
+*/
 
 // Debug function for Conductivity With the critical enhancement for verifying values in R15-11 table 5
 // Assumes the input values are in Region 3.  Does not check in a valid range, only for testing
-/**
- * Conductivity f(V,T) without critical enhancement
+/*
+ * Conductivity f(V,T) with critical enhancement
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} temperature K
  * @param {number} volume m³/kg
  * @returns mW/(m·K)
- */
-/*export function Test_TVK_With_Crit_Enh(temperature, volume) {
+ *
+export function Test_TVK_With_Crit_Enh(temperature, volume) {
   return H2o.Conductivity_fTV_With_Crit_Enh(temperature, volume);
 }
+*/
 
 // Debug Functions for Region 3 f(v,T) to verify the values in R7-97 Table 33.
 // Comment out when done testing or add a check to make sure in Region 3
-/**
+/*
  * Region 3 only: returns pressure f(v,T)
  * @customfunction
  * @helpurl https://h2othermo/functions/
@@ -2619,12 +2624,13 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)MPa, (1)psia, (2)bara, (3)kPa
- */
-/*export function Test_VTP(volume, temperature, units) {
+ *
+export function Test_VTP(volume, temperature, units) {
   return H2o.CallStmProp_fVT(volume, temperature, units, Units.VectorParameters.Pressure);
 }
+*/
 
-/**
+/*
  * Region 3 only: returns enthalpy f(v,T)
  * @customfunction
  * @helpurl https://h2othermo/functions/
@@ -2632,12 +2638,13 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
- */
-/*export function Test_VTH(volume, temperature, units) {
+ *
+export function Test_VTH(volume, temperature, units) {
   return H2o.CallStmProp_fVT(volume, temperature, units, Units.VectorParameters.Enthalpy);
 }
+*/
 
-/**
+/*
  * Region 3 only: returns internal energy f(v,T)
  * @customfunction
  * @helpurl https://h2othermo/functions/
@@ -2645,12 +2652,13 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)kJ/kg, (1)BTU/lbm, (2)kJ/kg, (3)kJ/kg
- */
-/*export function Test_VTU(volume, temperature, units) {
+ *
+export function Test_VTU(volume, temperature, units) {
   return H2o.CallStmProp_fVT(volume, temperature, units, Units.VectorParameters.InternalEnergy);
 }
+*/
 
-/**
+/*
  * Region 3 only: returns entropy f(v,T)
  * @customfunction
  * @helpurl https://h2othermo/functions/
@@ -2658,12 +2666,13 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
- */
-/*export function Test_VTS(volume, temperature, units) {
+ *
+export function Test_VTS(volume, temperature, units) {
   return H2o.CallStmProp_fVT(volume, temperature, units, Units.VectorParameters.Entropy);
 }
+*/
 
-/**
+/*
  * Region 3 only: returns isobaric specific heat f(v,T)
  * @customfunction
  * @helpurl https://h2othermo/functions/
@@ -2671,12 +2680,13 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)kJ/(kg·K), (1)BTU/(lbm·°F), (2)kJ/(kg·°C), (3)kJ/(kg·°C)
- */
-/*export function Test_VTCp(volume, temperature, units) {
+ *
+export function Test_VTCp(volume, temperature, units) {
   return H2o.CallStmProp_fVT(volume, temperature, units, Units.VectorParameters.IsobaricHeat);
 }
+*/
 
-/**
+/*
  * Region 3 only: returns speed of sound f(v,T)
  * @customfunction
  * @helpurl https://h2othermo/functions/
@@ -2684,271 +2694,292 @@ export function fPT(pressure, temperature, returnName, units, metastable) {
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
  * @returns (0)m/s, (1)ft/s, (2)m/s, (3)m/s
- */
-/*export function Test_VTW(volume, temperature, units) {
+ *
+export function Test_VTW(volume, temperature, units) {
   return H2o.CallStmProp_fVT(volume, temperature, units, Units.VectorParameters.SpeedOfSound);
 }
+*/
 
 // Debug Function for Region 3 saturation pressure psat(h) to verify the values in 3R3-03 Table 18.
 // Comment out when done testing or add a check to make sure inputs within valid range
-/**
+/*
  * returns Region 3 saturation pressure psat(h)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} enthalpy  kJ/kg
  * @returns MPa
- */
-/*export function Test_R3_h_psat(enthalpy) {
+ *
+export function Test_R3_h_psat(enthalpy) {
   return H2o.R3Psat_fH(enthalpy);
 }
+*/
 
 // Debug Function for Region 3 saturation pressure psat(s) to verify the values in 3R3-03 Table 20.
 // Comment out when done testing or add a check to make sure inputs within valid range
-/**
+/*
  * returns Region 1 to Region 4 boundary: h(s)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
- */
-/*export function Test_R3_s_psat(enthalpy) {
+ *
+export function Test_R3_s_psat(enthalpy) {
   return H2o.R3Psat_fS(enthalpy);
 }
+*/
 
 // Debug Function for boundary equation between Region 1 and Region 4 to verify the values in SR4-04 Table 11
 // Comment out when done testing or add a check to make sure inputs within valid range
-/**
+/*
  * returns Region 1 to Region 4 boundary: h(s)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
- */
-/*export function Test_H1_sat_liqS(enthalpy) {
+ *
+export function Test_H1_sat_liqS(enthalpy) {
   return H2o.H1_sat_liqS(enthalpy);
 }
+*/
 
 // Debug Function for saturated liquid boundary equation between Region 3 and Region 4 to verify the values in SR4-04 Table 11
 // Comment out when done testing or add a check to make sure inputs within valid range
-/**
+/*
  * returns Region 3 to Region 4 saturated liquid boundary: h(s)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
- */
-/*export function Test_H3a_sat_liqS(enthalpy) {
+ *
+export function Test_H3a_sat_liqS(enthalpy) {
   return H2o.H3a_sat_liqS(enthalpy);
 }
+*/
 
 // Debug Function for saturated vapor boundary between Region 2 and Region 4 to verify the values in SR4-04 Table 18
 // Comment out when done testing or add a check to make sure inputs within valid range
-/**
+/*
  * returns Region 1 to Region 4 boundary: h(s)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
- */
-/*export function Test_H2ab_sat_VapS(entropy) {
+ *
+export function Test_H2ab_sat_VapS(entropy) {
   return H2o.H2ab_sat_VapS(entropy);
 }
+*/
 
 // Debug Function for saturated liquid boundary equation between Region 2&3 and Region 4 to verify the values in SR4-04 Table 18
 // Comment out when done testing or add a check to make sure inputs within valid range
-/**
+/*
  * returns Region 3 to Region 4 saturated liquid boundary: h(s)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
- */
-/*export function Test_H2c3b_sat_VapS(entropy) {
+ *
+export function Test_H2c3b_sat_VapS(entropy) {
   return H2o.H2c3b_sat_VapS(entropy);
 }
+*/
 
 // Debug Function for the boundary between Regions 1 and 3 to verify the values in SR4-04 Table 24
 // Comment out when done testing or add a check to make sure inputs within valid range
-/**
+/*
  * returns boundary between Regions 1 & 3 f(s)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} entropy  kJ/(kg·K)
  * @returns enthalpy kJ/kg
- */
-/*export function Test_Hb13S(entropy) {
+ *
+export function Test_Hb13S(entropy) {
   return H2o.Hb13S(entropy);
 }
+*/
 
 // Debug Function for the boundary between Regions 2 and 3 to verify the values in SR4-04 Table 26
 // Comment out when done testing or add a check to make sure inputs within valid range
-/**
+/*
  * returns boundary between Regions 2 & 3 T(h,s)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} enthalpy  kJ/kg
  * @param {number} entropy  kJ/(kg·K)
  * @returns Temperature K
- */
-/*export function Test_Tb23HS(enthalpy, entropy) {
+ *
+export function Test_Tb23HS(enthalpy, entropy) {
   return H2o.Tb23HS(enthalpy, entropy);
 }
+*/
 
 // Debug Function for the boundary between Regions 2 and 3 to verify the values in SR4-04 Table 26
 // Comment out when done testing or add a check to make sure inputs within valid range
-/**
+/*
  * returns boundary between Regions 2 & 3 T(h,s)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} enthalpy  kJ/kg
  * @param {number} entropy  kJ/(kg·K)
  * @returns Saturation Temperature K
- */
-/*export function Test_TsatHS(enthalpy, entropy) {
+ *
+export function Test_TsatHS(enthalpy, entropy) {
   return H2o.TsatHS(enthalpy, entropy);
 }
+*/
 
 // Debug Function for T3ab(p) SR5-05 eq 2
-/**
+/*
  * Region 3 only: returns T3ab(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3ab K
- */
-/*export function Test_T3ab(pressure) {
+ *
+export function Test_T3ab(pressure) {
   return H2o.T3ab(pressure);
 }
+*/
 
 // Debug Function for T3op(p) SR5-05 eq 2
-/**
+/*
  * Region 3 only: returns T3op(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3op K
- */
-/*export function Test_T3op(pressure) {
+ *
+export function Test_T3op(pressure) {
   return H2o.T3op(pressure);
 }
+*/
 
 // Debug Function for T3ef(p) SR5-05 eq 3
-/**
+/*
  * Region 3 only: returns T3ef(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3ef K
- */
-/*export function Test_T3ef(pressure) {
+ *
+export function Test_T3ef(pressure) {
   return H2o.T3ef(pressure);
 }
+*/
 
 // Debug Function for T3cd(p) SR5-05 eq 1
-/**
+/*
  * Region 3 only: returns T3cd(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3cd K
- */
-/*export function Test_T3cd(pressure) {
+ *
+export function Test_T3cd(pressure) {
   return H2o.T3cd(pressure);
 }
+*/
 
 // Debug Function for T3gh(p) SR5-05 eq 1
-/**
+/*
  * Region 3 only: returns T3gh(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3gh K
- */
-/*export function Test_T3gh(pressure) {
+ *
+export function Test_T3gh(pressure) {
   return H2o.T3gh(pressure);
 }
+*/
 
 // Debug Function for T3ij(p) SR5-05 eq 1
-/**
+/*
  * Region 3 only: returns T3ij(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3ij K
- */
-/*export function Test_T3ij(pressure) {
+ *
+export function Test_T3ij(pressure) {
   return H2o.T3ij(pressure);
 }
+*/
 
 // Debug Function for T3jk(p) SR5-05 eq 1
-/**
+/*
  * Region 3 only: returns T3jk(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3jk K
- */
-/*export function Test_T3jk(pressure) {
+ *
+export function Test_T3jk(pressure) {
   return H2o.T3jk(pressure);
 }
+*/
 
 // Debug Function for T3mn(p) SR5-05 eq 1
-/**
+/*
  * Region 3 only: returns T3mn(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3mn K
- */
-/*export function Test_T3mn(pressure) {
+ *
+export function Test_T3mn(pressure) {
   return H2o.T3mn(pressure);
 }
+*/
 
 // Debug Function for T3qu(p) SR5-05 eq 1
-/**
+/*
  * Region 3 only: returns T3qu(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3qu K
- */
-/*export function Test_T3qu(pressure) {
+ *
+export function Test_T3qu(pressure) {
   return H2o.T3qu(pressure);
 }
+*/
 
 // Debug Function for T3rx(p) SR5-05 eq 1
-/**
+/*
  * Region 3 only: returns T3rx(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3rx K
- */
-/*export function Test_T3rx(pressure) {
+ *
+export function Test_T3rx(pressure) {
   return H2o.T3rx(pressure);
 }
+*/
 
 // Debug Function for T3uv(p) SR5-05 eq 1
-/**
+/*
  * Region 3 only: returns T3uv(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3uv K
- */
-/*export function Test_T3uv(pressure) {
+ *
+export function Test_T3uv(pressure) {
   return H2o.T3uv(pressure);
 }
+*/
 
 // Debug Function for T3wx(p) SR5-05 eq 1
-/**
+/*
  * Region 3 only: returns T3wx(p)
  * @customfunction
  * @helpurl https://h2othermo/functions/
  * @param {number} pressure MPa
  * @returns T3wx K
- */
-/*export function Test_T3wx(pressure) {
+
+export function Test_T3wx(pressure) {
   return H2o.T3wx(pressure);
 }
-*/
+ */

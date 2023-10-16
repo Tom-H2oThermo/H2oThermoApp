@@ -97,7 +97,8 @@ export function Cond_With_crit_enh(
   zetaTR = 1 / zetaTR;
 
   const dRhoDp_T = -dVdP_T / Math.pow(volume, 2); // Conversion from dv_dp to dRho_dp.  Uses the derivative reciprocal rule.
-  const dRhoDp_TR = zetaTR * (Constants.Tc_H2O / Constants.RHOc_H2O); // Conversion from dv_dp to dRho_dp.
+  // const dRhoDp_TR = -dVdP_TR / Math.pow(volume, 2);
+  // const dRhoDp_TR = zetaTR * (Constants.Tc_H2O / Constants.RHOc_H2O); // Conversion from dv_dp to dRho_dp.
   var cp_rel = isobaricHeat / R; // cp relative R15-11 Eq. 12
   if (cp_rel < 0 || cp_rel > 1e13) {
     // If negative or greater than 10^13, then it set it to 10^13.  See IAPWS R15-11 note on bottom of page 12
@@ -114,6 +115,7 @@ export function Cond_With_crit_enh(
 
   // If zeta is negative or greater than 10^13, then it set it to 10^13
   // See IAPWS R15-11 note on bottom of page 12
+  // var zetaTR = dRhoDp_TR * (Constants.pc_H2O / Constants.RHOc_H2O); // R15-11 Eq. 24
   if (zetaTR < 0 || zetaTR > 1e13) {
     zetaTR = 1e13;
   }

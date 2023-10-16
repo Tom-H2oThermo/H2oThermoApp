@@ -526,9 +526,9 @@ export function Conductivity_fPT(pressure, temperature, units) {
     var Cp = CallStmProp_fPT(p, t, 0, [7], false); // StmPproperties[6] is volume
     var Cv = CallStmProp_fPT(p, t, 0, [8], false); // StmPproperties[6] is volume
     var dVdP_T = CallStmProp_fPT(p, t, 0, [52], false); // StmPproperties[6] is volume
-    // var dVdP_TR = CallStmProp_fPT(p, Constants.TR, 0, [52], false); // StmPproperties[6] is volume
+    var dVdP_TR = CallStmProp_fPT(p, Constants.TR, 0, [52], false); // StmPproperties[6] is volume
 
-    conductivity = Conductivity.Cond(temperature, volume, pressure, viscosity, Cp, Cv, dVdP_T);
+    conductivity = Conductivity.Cond(temperature, volume, pressure, viscosity, Cp, Cv, dVdP_T, dVdP_TR);
 
     switch (units) {
       case Units.SI:
