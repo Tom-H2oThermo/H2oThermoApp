@@ -798,7 +798,7 @@ export function TQCv(temperature, quality, units) {
  * @param {number} pressure (0)MPa, (1)psia, (2)bara, (3)kPa
  * @param {number} temperature  (0)K, (1)°F, (2)°C, (3)°C
  * @param  {number} [units=0] (0)SI, (1)US Customary, (2)Metric bara, (3) Metric kPa
- * @returns (0)Pa·s, (1)lbf·s/ft³, (2)cP, (3)cP
+ * @returns (0)Pa·s, (1)lbf·s/ft², (2)cP, (3)cP
  */
 export function PTM(pressure, temperature, units) {
   return H2o.Viscosity_fPT(pressure, temperature, units);
