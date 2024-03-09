@@ -12,9 +12,9 @@
   <Description DefaultValue="IAPWS Properties of Water and Steam formulations for industrial use."/>
   <IconUrl DefaultValue="https://www.h2othermo.com/steam/add-inassets/H2oLogo.png"/>
   <HighResolutionIconUrl DefaultValue="https://www.h2othermo.com/steam/add-inassets/H2oLogo.png"/>
-  <SupportUrl DefaultValue="https://www.h2othermo.com/help"/>
+  <SupportUrl DefaultValue="https://h2othermo.com/help"/>
   <AppDomains>
-    <AppDomain>https://www.h2othermo.com/</AppDomain>
+    <AppDomain>https://h2othermo.com/</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
