@@ -10,7 +10,7 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="H2o"/>
   <Description DefaultValue="IAPWS Properties of Water and Steam formulations for industrial use."/>
-  <IconUrl DefaultValue="https://www.h2othermo.com/steam/add-inassets/icon-80.png"/>
+  <IconUrl DefaultValue="https://h2othermo.com/assets/images/icon-80.png"/>
   <HighResolutionIconUrl DefaultValue="https://www.h2othermo.com/steam/add-inassets/H2oLogo350.png"/>
   <SupportUrl DefaultValue="https://h2othermo.com/home-page/"/>
   <AppDomains>
@@ -88,9 +88,9 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://www.h2othermo.com/steam/add-inassets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://www.h2othermo.com/steam/add-inassets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://www.h2othermo.com/steam/add-inassets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://h2othermo.com/assets/images/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://h2othermo.com/assets/images/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://h2othermo.com/assets/images/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Functions.Script.Url" DefaultValue="https://www.h2othermo.com/steam/add-infunctions.js"/>
