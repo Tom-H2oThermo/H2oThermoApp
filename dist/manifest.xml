@@ -10,7 +10,7 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="H2o"/>
   <Description DefaultValue="IAPWS Properties of Water and Steam formulations for industrial use."/>
-  <IconUrl DefaultValue="https://www.h2othermo.com/steam/add-inassets/H2oLogo.png"/>
+  <IconUrl DefaultValue="https://www.h2othermo.com/steam/add-inassets/icon-80.png"/>
   <HighResolutionIconUrl DefaultValue="https://www.h2othermo.com/steam/add-inassets/H2oLogo350.png"/>
   <SupportUrl DefaultValue="https://h2othermo.com/home-page/"/>
   <AppDomains>
