@@ -93,10 +93,17 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://h2othermo.com/assets/images/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
+<<<<<<< HEAD
         <bt:Url id="Functions.Script.Url" DefaultValue="https://www.h2othermo.com/steam/add-infunctions.js"/>
         <bt:Url id="Functions.Metadata.Url" DefaultValue="https://www.h2othermo.com/steam/add-infunctions.json"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://www.h2othermo.com/steam/add-intaskpane.html"/>
+=======
+        <bt:Url id="Functions.Script.Url" DefaultValue="https://www.h2othermo.com/steam/add-infunctions.js"/>
+        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://www.h2othermo.com/steam/add-infunctions.json"/>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://www.h2othermo.com/steam/add-intaskpane.html"/>
+>>>>>>> parent of 305a080 (added github links for  the bt urls)
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Functions.Namespace" DefaultValue="H2o"/>
