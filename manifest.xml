@@ -93,10 +93,10 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://h2othermo.com/assets/images/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Functions.Script.Url" DefaultValue="https://localhost:3000/public/functions.js"/>
-        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://h2othermo0storage.file.core.windows.net/mainifest-bt-urls/functions.json"/>
+        <bt:Url id="Functions.Script.Url" DefaultValue="https://h2othermollc-my.sharepoint.com/:u:/g/personal/tom_h2othermo_com/EeRoweuj2yxOoZ189ocm83UBafJOC5nN_MEiiAd_1Bbzbg?e=syNNwX"/>
+        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://h2othermollc-my.sharepoint.com/:u:/g/personal/tom_h2othermo_com/EYOHumhGsWpOtUFHkqueR9cBTFrIrJUPvRW3gWKqMrNH7A?e=Pn4jx4"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://h2othermollc-my.sharepoint.com/:u:/g/personal/tom_h2othermo_com/ERnO1XcPErpIntOvKH9pB3ABkXCnvFmxQ-5HNlZpZ82GgA?e=cvGON3"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Functions.Namespace" DefaultValue="H2o"/>
