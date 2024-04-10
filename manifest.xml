@@ -14,7 +14,7 @@
   <HighResolutionIconUrl DefaultValue="https://h2othermo.com/assets/images/Logo64x64.png"/>
   <SupportUrl DefaultValue="https://forms.gle/gvGZDxjrPWEdEaE38"/>
   <AppDomains>
-    <AppDomain>https://h2othermo.com/</AppDomain>
+    <AppDomain>https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
@@ -88,9 +88,9 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://h2othermo.com/assets/images/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://h2othermo.com/assets/images/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://h2othermo.com/assets/images/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://h2othermo.com/assets/images/Logo16x16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://h2othermo.com/assets/images/Logo32x32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://h2othermo.com/assets/images/Logo80x80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Functions.Script.Url" DefaultValue="https://localhost:3000/public/functions.js"/>
