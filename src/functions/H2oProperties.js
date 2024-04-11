@@ -18,7 +18,7 @@ var licensing = {
   checkLicense: function () {
     var isOk = true;
     if (!isOk) {
-      throw "Trial Expired, see https://www.h2othermo.com/steam";
+      throw "Trial Expired, see https://www.h2othermo.com";
     }
   },
 };
