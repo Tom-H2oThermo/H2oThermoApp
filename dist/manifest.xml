@@ -25,7 +25,7 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://h2othermoapp.blob.core.windows.net/$web/taskpane.html"/>
+    <SourceLocation DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/taskpane.html"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -93,10 +93,10 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://h2othermo.com/assets/images/Logo80x80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Functions.Script.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urlsfunctions.js"/>
-        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urlsfunctions.json"/>
+        <bt:Url id="Functions.Script.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/functions.js"/>
+        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/functions.json"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urlstaskpane.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Functions.Namespace" DefaultValue="H2o"/>
