@@ -10,11 +10,11 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="H2o"/>
   <Description DefaultValue="IAPWS Properties of Water and Steam formulations for industrial use."/>
-  <IconUrl DefaultValue="https://h2othermo.com/assets/images/Logo32x32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://h2othermo.com/assets/images/Logo64x64.png"/>
+  <IconUrl DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/Logo32x32.png" />
+  <HighResolutionIconUrl DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/Logo64x64.png" />
   <SupportUrl DefaultValue="https://forms.gle/gvGZDxjrPWEdEaE38"/>
   <AppDomains>
-    <AppDomain>https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/taskpane.html</AppDomain>
+    <AppDomain>https://h2othermo.com</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
