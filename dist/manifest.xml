@@ -10,11 +10,11 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="H2o"/>
   <Description DefaultValue="IAPWS Properties of Water and Steam formulations for industrial use."/>
-  <IconUrl DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/Logo32x32.png" />
-  <HighResolutionIconUrl DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/Logo64x64.png" />
+  <IconUrl DefaultValue="https://h2othermo.com/assets/images/Logo32x32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://h2othermo.com/assets/images/Logo64x64.png"/>
   <SupportUrl DefaultValue="https://forms.gle/gvGZDxjrPWEdEaE38"/>
   <AppDomains>
-    <AppDomain>https://h2othermo.com</AppDomain>
+    <AppDomain>https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
@@ -93,10 +93,10 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://h2othermo.com/assets/images/Logo80x80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Functions.Script.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/functions.js"/>
-        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/functions.json"/>
+        <bt:Url id="Functions.Script.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urlsfunctions.js"/>
+        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urlsfunctions.json"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls/taskpane.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urlstaskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Functions.Namespace" DefaultValue="H2o"/>
