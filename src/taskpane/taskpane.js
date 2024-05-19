@@ -6,6 +6,8 @@
 /* global console, document, Excel, Office */
 
 // The initialize function must be run each time a new page is loaded
+import { PublicClientNext } from "@azure/msal-browser";
+
 Office.onReady(() => {
   document.getElementById("sideload-msg").style.display = "none";
   document.getElementById("app-body").style.display = "flex";
