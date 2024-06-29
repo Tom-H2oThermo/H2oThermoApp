@@ -8,22 +8,10 @@
 // The initialize function must be run each time a new page is loaded
 import { PublicClientNext } from "@azure/msal-browser";
 
-let pca = undefined;
-Office.onReady(async (info) => {
-  if (info.host === Office.HostType.Excel) {
-    document.getElementById("sideload-msg").style.display = "none";
-    document.getElementById("app-body").style.display = "flex";
-    document.getElementById("run").onclick = run;
-
-    // Initialize the public client application
-    pca = await PublicClientNext.createPublicClientApplication({
-      auth: {
-        clientId: "e9a58708-ab78-4d3c-a158-9db2a75465ad",
-        authority: "https://login.microsoftonline.com/common",
-        supportsNestedAppAuth: true,
-      },
-    });
-  }
+Office.onReady(() => {
+  document.getElementById("sideload-msg").style.display = "none";
+  document.getElementById("app-body").style.display = "flex";
+  document.getElementById("run").onclick = run;
 });
 
 export async function run() {
