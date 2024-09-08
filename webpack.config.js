@@ -1,116 +1,138 @@
 /* eslint-disable no-undef */
 
-const devCerts = require("office-addin-dev-certs");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const CustomFunctionsMetadataPlugin = require("custom-functions-metadata-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
+const nodeExternals = require("webpack-node-externals");
 
-const urlDev = "https://localhost:3000/";
-const urlProd = "https://h2othermo0storage.blob.core.windows.net/h2othermo-blob-bt-urls"; // TODO: CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
-
-/* global require, module, process, __dirname */
-
-async function getHttpsOptions() {
-  const httpsOptions = await devCerts.getHttpsServerOptions();
-  return { ca: httpsOptions.ca, key: httpsOptions.key, cert: httpsOptions.cert };
-}
+const urlDev = "localhost:3000";
+const urlProd = "h2othermo-app-sso-web-app.azurewebsites.net"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
 
 module.exports = async (env, options) => {
   const dev = options.mode === "development";
-  const config = {
-    devtool: "source-map",
-    entry: {
-      polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
-      taskpane: ["./src/taskpane/taskpane.js", "./src/taskpane/taskpane.html"],
-      commands: "./src/commands/commands.js",
-      functions: "./src/functions/functions.js",
-    },
-    output: {
-      clean: true,
-    },
-    resolve: {
-      extensions: [".html", ".js"],
-    },
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: {
-            loader: "babel-loader",
-            options: {
-              presets: ["@babel/preset-env"],
+  const config = [
+    {
+      devtool: "source-map",
+      entry: {
+        polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
+        taskpane: ["./src/taskpane/taskpane.js", "./src/taskpane/taskpane.html"],
+        commands: "./src/commands/commands.js",
+        fallbackauthdialog: "./src/helpers/fallbackauthdialog.js",
+      },
+      resolve: {
+        extensions: [".html", ".js"],
+        fallback: {
+          buffer: require.resolve("buffer/"),
+          http: require.resolve("stream-http"),
+          https: require.resolve("https-browserify"),
+          url: require.resolve("url/"),
+        },
+      },
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: "babel-loader",
+              options: {
+                presets: ["@babel/preset-env"],
+              },
             },
           },
-        },
-        {
-          test: /\.html$/,
-          exclude: /node_modules/,
-          use: "html-loader",
-        },
-        {
-          test: /\.(png|jpg|jpeg|gif|ico)$/,
-          type: "asset/resource",
-          generator: {
-            filename: "assets/[name][ext][query]",
+          {
+            test: /\.html$/,
+            exclude: /node_modules/,
+            use: "html-loader",
           },
-        },
+          {
+            test: /\.(png|jpg|jpeg|gif|ico)$/,
+            type: "asset/resource",
+            generator: {
+              filename: "assets/[name][ext][query]",
+            },
+          },
+        ],
+      },
+      plugins: [
+        new HtmlWebpackPlugin({
+          filename: "taskpane.html",
+          template: "./src/taskpane/taskpane.html",
+          chunks: ["polyfill", "taskpane"],
+        }),
+        new HtmlWebpackPlugin({
+          filename: "commands.html",
+          template: "./src/commands/commands.html",
+          chunks: ["polyfill", "commands"],
+        }),
+        new HtmlWebpackPlugin({
+          filename: "fallbackauthdialog.html",
+          template: "./src/helpers/fallbackauthdialog.html",
+          chunks: ["polyfill", "fallbackauthdialog"],
+        }),
+        new CopyWebpackPlugin({
+          patterns: [
+            {
+              from: "assets/*",
+              to: "assets/[name][ext][query]",
+            },
+            {
+              from: "package.json",
+              to: "package.json",
+            },
+            {
+              from: "manifest*.xml",
+              to: "[name]" + "[ext]",
+              transform(content) {
+                if (dev) {
+                  return content;
+                } else {
+                  return content.toString().replace(new RegExp(urlDev, "g"), urlProd);
+                }
+              },
+            },
+          ],
+        }),
       ],
     },
-    plugins: [
-      new CustomFunctionsMetadataPlugin({
-        output: "functions.json",
-        input: "./src/functions/functions.js",
-      }),
-      new HtmlWebpackPlugin({
-        filename: "taskpane.html",
-        template: "./src/taskpane/taskpane.html",
-        chunks: ["polyfill", "taskpane", "functions", "commands"],
-      }),
-      new CopyWebpackPlugin({
-        patterns: [
+    {
+      devtool: "source-map",
+      target: "node",
+      entry: {
+        middletier: "./src/middle-tier/app.js",
+      },
+      output: {
+        clean: true,
+      },
+      externals: [nodeExternals()],
+      resolve: {
+        extensions: [".js"],
+      },
+      module: {
+        rules: [
           {
-            from: "src/web.config",
-            to: "src/web.config",
-          },
-        ],
-      }),
-      new CopyWebpackPlugin({
-        patterns: [
-          {
-            from: "assets/*",
-            to: "assets/[name][ext][query]",
-          },
-          {
-            from: "manifest*.xml",
-            to: "[name]" + "[ext]",
-            transform(content) {
-              if (dev) {
-                return content;
-              } else {
-                return content.toString().replace(new RegExp(urlDev + "(?:public/)?", "g"), urlProd);
-              }
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: "babel-loader",
+              options: {
+                presets: ["@babel/preset-env"],
+              },
             },
           },
         ],
-      }),
-    ],
-    devServer: {
-      static: {
-        directory: path.join(__dirname, "dist"),
-        publicPath: "/public",
       },
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-      server: {
-        type: "https",
-        options: env.WEBPACK_BUILD || options.https !== undefined ? options.https : await getHttpsOptions(),
-      },
-      port: process.env.npm_package_config_dev_server_port || 3000,
+      plugins: [
+        new CopyWebpackPlugin({
+          patterns: [
+            {
+              from: ".env",
+              to: ".",
+            },
+          ],
+        }),
+      ],
     },
-  };
+  ];
 
   return config;
 };
