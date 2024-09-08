@@ -8,7 +8,7 @@
   <Version>1.0.0.0</Version>
   <ProviderName>H2oThermo LLC</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="H2o"/>
+  <DisplayName DefaultValue="H2o Thermodynamic Properties Add In"/>
   <Description DefaultValue="Thermodynamic Properties of Water and Steam for Excel Add-In"/>
   <IconUrl DefaultValue="https://h2othermo.com/assets/images/Logo32x32.png"/>
   <HighResolutionIconUrl DefaultValue="https://h2othermo.com/assets/images/Logo64x64.png"/>
@@ -109,5 +109,14 @@
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane"/>
       </bt:LongStrings>
     </Resources>
+    <WebApplicationInfo>
+      <Id>ea5a67f6-b6f3-4338-b240-c655ddc3cc8e</Id>
+      <Resource>api://h2othermo.com/d2ed1ade-b65e-4edc-9b6c-415f556049a4</Resource>
+      <Scopes>
+        <Scope>User.Read</Scope>
+        <Scope>profile</Scope>
+        <Scope>openid</Scope>
+      </Scopes>
+    </WebApplicationInfo>
   </VersionOverrides>
 </OfficeApp>
