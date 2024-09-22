@@ -14,9 +14,7 @@
   <HighResolutionIconUrl DefaultValue="https://h2othermo.com/assets/images/Logo64x64.png"/>
   <SupportUrl DefaultValue="https://forms.gle/gvGZDxjrPWEdEaE38"/>
   <AppDomains>
-    <AppDomain>https://h2othermo-sso-web-app.azurewebsites.net</AppDomain>
-    <AppDomain>https://H2oThermo.com</AppDomain>
-    <AppDomain>https://h2othermostorage1.blob.core.windows.net/$web</AppDomain>
+    <AppDomain>https://h2othermo.com</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
